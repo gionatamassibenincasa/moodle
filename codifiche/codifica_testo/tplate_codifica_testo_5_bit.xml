@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <question type="category">
+        <category>
+            <text>$course$/Codifica delle informazioni/Codifica del testo/Cloze/Dal testo al messaggio codificato</text>
+
+        </category>
+    </question>
+
+    {{#each this}}
+
+    <question type="cloze">
+        <name>
+            <text>Codificare un testo: {{ testo }}</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[<p>Si consideri il seguente codice:&nbsp;</p><table style\="color\: rgb(0, 0, 0); font-family\: &quot;Times New Roman&quot;; font-size\: medium;"><tbody><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr><tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td></tr><tr><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th></tr><tr><td>H</td><td>I</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td></tr><tr><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th><th>21</th></tr><tr><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>Z<br></td></tr></tbody></table></p>
+            <p>Codificare con esattamente 5 bit ogni carattere della parola <code>{{ testo }}</code>.</p>
+
+            <table>
+              <thead>
+                <tr style="border= 1px solid black;">
+                     {{#each caratteri}}
+                        <th>{{this}}</th>
+                     {{/each}}
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border= 1px solid black;">
+                     {{#each codifica}}
+                        <td>{:SHORTANSWER:={{this}} }</td>
+                     {{/each}}
+                </tr>
+              </tbody>
+            </table>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+    </question>
+
+    {{/each}}
+
+</quiz>
