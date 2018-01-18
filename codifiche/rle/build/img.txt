@@ -1,0 +1,263 @@
+$CATEGORY: $course$/Codifica delle informazioni/Rappresentazione delle immagini/Codifica della lunghezza delle sequenze/Immagini a due colori/Dall'immagine codificata alla rappresentazione - Aperte
+
+::Immagine codificata\: 0,5,0,1,3,1,0,5,0,1,3,1,0,1,3,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,3,1,0,5,0,1,3,1,0,1,3,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=a}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,3,1,0,4,1,0,1,3,1,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,3,1,0,4,1,0,1,3,1,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=b}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,4,0,1,4,0,1,4,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,4,0,1,4,0,1,4,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=c}</p>
+</div>
+
+
+::Immagine codificata\: 0,4,1,0,1,3,1,0,1,3,1,0,1,3,1,0,4,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,4,1,0,1,3,1,0,1,3,1,0,1,3,1,0,4,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=d}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,4,0,4,1,0,1,4,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,4,0,4,1,0,1,4,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=e}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,4,0,4,1,0,1,4,0,1,4::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,4,0,4,1,0,1,4,0,1,4
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=f}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,4,0,1,1,3,0,1,3,1,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,4,0,1,1,3,0,1,3,1,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=g}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,0,1,3,1,0,5,0,1,3,1,0,1,3,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,0,1,3,1,0,5,0,1,3,1,0,1,3,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=h}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,2,1,2,2,1,2,2,1,2,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,2,1,2,2,1,2,2,1,2,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=i}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,2,1,2,2,1,2,0,1,1,1,2,0,3,2::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,2,1,2,2,1,2,0,1,1,1,2,0,3,2
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=j}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,2,1,1,0,1,1,1,2,0,2,3,0,1,1,1,2,0,1,2,1,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,2,1,1,0,1,1,1,2,0,2,3,0,1,1,1,2,0,1,2,1,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=k}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,4,0,1,4,0,1,4,0,1,4,0,4,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,4,0,1,4,0,1,4,0,1,4,0,4,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=l}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,0,2,1,2,0,1,1,1,1,1,0,1,3,1,0,1,3,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,0,2,1,2,0,1,1,1,1,1,0,1,3,1,0,1,3,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=m}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,0,2,2,1,0,1,1,1,1,1,0,1,2,2,0,1,3,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,0,2,2,1,0,1,1,1,1,1,0,1,2,2,0,1,3,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=n}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,3,1,0,1,3,1,0,1,3,1,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,3,1,0,1,3,1,0,1,3,1,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=o}</p>
+</div>
+
+
+::Immagine codificata\: 0,4,1,0,1,2,1,1,0,4,1,0,1,4,0,1,4::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,4,1,0,1,2,1,1,0,4,1,0,1,4,0,1,4
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=p}</p>
+</div>
+
+
+::Immagine codificata\: 0,4,1,0,1,2,1,1,0,1,2,1,1,0,4,1,4,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,4,1,0,1,2,1,1,0,1,2,1,1,0,4,1,4,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=q}</p>
+</div>
+
+
+::Immagine codificata\: 0,4,1,0,1,2,1,1,0,4,1,0,1,1,1,2,0,1,2,1,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,4,1,0,1,2,1,1,0,4,1,0,1,1,1,2,0,1,2,1,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=r}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,0,1,4,0,5,4,1,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,0,1,4,0,5,4,1,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=s}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,2,1,2,2,1,2,2,1,2,2,1,2::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,2,1,2,2,1,2,2,1,2,2,1,2
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=t}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,0,1,3,1,0,1,3,1,0,1,3,1,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,0,1,3,1,0,1,3,1,0,1,3,1,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=u}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,0,1,3,1,1,1,1,1,1,1,1,1,1,1,2,1,2::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,0,1,3,1,1,1,1,1,1,1,1,1,1,1,2,1,2
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=v}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=w}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,1,1,1,1,1,2,1,2,1,1,1,1,1,0,1,3,1::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,1,1,1,1,1,2,1,2,1,1,1,1,1,0,1,3,1
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=x}</p>
+</div>
+
+
+::Immagine codificata\: 0,1,3,1,1,1,1,1,1,2,1,2,2,1,2,2,1,2::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,1,3,1,1,1,1,1,1,2,1,2,2,1,2,2,1,2
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=y}</p>
+</div>
+
+
+::Immagine codificata\: 0,5,3,1,1,2,1,2,1,1,3,0,5::[html]<div><p>Considerando lo schema di codifica delle immagini presentato in "Computer Science Unplugged", determinare a quale carattere alfabetico assomiglia maggiormente l'immagine codificata su una griglia 5 x 5 come\:</p>
+<code>
+0,5,3,1,1,2,1,2,1,1,3,0,5
+</code>
+<p>La codifica &egrave; per righe.</br>
+Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
+<p>Lettera {:SHORTANSWER:=z}</p>
+</div>
+
+
+
