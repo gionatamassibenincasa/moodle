@@ -1,0 +1,6 @@
+$CATEGORY: $course$/Codifica delle informazioni/Conversioni di base/Conversioni da base 2 a base 10 - Risposte aperte
+
+{{#each this}}
+::Conversione da binario a decimale n. {{ base2 }}_2::[html]Converti {{ base2 }}<sub>2</sub> da base 2 a base 10 {#{{ numero }}:0}
+
+{{/each}}

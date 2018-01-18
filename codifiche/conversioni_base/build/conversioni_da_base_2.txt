@@ -1,0 +1,195 @@
+$CATEGORY: $course$/Codifica delle informazioni/Conversioni di base/Conversioni da base 2 a base 10 - Risposte aperte
+
+::Conversione da binario a decimale n. 100000_2::[html]Converti 100000<sub>2</sub> da base 2 a base 10 {#32:0}
+
+::Conversione da binario a decimale n. 100001_2::[html]Converti 100001<sub>2</sub> da base 2 a base 10 {#33:0}
+
+::Conversione da binario a decimale n. 100010_2::[html]Converti 100010<sub>2</sub> da base 2 a base 10 {#34:0}
+
+::Conversione da binario a decimale n. 100011_2::[html]Converti 100011<sub>2</sub> da base 2 a base 10 {#35:0}
+
+::Conversione da binario a decimale n. 100100_2::[html]Converti 100100<sub>2</sub> da base 2 a base 10 {#36:0}
+
+::Conversione da binario a decimale n. 100101_2::[html]Converti 100101<sub>2</sub> da base 2 a base 10 {#37:0}
+
+::Conversione da binario a decimale n. 100110_2::[html]Converti 100110<sub>2</sub> da base 2 a base 10 {#38:0}
+
+::Conversione da binario a decimale n. 100111_2::[html]Converti 100111<sub>2</sub> da base 2 a base 10 {#39:0}
+
+::Conversione da binario a decimale n. 101000_2::[html]Converti 101000<sub>2</sub> da base 2 a base 10 {#40:0}
+
+::Conversione da binario a decimale n. 101001_2::[html]Converti 101001<sub>2</sub> da base 2 a base 10 {#41:0}
+
+::Conversione da binario a decimale n. 101010_2::[html]Converti 101010<sub>2</sub> da base 2 a base 10 {#42:0}
+
+::Conversione da binario a decimale n. 101011_2::[html]Converti 101011<sub>2</sub> da base 2 a base 10 {#43:0}
+
+::Conversione da binario a decimale n. 101100_2::[html]Converti 101100<sub>2</sub> da base 2 a base 10 {#44:0}
+
+::Conversione da binario a decimale n. 101101_2::[html]Converti 101101<sub>2</sub> da base 2 a base 10 {#45:0}
+
+::Conversione da binario a decimale n. 101110_2::[html]Converti 101110<sub>2</sub> da base 2 a base 10 {#46:0}
+
+::Conversione da binario a decimale n. 101111_2::[html]Converti 101111<sub>2</sub> da base 2 a base 10 {#47:0}
+
+::Conversione da binario a decimale n. 110000_2::[html]Converti 110000<sub>2</sub> da base 2 a base 10 {#48:0}
+
+::Conversione da binario a decimale n. 110001_2::[html]Converti 110001<sub>2</sub> da base 2 a base 10 {#49:0}
+
+::Conversione da binario a decimale n. 110010_2::[html]Converti 110010<sub>2</sub> da base 2 a base 10 {#50:0}
+
+::Conversione da binario a decimale n. 110011_2::[html]Converti 110011<sub>2</sub> da base 2 a base 10 {#51:0}
+
+::Conversione da binario a decimale n. 110100_2::[html]Converti 110100<sub>2</sub> da base 2 a base 10 {#52:0}
+
+::Conversione da binario a decimale n. 110101_2::[html]Converti 110101<sub>2</sub> da base 2 a base 10 {#53:0}
+
+::Conversione da binario a decimale n. 110110_2::[html]Converti 110110<sub>2</sub> da base 2 a base 10 {#54:0}
+
+::Conversione da binario a decimale n. 110111_2::[html]Converti 110111<sub>2</sub> da base 2 a base 10 {#55:0}
+
+::Conversione da binario a decimale n. 111000_2::[html]Converti 111000<sub>2</sub> da base 2 a base 10 {#56:0}
+
+::Conversione da binario a decimale n. 111001_2::[html]Converti 111001<sub>2</sub> da base 2 a base 10 {#57:0}
+
+::Conversione da binario a decimale n. 111010_2::[html]Converti 111010<sub>2</sub> da base 2 a base 10 {#58:0}
+
+::Conversione da binario a decimale n. 111011_2::[html]Converti 111011<sub>2</sub> da base 2 a base 10 {#59:0}
+
+::Conversione da binario a decimale n. 111100_2::[html]Converti 111100<sub>2</sub> da base 2 a base 10 {#60:0}
+
+::Conversione da binario a decimale n. 111101_2::[html]Converti 111101<sub>2</sub> da base 2 a base 10 {#61:0}
+
+::Conversione da binario a decimale n. 111110_2::[html]Converti 111110<sub>2</sub> da base 2 a base 10 {#62:0}
+
+::Conversione da binario a decimale n. 111111_2::[html]Converti 111111<sub>2</sub> da base 2 a base 10 {#63:0}
+
+::Conversione da binario a decimale n. 1000000_2::[html]Converti 1000000<sub>2</sub> da base 2 a base 10 {#64:0}
+
+::Conversione da binario a decimale n. 1000001_2::[html]Converti 1000001<sub>2</sub> da base 2 a base 10 {#65:0}
+
+::Conversione da binario a decimale n. 1000010_2::[html]Converti 1000010<sub>2</sub> da base 2 a base 10 {#66:0}
+
+::Conversione da binario a decimale n. 1000011_2::[html]Converti 1000011<sub>2</sub> da base 2 a base 10 {#67:0}
+
+::Conversione da binario a decimale n. 1000100_2::[html]Converti 1000100<sub>2</sub> da base 2 a base 10 {#68:0}
+
+::Conversione da binario a decimale n. 1000101_2::[html]Converti 1000101<sub>2</sub> da base 2 a base 10 {#69:0}
+
+::Conversione da binario a decimale n. 1000110_2::[html]Converti 1000110<sub>2</sub> da base 2 a base 10 {#70:0}
+
+::Conversione da binario a decimale n. 1000111_2::[html]Converti 1000111<sub>2</sub> da base 2 a base 10 {#71:0}
+
+::Conversione da binario a decimale n. 1001000_2::[html]Converti 1001000<sub>2</sub> da base 2 a base 10 {#72:0}
+
+::Conversione da binario a decimale n. 1001001_2::[html]Converti 1001001<sub>2</sub> da base 2 a base 10 {#73:0}
+
+::Conversione da binario a decimale n. 1001010_2::[html]Converti 1001010<sub>2</sub> da base 2 a base 10 {#74:0}
+
+::Conversione da binario a decimale n. 1001011_2::[html]Converti 1001011<sub>2</sub> da base 2 a base 10 {#75:0}
+
+::Conversione da binario a decimale n. 1001100_2::[html]Converti 1001100<sub>2</sub> da base 2 a base 10 {#76:0}
+
+::Conversione da binario a decimale n. 1001101_2::[html]Converti 1001101<sub>2</sub> da base 2 a base 10 {#77:0}
+
+::Conversione da binario a decimale n. 1001110_2::[html]Converti 1001110<sub>2</sub> da base 2 a base 10 {#78:0}
+
+::Conversione da binario a decimale n. 1001111_2::[html]Converti 1001111<sub>2</sub> da base 2 a base 10 {#79:0}
+
+::Conversione da binario a decimale n. 1010000_2::[html]Converti 1010000<sub>2</sub> da base 2 a base 10 {#80:0}
+
+::Conversione da binario a decimale n. 1010001_2::[html]Converti 1010001<sub>2</sub> da base 2 a base 10 {#81:0}
+
+::Conversione da binario a decimale n. 1010010_2::[html]Converti 1010010<sub>2</sub> da base 2 a base 10 {#82:0}
+
+::Conversione da binario a decimale n. 1010011_2::[html]Converti 1010011<sub>2</sub> da base 2 a base 10 {#83:0}
+
+::Conversione da binario a decimale n. 1010100_2::[html]Converti 1010100<sub>2</sub> da base 2 a base 10 {#84:0}
+
+::Conversione da binario a decimale n. 1010101_2::[html]Converti 1010101<sub>2</sub> da base 2 a base 10 {#85:0}
+
+::Conversione da binario a decimale n. 1010110_2::[html]Converti 1010110<sub>2</sub> da base 2 a base 10 {#86:0}
+
+::Conversione da binario a decimale n. 1010111_2::[html]Converti 1010111<sub>2</sub> da base 2 a base 10 {#87:0}
+
+::Conversione da binario a decimale n. 1011000_2::[html]Converti 1011000<sub>2</sub> da base 2 a base 10 {#88:0}
+
+::Conversione da binario a decimale n. 1011001_2::[html]Converti 1011001<sub>2</sub> da base 2 a base 10 {#89:0}
+
+::Conversione da binario a decimale n. 1011010_2::[html]Converti 1011010<sub>2</sub> da base 2 a base 10 {#90:0}
+
+::Conversione da binario a decimale n. 1011011_2::[html]Converti 1011011<sub>2</sub> da base 2 a base 10 {#91:0}
+
+::Conversione da binario a decimale n. 1011100_2::[html]Converti 1011100<sub>2</sub> da base 2 a base 10 {#92:0}
+
+::Conversione da binario a decimale n. 1011101_2::[html]Converti 1011101<sub>2</sub> da base 2 a base 10 {#93:0}
+
+::Conversione da binario a decimale n. 1011110_2::[html]Converti 1011110<sub>2</sub> da base 2 a base 10 {#94:0}
+
+::Conversione da binario a decimale n. 1011111_2::[html]Converti 1011111<sub>2</sub> da base 2 a base 10 {#95:0}
+
+::Conversione da binario a decimale n. 1100000_2::[html]Converti 1100000<sub>2</sub> da base 2 a base 10 {#96:0}
+
+::Conversione da binario a decimale n. 1100001_2::[html]Converti 1100001<sub>2</sub> da base 2 a base 10 {#97:0}
+
+::Conversione da binario a decimale n. 1100010_2::[html]Converti 1100010<sub>2</sub> da base 2 a base 10 {#98:0}
+
+::Conversione da binario a decimale n. 1100011_2::[html]Converti 1100011<sub>2</sub> da base 2 a base 10 {#99:0}
+
+::Conversione da binario a decimale n. 1100100_2::[html]Converti 1100100<sub>2</sub> da base 2 a base 10 {#100:0}
+
+::Conversione da binario a decimale n. 1100101_2::[html]Converti 1100101<sub>2</sub> da base 2 a base 10 {#101:0}
+
+::Conversione da binario a decimale n. 1100110_2::[html]Converti 1100110<sub>2</sub> da base 2 a base 10 {#102:0}
+
+::Conversione da binario a decimale n. 1100111_2::[html]Converti 1100111<sub>2</sub> da base 2 a base 10 {#103:0}
+
+::Conversione da binario a decimale n. 1101000_2::[html]Converti 1101000<sub>2</sub> da base 2 a base 10 {#104:0}
+
+::Conversione da binario a decimale n. 1101001_2::[html]Converti 1101001<sub>2</sub> da base 2 a base 10 {#105:0}
+
+::Conversione da binario a decimale n. 1101010_2::[html]Converti 1101010<sub>2</sub> da base 2 a base 10 {#106:0}
+
+::Conversione da binario a decimale n. 1101011_2::[html]Converti 1101011<sub>2</sub> da base 2 a base 10 {#107:0}
+
+::Conversione da binario a decimale n. 1101100_2::[html]Converti 1101100<sub>2</sub> da base 2 a base 10 {#108:0}
+
+::Conversione da binario a decimale n. 1101101_2::[html]Converti 1101101<sub>2</sub> da base 2 a base 10 {#109:0}
+
+::Conversione da binario a decimale n. 1101110_2::[html]Converti 1101110<sub>2</sub> da base 2 a base 10 {#110:0}
+
+::Conversione da binario a decimale n. 1101111_2::[html]Converti 1101111<sub>2</sub> da base 2 a base 10 {#111:0}
+
+::Conversione da binario a decimale n. 1110000_2::[html]Converti 1110000<sub>2</sub> da base 2 a base 10 {#112:0}
+
+::Conversione da binario a decimale n. 1110001_2::[html]Converti 1110001<sub>2</sub> da base 2 a base 10 {#113:0}
+
+::Conversione da binario a decimale n. 1110010_2::[html]Converti 1110010<sub>2</sub> da base 2 a base 10 {#114:0}
+
+::Conversione da binario a decimale n. 1110011_2::[html]Converti 1110011<sub>2</sub> da base 2 a base 10 {#115:0}
+
+::Conversione da binario a decimale n. 1110100_2::[html]Converti 1110100<sub>2</sub> da base 2 a base 10 {#116:0}
+
+::Conversione da binario a decimale n. 1110101_2::[html]Converti 1110101<sub>2</sub> da base 2 a base 10 {#117:0}
+
+::Conversione da binario a decimale n. 1110110_2::[html]Converti 1110110<sub>2</sub> da base 2 a base 10 {#118:0}
+
+::Conversione da binario a decimale n. 1110111_2::[html]Converti 1110111<sub>2</sub> da base 2 a base 10 {#119:0}
+
+::Conversione da binario a decimale n. 1111000_2::[html]Converti 1111000<sub>2</sub> da base 2 a base 10 {#120:0}
+
+::Conversione da binario a decimale n. 1111001_2::[html]Converti 1111001<sub>2</sub> da base 2 a base 10 {#121:0}
+
+::Conversione da binario a decimale n. 1111010_2::[html]Converti 1111010<sub>2</sub> da base 2 a base 10 {#122:0}
+
+::Conversione da binario a decimale n. 1111011_2::[html]Converti 1111011<sub>2</sub> da base 2 a base 10 {#123:0}
+
+::Conversione da binario a decimale n. 1111100_2::[html]Converti 1111100<sub>2</sub> da base 2 a base 10 {#124:0}
+
+::Conversione da binario a decimale n. 1111101_2::[html]Converti 1111101<sub>2</sub> da base 2 a base 10 {#125:0}
+
+::Conversione da binario a decimale n. 1111110_2::[html]Converti 1111110<sub>2</sub> da base 2 a base 10 {#126:0}
+
+::Conversione da binario a decimale n. 1111111_2::[html]Converti 1111111<sub>2</sub> da base 2 a base 10 {#127:0}
+
+
