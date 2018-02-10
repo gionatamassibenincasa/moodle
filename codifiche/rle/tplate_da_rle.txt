@@ -5,10 +5,11 @@ $CATEGORY: $course$/Codifica delle informazioni/Rappresentazione delle immagini/
 <code>
 {{codifica}}
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:={{lettera}} }</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%{{lettera}}#}</p>
 </div>
 
 
 {{/each}}
+

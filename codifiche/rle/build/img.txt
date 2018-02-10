@@ -4,9 +4,9 @@ $CATEGORY: $course$/Codifica delle informazioni/Rappresentazione delle immagini/
 <code>
 0,5,0,1,3,1,0,5,0,1,3,1,0,1,3,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=a}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%a#}</p>
 </div>
 
 
@@ -14,9 +14,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,3,1,0,4,1,0,1,3,1,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=b}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%b#}</p>
 </div>
 
 
@@ -24,9 +24,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,4,0,1,4,0,1,4,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=c}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%c#}</p>
 </div>
 
 
@@ -34,9 +34,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,4,1,0,1,3,1,0,1,3,1,0,1,3,1,0,4,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=d}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%d#}</p>
 </div>
 
 
@@ -44,9 +44,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,4,0,4,1,0,1,4,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=e}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%e#}</p>
 </div>
 
 
@@ -54,9 +54,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,4,0,4,1,0,1,4,0,1,4
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=f}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%f#}</p>
 </div>
 
 
@@ -64,9 +64,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,4,0,1,1,3,0,1,3,1,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=g}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%g#}</p>
 </div>
 
 
@@ -74,9 +74,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,0,1,3,1,0,5,0,1,3,1,0,1,3,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=h}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%h#}</p>
 </div>
 
 
@@ -84,9 +84,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,2,1,2,2,1,2,2,1,2,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=i}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%i#}</p>
 </div>
 
 
@@ -94,9 +94,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,2,1,2,2,1,2,0,1,1,1,2,0,3,2
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=j}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%j#}</p>
 </div>
 
 
@@ -104,9 +104,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,2,1,1,0,1,1,1,2,0,2,3,0,1,1,1,2,0,1,2,1,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=k}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%k#}</p>
 </div>
 
 
@@ -114,9 +114,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,4,0,1,4,0,1,4,0,1,4,0,4,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=l}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%l#}</p>
 </div>
 
 
@@ -124,9 +124,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,0,2,1,2,0,1,1,1,1,1,0,1,3,1,0,1,3,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=m}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%m#}</p>
 </div>
 
 
@@ -134,9 +134,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,0,2,2,1,0,1,1,1,1,1,0,1,2,2,0,1,3,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=n}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%n#}</p>
 </div>
 
 
@@ -144,9 +144,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,3,1,0,1,3,1,0,1,3,1,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=o}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%o#}</p>
 </div>
 
 
@@ -154,9 +154,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,4,1,0,1,2,1,1,0,4,1,0,1,4,0,1,4
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=p}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%p#}</p>
 </div>
 
 
@@ -164,9 +164,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,4,1,0,1,2,1,1,0,1,2,1,1,0,4,1,4,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=q}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%q#}</p>
 </div>
 
 
@@ -174,9 +174,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,4,1,0,1,2,1,1,0,4,1,0,1,1,1,2,0,1,2,1,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=r}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%r#}</p>
 </div>
 
 
@@ -184,9 +184,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,0,1,4,0,5,4,1,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=s}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%s#}</p>
 </div>
 
 
@@ -194,9 +194,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,2,1,2,2,1,2,2,1,2,2,1,2
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=t}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%t#}</p>
 </div>
 
 
@@ -204,9 +204,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,0,1,3,1,0,1,3,1,0,1,3,1,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=u}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%u#}</p>
 </div>
 
 
@@ -214,9 +214,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,0,1,3,1,1,1,1,1,1,1,1,1,1,1,2,1,2
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=v}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%v#}</p>
 </div>
 
 
@@ -224,9 +224,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=w}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%w#}</p>
 </div>
 
 
@@ -234,9 +234,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,1,1,1,1,1,2,1,2,1,1,1,1,1,0,1,3,1
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=x}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%x#}</p>
 </div>
 
 
@@ -244,9 +244,9 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,1,3,1,1,1,1,1,1,2,1,2,2,1,2,2,1,2
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=y}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%y#}</p>
 </div>
 
 
@@ -254,10 +254,11 @@ Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'
 <code>
 0,5,3,1,1,2,1,2,1,1,3,0,5
 </code>
-<p>La codifica &egrave; per righe.</br>
-Il primo numero di ogni riga è sempre relativo al numero dei pixel bianchi all'inizio della linea.</p>
-<p>Lettera {:SHORTANSWER:=z}</p>
+<p>La codifica avviene per righe.</br>
+Il primo numero di ogni riga &egrave; sempre relativo al numero dei pixel bianchi.</p>
+<p>Lettera {=%100%z#}</p>
 </div>
+
 
 
 
