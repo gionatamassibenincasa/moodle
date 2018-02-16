@@ -1,0 +1,241 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="1229" height="422">
+                
+            <g>
+                <rect x="50" y="80"
+            width="307.4" height="30"
+            style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                    
+                <line x1="60" y1="80" x2="60" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                <line x1="347.4" y1="80" x2="347.4" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+             
+                <title>function ricerca_lineare(A, n, v)</title>
+            <text x="75" y="100"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="100">function ricerca_lineare(A, n, v)</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="87" y="128.5"
+            width="440" height="30"
+            style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                    
+                <line x1="97" y1="128.5" x2="97" y2="158.5"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                <line x1="517" y1="128.5" x2="517" y2="158.5"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+             
+                <title>function passo_ricerca_lineare(A, n, v, posizione)</title>
+            <text x="112" y="148.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="112" y="148.5">function passo_ricerca_lineare(A, n, v, posizione)</tspan>
+            </text>
+                
+            </g><g>
+            <rect x="154" y="192"
+            width="177" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="124,207 154,177 184,207 154,237"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(posizione &gt; n)</title>
+            <text x="199" y="212"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="199" y="212">(posizione &gt; n)</tspan>
+            </text>
+            
+            <text x="146.2" y="212"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="161.8" y="238.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="334.9" y="205.05"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+            <g>
+                <rect x="174" y="247"
+            width="178.2" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="352.2" y1="257" x2="357.2" y2="257"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="352.2" y1="267" x2="357.2" y2="267"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M357.2, 251 L373.2, 262 L357.2, 273 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return NON_PRESENTE</title>
+            <text x="189" y="267"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="189" y="267">return NON_PRESENTE</tspan>
+            </text>
+                
+            </g><g>
+            <rect x="463.2" y="262"
+            width="216" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="433.2,277 463.2,247 493.2,277 463.2,307"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(A[posizione] === v)</title>
+            <text x="508.2" y="282"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="508.2" y="282">(A[posizione] === v)</tspan>
+            </text>
+            
+            <text x="455.4" y="282"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="471" y="308.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="683.1" y="275.05"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+            <g>
+                <rect x="483.2" y="317"
+            width="154.8" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="638" y1="327" x2="643" y2="327"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="638" y1="337" x2="643" y2="337"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M643, 321 L659, 332 L643, 343 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return posizione</title>
+            <text x="498.2" y="337"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="498.2" y="337">return posizione</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="739.2" y="317"
+            width="443.4" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="1182.6" y1="327" x2="1187.6" y2="327"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="1182.6" y1="337" x2="1187.6" y2="337"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M1187.6, 321 L1203.6, 332 L1187.6, 343 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return passo_ricerca_lineare(A, n, v, posizione + 1)</title>
+            <text x="754.2" y="337"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="754.2" y="337">return passo_ricerca_lineare(A, n, v, posizione + ...</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="87" y="367"
+            width="342" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="429" y1="377" x2="434" y2="377"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="429" y1="387" x2="434" y2="387"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M434, 371 L450, 382 L434, 393 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return passo_ricerca_lineare(A, n, v, 1)</title>
+            <text x="102" y="387"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="387">return passo_ricerca_lineare(A, n, v, 1)</tspan>
+            </text>
+                
+            </g>
+            <g>
+               <rect x="25" y="13.75"
+            width="216.6" height="24"
+            style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <circle cx="25" cy="25" r="15"
+        style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <title>Program: source module</title>
+            <text x="55" y="30"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="55" y="30">Program: source module</tspan>
+            </text>
+            </g>
+            <g>
+               <path d="M25, 40 L25 91 Q25 95
+                29 95
+                L42 95 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 92 L50, 95 L42, 98 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+                72.5 143.5
+                L79 143.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 140.5 L87, 143.5 L79, 146.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M105.5, 158.5 L105.5 203 Q105.5 207
+                109.5 207
+                L116 207 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M116, 204 L124, 207 L116, 210 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M154, 237 L154 258 Q154 262
+                158 262
+                L166 262 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M166, 259 L174, 262 L166, 265 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M331, 207 L409.2 207  Q413.2 207
+                413.2 211
+                L413.2 269 Q413.2 277
+                417.2 277
+                L425.2 277 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M425.2, 274 L433.2, 277 L425.2, 280 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M463.2, 307 L463.2 328 Q463.2 332
+                467.2 332
+                L475.2 332 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M475.2, 329 L483.2, 332 L475.2, 335 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M679.2, 277 L715.2 277  Q719.2 277
+                719.2 281
+                L719.2 324 Q719.2 332
+                723.2 332
+                L731.2 332 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M731.2, 329 L739.2, 332 L731.2, 335 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 378 Q68.5 382
+                72.5 382
+                L79 382 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 379 L87, 382 L79, 385 Z" 
+        fill="#333" />
+            </g>
+            </svg>

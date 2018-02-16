@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+import * as markdownIt from "markdown-it";
+import * as fs from "fs";
+
+const h = `<!DOCTYPE html>
 <html lang="it">
 
 <head>
@@ -35,65 +38,8 @@
     </style>
 </head>
 
-<body>
-<h1>Ricerca lineare</h1>
-<h2>Problema</h2>
-<p>Determinare se un valore \( v \) dato è presente in una sequenza \( A \) di \( n \) valori. Se il valore \( v \) è presente, restituirne
-la posizione.</p>
-<h3>Input</h3>
-<p>Una sequenza \( A \) di \( n \) valori, \( A = [a_1, a_2, \ldots, a_n] \) e un valore \( v \).</p>
-<h3>Output</h3>
-<p>Un indice \( i \) tale che l’elemento in posizione \( i \)-esima
-della sequenza, \( a_i \) sia uguale a \( v \), oppure un valore
-speciale che indica che \( v \) non compare nella sequenza \( A \).</p>
-<h3>Esempio</h3>
-<h4>Input</h4>
-<p>La sequenza \(A = [5, 1, 4, 2, 3] \) di \( n = 5 \) elementi e il valore \( v = 2 \)</p>
-<h4>Output</h4>
-<p>L’indice \( i = 4 \) tale che \( a_4 \) è l’elemento \( 2 \).</p>
-<h2>Algoritmo di ricerca lineare</h2>
-<p>L’algoritmo di ricerca lineare consiste nella scansione dei valori della
-sequenza, partendo dal primo elemento e terminando o quando si incontra
-il valore cercato o quando la sequenza termina. Usa <code>NON_PRESENTE</code> per indicare che
-il valore non è presente nella sequenza.</p>
-<h2>Realizzazione iterativa</h2>
-<h3>In pseudo-codice</h3>
-<pre><code class="pseudo" algo="ricerca_lineare_iterativa"></code></pre>
-<h3>Come diagramma di flusso (di esecuzione)</h3>
-<p><img src="./codice/ricerca_lineare_iterativa.fc.svg" alt=""></p>
-<!--![](https://code2flow.com/Hrzixh.svg)-->
-<h3>In JavaScript</h3>
-<pre><code class="javascript" algo="ricerca_lineare_iterativa"></code></pre>
-<h3>In Python</h3>
-<pre><code class="python" algo="ricerca_lineare_iterativa"></code></pre>
-<h4>Traccia dell’esecuzione</h4>
-<div class="pytutorVisualizer"
-data-tracefile="./tracce/ricerca_lineare_iterativa_tracce.json"
-data-params="{'embeddedMode': true, 'startingInstruction': 5}">
-</div>
-<h2>Realizzazione ricorsiva</h2>
-<h3>In pseudo-codice</h3>
-<pre><code class="pseudo" algo="ricerca_lineare_ricorsiva"></code></pre>
-<h3>Come diagramma di flusso</h3>
-<p><img src="./codice/ricerca_lineare_ricorsiva.fc.svg" alt=""></p>
-<h3>In JavaScript</h3>
-<pre><code class="javascript" algo="ricerca_lineare_ricorsiva"></code></pre>
-<h3>In Python</h3>
-<pre><code class="python" algo="ricerca_lineare_ricorsiva"></code></pre>
-<h4>Traccia dell’esecuzione</h4>
-<div class="pytutorVisualizer"
-data-tracefile="./tracce/ricerca_lineare_ricorsiva_tracce.json"
-data-params="{'embeddedMode': true, 'startingInstruction': 5}">
-</div>
-<h2>Complessità computazionale</h2>
-<h3>Caso migliore</h3>
-<p>Numero confronti: 1</p>
-<h3>Caso peggiore</h3>
-<p>Numero confronti: \( n \)</p>
-<h3>Caso medio</h3>
-<p>Numero confronti: \( \frac{1+2+3+\cdots+n}{n} = \frac{(1+n)\cdot n}{2 \cdot n} = \frac{1+n}{2} \)</p>
-
-    <script>
+<body>`;
+const t = `    <script>
 renderMathInElement(document.body);
 var algos = [];
 document.querySelectorAll('pre > code').forEach(function (e) {
@@ -122,4 +68,19 @@ createAllVisualizersFromHtmlAttrs();
   </script>
 
 </body>
-</html>
+</html>`;
+
+const mdi = markdownIt();
+mdi.set({
+  html: true,
+  linkify: true,
+  typographer: true
+});
+
+let file = process.argv[2];
+// let p = mdi.parse(fs.readFileSync(file, "utf8"), {});
+
+let b = mdi.render(fs.readFileSync(file, "utf8"), {});
+console.log(h);
+console.log(b);
+console.log(t);

@@ -14,10 +14,3 @@ const ricerca_lineare = function(A, n, v) {
 
   return NON_PRESENTE;
 };
-
-// Esempi
-const sequenza = [5, 1, 4, 2, 3];
-const dimensione = sequenza.length;
-let posizione;
-posizione = ricerca_lineare(sequenza, dimensione, 2);
-posizione = ricerca_lineare(sequenza, dimensione, 9);

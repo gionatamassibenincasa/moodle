@@ -1,0 +1,10 @@
+ricerca_lineare (A, n, v):
+    restituisci passo_ricerca_lineare (A, n, v, 1)
+
+passo_ricerca_lineare (A, n, v, indice):
+    se indice > n:
+        restituisci NON_PRESENTE
+    altrimenti se A[indice] = v:
+        restituisci indice
+    altrimenti:
+        restituisci passo_ricerca_lineare (A, n, v, indice + 1)

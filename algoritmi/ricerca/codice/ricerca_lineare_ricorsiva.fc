@@ -1,0 +1,13 @@
+function ricerca_lineare (A, n, v) {
+  function passo_ricerca_lineare (A, n, v, posizione) {
+    if (posizione > n) {
+      return NON_PRESENTE;
+    } else if (A[posizione] === v) {
+      return posizione;
+    } else {
+      return passo_ricerca_lineare(A, n, v, posizione + 1);
+    }
+  };
+
+  return passo_ricerca_lineare(A, n, v, 1);
+};

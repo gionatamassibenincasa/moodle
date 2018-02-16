@@ -1,0 +1,13 @@
+function ricerca_lineare (A, n, v) {
+  let posizione = 1;
+  while (posizione <= n) {
+    let elemento_corrente = A[posizione];
+    if (elemento_corrente === v) {
+      return posizione;
+    } else {
+      posizione = posizione + 1;
+    }
+  }
+
+  return NON_PRESENTE;
+};
