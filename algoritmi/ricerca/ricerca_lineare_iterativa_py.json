@@ -1,0 +1,3274 @@
+{
+  "code": "NON_PRESENTE = -1\n\n\ndef ricerca_lineare(A, n, v):\n    posizione = 0\n    while (posizione < n):\n        elemento_corrente = A[posizione]\n        if (elemento_corrente == v):\n            return posizione\n        else:\n            posizione = posizione + 1\n    return NON_PRESENTE\n\n\n# Esempi\nsequenza = [5, 1, 4, 2, 3]\ndimensione = len(sequenza)\nposizione = 0\nposizione = ricerca_lineare(sequenza, dimensione, 2)\nposizione = ricerca_lineare(sequenza, dimensione, 9)\n", 
+  "trace": [
+    {
+      "ordered_globals": [], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 1, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {}, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ]
+      }, 
+      "line": 16, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 17, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 18, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 19, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 4, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 5, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 2, 
+            "__return__": 3
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 0, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 9, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 20, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 4, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 5, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 0, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 5, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 1, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 1, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 2, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 4, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 3, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 4, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 2, 
+            "n": 5, 
+            "posizione": 4, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 3, 
+            "n": 5, 
+            "posizione": 4, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 3, 
+            "n": 5, 
+            "posizione": 4, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 3, 
+            "n": 5, 
+            "posizione": 5, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 3, 
+            "n": 5, 
+            "posizione": 5, 
+            "v": 9
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_lineare", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "elemento_corrente": 3, 
+            "n": 5, 
+            "posizione": 5, 
+            "v": 9, 
+            "__return__": -1
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_lineare", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_lineare_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "posizione", 
+            "elemento_corrente", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": 3, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 12, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_lineare", 
+        "sequenza", 
+        "dimensione", 
+        "posizione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_lineare": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "posizione": -1, 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_lineare(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 20, 
+      "event": "return"
+    }
+  ]
+}

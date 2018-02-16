@@ -12,7 +12,20 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc"
         crossorigin="anonymous"></script>
-    <title>Document</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- HighlightJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+
+    <!-- Online Python Tutor -->
+    <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js?f1b62be6f5" charset="utf-8"></script>
+    <title>Algorimo di ricerca lineare</title>
+
     <style>
         tr,
         td {
@@ -71,62 +84,16 @@
         nella sequenza.</p>
 
     <h5>In pseudo-codice - Realizzazione iterativa</h5>
-    <pre>ricerca_lineare (A, n, v):
-          sia i := 1
-          finché i &lt;= n:
-            se A[i] = v:
-              restituisci i
-            altrimenti:
-              i := i + 1
-        
-          restituisci NON_PRESENTE
-    </pre>
+
+    <pre><code class="pseudo" algo="ricerca_lineare_iterativa"></code></pre>
 
     <h5>In JavaScript - Realizzazione iterativa</h5>
-    <textarea>const NON_PRESENTE = Symbol('non presente');
 
-        const ricerca_lineare = function (A, n, v) {
-            let posizione = 0;
-            let elemento_corrente;
-            while (posizione < n) {
-                elemento_corrente = A[posizione];
-                if (elemento_corrente === v) {
-                    return posizione;
-                } else {
-                    posizione = posizione + 1;
-                }
-            }
-        
-            return NON_PRESENTE;
-        }
-        
-        let sequenza = [5, 1, 4, 2, 3];
-        let dimensione = sequenza.length;
-        let posizione;
-        posizione = ricerca_lineare(sequenza, dimensione, 2);
-        posizione = ricerca_lineare(sequenza, dimensione, 9);
-    </textarea>
-
+    <pre><code class="javascript" algo="ricerca_lineare_iterativa"></code></pre>
 
     <h5>In Python - Realizzazione iterativa</h5>
-    <textarea>NON_PRESENTE = -1
-
-        def ricerca_lineare(A, n, v):
-            posizione = 0
-            while (posizione < n):
-                elemento_corrente = A[posizione]
-                if (elemento_corrente == v):
-                    return posizione
-                else:
-                    posizione = posizione + 1
-                
-            return NON_PRESENTE
-            
-        sequenza =  [5, 1, 4, 2, 3]
-        dimensione = len(sequenza)
-        ricerca_lineare(sequenza, dimensione, 2)
-        ricerca_lineare(sequenza, dimensione, 9)
-    </textarea>
+    <pre><code class="python" algo="ricerca_lineare_iterativa"></code></pre>
+    <div class="pytutorVisualizer" id="ricerca_lineare_iterativa_js" data-tracefile="ricerca_lineare_iterativa_py.json" data-params='{"embeddedMode": true, "startingInstruction": 5}'></div>
 
 
 
@@ -135,7 +102,7 @@
 
     <h5>In JavaScript</h5>
 
-    <script src="https://repl.it/embed/FYFc/0.js"></script>
+    <!--script src="https://repl.it/embed/FYFc/0.js"></script-->
 
     <h4>In pseudo-codice - versione ricorsiva</h4>
     <pre>ricerca_lineare (A, v):
@@ -293,7 +260,7 @@
     </svg>
 
     <h4>In JavaScript</h4>
-    <script src="https://repl.it/embed/F7Fp/0.js"></script>
+    <!--script src="https://repl.it/embed/F7Fp/0.js"></script-->
 
     <h4>Complessità</h4>
     <h5>Caso migliore</h5>
@@ -308,6 +275,25 @@
     </p>
     <script>
         renderMathInElement(document.body);
+        var algos = ['ricerca_lineare_iterativa'];
+        algos.forEach(function (algo) {
+            [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
+                var filename = algo + '.' + impl.ext;
+                $.ajax({
+                    url: "./" + filename,
+                    dataType: 'text',
+                    success: function (src_code) {  //(1)
+                        var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+                        $(sel).html(src_code);
+                        $(sel).each(function (i, block) {
+                            hljs.highlightBlock(block);             //(3)
+                        });
+                    }
+                });
+            });
+        });
+        // Tracce con OPT
+        createAllVisualizersFromHtmlAttrs();
     </script>
 </body>
 
