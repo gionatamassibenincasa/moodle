@@ -1,0 +1,9 @@
+ordinata (A, n):
+    sia i := 1
+    finché i < n:
+        se A[i] > A[i + 1]:
+            restituisci Falso
+        altrimenti:
+            i := i + 1
+    
+    restituisci Vero

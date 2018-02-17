@@ -1,0 +1,208 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="795" height="442">
+                
+            <g>
+                <rect x="50" y="80"
+            width="229.4" height="30"
+            style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                    
+                <line x1="60" y1="80" x2="60" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                <line x1="269.4" y1="80" x2="269.4" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+             
+                <title>function ordinata(A, n)</title>
+            <text x="75" y="100"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="100">function ordinata(A, n)</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="128.5"
+            width="162.6" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>let posizione = 1</title>
+            <text x="102" y="148.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="148.5">let posizione = 1</tspan>
+            </text>
+                   
+                   
+                </g><g>
+
+            <rect x="117" y="212"
+            width="161.39999999999998" height="30"
+            rx="3" ry="3"
+            style="fill:#b39ddb; stroke:#444; stroke-width:1" />
+            <polygon points="87,227 117,197 147,227 117,257"
+            style="fill:#b39ddb; stroke:#444; stroke-width:1" />
+                
+            <title>posizione &lt; n</title>
+            <text x="162" y="232"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="162" y="232">posizione &lt; n</tspan>
+            </text>
+            
+            <text x="97.5" y="232"
+        font-family="monospace" font-size="13" fill="#222">while</text>
+        </g><g>
+            <rect x="167" y="282"
+            width="317.4" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="137,297 167,267 197,297 167,327"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(A[posizione] &gt; A[posizione + 1])</title>
+            <text x="212" y="302"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="212" y="302">(A[posizione] &gt; A[posizione + 1])</tspan>
+            </text>
+            
+            <text x="159.2" y="302"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="174.8" y="328.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="488.29999999999995" y="295.05"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+            <g>
+                <rect x="187" y="337"
+            width="123.6" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="310.6" y1="347" x2="315.6" y2="347"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="310.6" y1="357" x2="315.6" y2="357"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M315.6, 341 L331.6, 352 L315.6, 363 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return false</title>
+            <text x="202" y="357"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="202" y="357">return false</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="544.4" y="337"
+            width="225" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>posizione = posizione + 1</title>
+            <text x="559.4" y="357"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="559.4" y="357">posizione = posizione + 1</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="87" y="387"
+            width="115.80000000000001" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="202.8" y1="397" x2="207.8" y2="397"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="202.8" y1="407" x2="207.8" y2="407"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M207.8, 391 L223.8, 402 L207.8, 413 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return true</title>
+            <text x="102" y="407"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="407">return true</tspan>
+            </text>
+                
+            </g>
+            <g>
+               <rect x="25" y="13.75"
+            width="216.6" height="24"
+            style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <circle cx="25" cy="25" r="15"
+        style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <title>Program: source module</title>
+            <text x="55" y="30"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="55" y="30">Program: source module</tspan>
+            </text>
+            </g>
+            <g>
+               <path d="M25, 40 L25 91 Q25 95
+                29 95
+                L42 95 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 92 L50, 95 L42, 98 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+                72.5 143.5
+                L79 143.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 140.5 L87, 143.5 L79, 146.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 223 Q68.5 227
+                72.5 227
+                L79 227 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 224 L87, 227 L79, 230 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M117, 257 L117 293 Q117 297
+                121 297
+                L129 297 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M129, 294 L137, 297 L129, 300 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M167, 327 L167 348 Q167 352
+                171 352
+                L179 352 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M179, 349 L187, 352 L179, 355 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M484.4, 297 L520.4 297  Q524.4 297
+                524.4 301
+                L524.4 344 Q524.4 352
+                528.4 352
+                L536.4 352 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M536.4, 349 L544.4, 352 L536.4, 355 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M769.4, 352 L785.4 352  Q789.4 352
+                789.4 348
+                L789.4 185 Q789.4 177
+                785.4 177
+                L125 177  Q117 177
+                117 181
+                L117 189"
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M114, 189 L117, 197 L120, 189 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 398 Q68.5 402
+                72.5 402
+                L79 402 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 399 L87, 402 L79, 405 Z" 
+        fill="#333" />
+            </g>
+            </svg>

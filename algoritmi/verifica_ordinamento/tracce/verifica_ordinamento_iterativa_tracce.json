@@ -1,0 +1,1723 @@
+{
+  "code": "def ordinata(A, n):\n    posizione = 0\n    while (posizione < n - 1):\n        if (A[posizione] > A[posizione + 1]):\n            return False\n        else:\n            posizione = posizione + 1\n    return True\n\n\n# Esempi\nsequenza = [5, 1, 4, 2, 3]\ndimensione = len(sequenza)\nordinata(sequenza, dimensione)\nordinata(sorted(sequenza), dimensione)\n", 
+  "trace": [
+    {
+      "ordered_globals": [], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 1, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 13, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 14, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 1, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 2, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 5, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "__return__": false, 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 5, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 15, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 1, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 2, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 0, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 1, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 1, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 1, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 2, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 2, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 2, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 3, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 3, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 3, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 4, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "posizione": 4, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "ordinata", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "__return__": true, 
+            "posizione": 4, 
+            "n": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ordinata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ordinata_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "posizione", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "ordinata": [
+          "REF", 
+          1
+        ], 
+        "dimensione": 5, 
+        "sequenza": [
+          "REF", 
+          2
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ], 
+        "3": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ]
+      }, 
+      "line": 8, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "ordinata", 
+        "sequenza", 
+        "dimensione"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "sequenza": [
+          "REF", 
+          2
+        ], 
+        "dimensione": 5, 
+        "ordinata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ordinata(A, n)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          5, 
+          1, 
+          4, 
+          2, 
+          3
+        ]
+      }, 
+      "line": 15, 
+      "event": "return"
+    }
+  ]
+}

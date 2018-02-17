@@ -1,0 +1,12 @@
+function ordinata (A, n) {
+  let posizione = 1;
+  while (posizione < n) {
+    if (A[posizione] > A[posizione + 1]) {
+      return false;
+    } else {
+      posizione = posizione + 1;
+    }
+  }
+
+  return true;
+};

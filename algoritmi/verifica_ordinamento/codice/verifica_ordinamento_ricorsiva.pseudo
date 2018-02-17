@@ -1,0 +1,13 @@
+ordinata (A, n):
+    se n < 2:
+        restituisci Vero
+    altrimenti:
+        restituisci passo_ordinata(A, n, 1)
+
+passo_ordinata (A, n , coppia)
+    se coppia >= n:
+        restituisci Vero
+    altrimenti se A[coppia] > A[coppia + 1]:
+        restituisci Falso
+    altrimenti:
+      restituisci ordinata (A, n, coppia + 1)
