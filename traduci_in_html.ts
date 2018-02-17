@@ -16,9 +16,6 @@ const h = `<!DOCTYPE html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc"
         crossorigin="anonymous"></script>
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- HighlightJS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -26,8 +23,10 @@ const h = `<!DOCTYPE html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
 
     <!-- Online Python Tutor -->
-    <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js?f1b62be6f5" charset="utf-8"></script>
-    <title>Algorimo di ricerca lineare</title>
+    <!--script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js" charset="utf-8"></script-->
+    <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js" charset="utf-8"></script>
+    
+    <title></title>
 
     <style>
         tr,
@@ -50,17 +49,15 @@ document.querySelectorAll('pre > code').forEach(function (e) {
 algos.forEach(function (algo) {
     [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
         var filename = algo + '.' + impl.ext;
-        $.ajax({
-            url: "./codice/" + filename,
-            dataType: 'text',
-            success: function (src_code) {
-                var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
-                $(sel).html(src_code);
-                $(sel).each(function (i, block) {
-                    hljs.highlightBlock(block);             //(3)
-                });
-            }
-        });
+        var url = './codice/' + filename;
+        fetch(url).then(function(response) {
+            return response.text();
+          }).then(function(src) {
+            var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+            var elem = document.querySelector(sel);
+            elem.innerText = src;
+            hljs.highlightBlock(elem);
+       });
     });
 });
 // Tracce con OPT
