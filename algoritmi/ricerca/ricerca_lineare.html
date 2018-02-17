@@ -13,9 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc"
         crossorigin="anonymous"></script>
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- HighlightJS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -23,8 +20,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
 
     <!-- Online Python Tutor -->
-    <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js?f1b62be6f5" charset="utf-8"></script>
-    <title>Algorimo di ricerca lineare</title>
+    <!--script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js" charset="utf-8"></script-->
+    <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js" charset="utf-8"></script>
+    
+    <title></title>
 
     <style>
         tr,
@@ -67,10 +66,7 @@ il valore non è presente nella sequenza.</p>
 <h3>In Python</h3>
 <pre><code class="python" algo="ricerca_lineare_iterativa"></code></pre>
 <h4>Traccia dell’esecuzione</h4>
-<div class="pytutorVisualizer"
-data-tracefile="./tracce/ricerca_lineare_iterativa_tracce.json"
-data-params="{'embeddedMode': true, 'startingInstruction': 5}">
-</div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_iterativa_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}"> </div>
 <h2>Realizzazione ricorsiva</h2>
 <h3>In pseudo-codice</h3>
 <pre><code class="pseudo" algo="ricerca_lineare_ricorsiva"></code></pre>
@@ -81,10 +77,7 @@ data-params="{'embeddedMode': true, 'startingInstruction': 5}">
 <h3>In Python</h3>
 <pre><code class="python" algo="ricerca_lineare_ricorsiva"></code></pre>
 <h4>Traccia dell’esecuzione</h4>
-<div class="pytutorVisualizer"
-data-tracefile="./tracce/ricerca_lineare_ricorsiva_tracce.json"
-data-params="{'embeddedMode': true, 'startingInstruction': 5}">
-</div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_ricorsiva_tracce.json" data-params="{'embeddedMode': true, 'startingInstruction': 5}" style="width=400px; height=600px"> </div>
 <h2>Complessità computazionale</h2>
 <h3>Caso migliore</h3>
 <p>Numero confronti: 1</p>
@@ -104,17 +97,20 @@ document.querySelectorAll('pre > code').forEach(function (e) {
 algos.forEach(function (algo) {
     [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
         var filename = algo + '.' + impl.ext;
-        $.ajax({
-            url: "./codice/" + filename,
-            dataType: 'text',
-            success: function (src_code) {
-                var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
-                $(sel).html(src_code);
-                $(sel).each(function (i, block) {
-                    hljs.highlightBlock(block);             //(3)
-                });
+        var xhr = new XMLHttpRequest();
+        var url = './codice/' + filename;
+        xhr.open('GET', url);
+        xhr.onload = function() {
+           if (xhr.status === 200) {
+               var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+               var elem = document.querySelector(sel);
+               elem.innerHTML = xhr.responseText;
+               hljs.highlightBlock(elem);
+            } else {
+                alert('Request failed.  Returned status of ' + xhr.status);
             }
-        });
+        };
+        xhr.send();
     });
 });
 // Tracce con OPT
