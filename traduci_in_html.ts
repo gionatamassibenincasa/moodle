@@ -42,7 +42,7 @@ const t = `    <script>
 renderMathInElement(document.body);
 var algos = [];
 document.querySelectorAll('pre > code').forEach(function (e) {
-  if (algos.indexOf(e.attributes['algo'].value) == -1) {
+  if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
     algos.push(e.attributes['algo'].value);
   }
 });

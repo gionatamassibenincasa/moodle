@@ -1,0 +1,30 @@
+{
+  "name": "materiale_informatica_massi_moodle",
+  "version": "1.0.0",
+  "description": "Materiale didattico da pubblicare su Moodle",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.4",
+    "awesome-typescript-loader": "^3.4.1",
+    "markdown-it": "^8.4.1",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gionatamassibenincasa/moodle.git"
+  },
+  "author": "Gionata Massi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gionatamassibenincasa/moodle/issues"
+  },
+  "homepage": "https://github.com/gionatamassibenincasa/moodle#readme"
+}
