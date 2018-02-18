@@ -1,0 +1,298 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="907" height="609">
+                
+            <g>
+                <rect x="50" y="80"
+            width="307.4" height="30"
+            style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                    
+                <line x1="60" y1="80" x2="60" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                <line x1="347.4" y1="80" x2="347.4" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+             
+                <title>function ricerca_binaria(A, n, v)</title>
+            <text x="75" y="100"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="100">function ricerca_binaria(A, n, v)</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="128.5"
+            width="154.8" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>let sinistra = 1</title>
+            <text x="102" y="148.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="148.5">let sinistra = 1</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="177"
+            width="139.2" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>let destra = n</title>
+            <text x="102" y="197"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="197">let destra = n</tspan>
+            </text>
+                   
+                   
+                </g><g>
+
+            <rect x="117" y="260.5"
+            width="200.4" height="30"
+            rx="3" ry="3"
+            style="fill:#b39ddb; stroke:#444; stroke-width:1" />
+            <polygon points="87,275.5 117,245.5 147,275.5 117,305.5"
+            style="fill:#b39ddb; stroke:#444; stroke-width:1" />
+                
+            <title>sinistra &lt;= destra</title>
+            <text x="162" y="280.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="162" y="280.5">sinistra &lt;= destra</tspan>
+            </text>
+            
+            <text x="97.5" y="280.5"
+        font-family="monospace" font-size="13" fill="#222">while</text>
+        </g>
+                <g>
+                   <rect x="137" y="315.5"
+            width="310.8" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>let centro = (sinistra + destra) / 2</title>
+            <text x="152" y="335.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="335.5">let centro = (sinistra + destra) / 2</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="167" y="379"
+            width="177" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="137,394 167,364 197,394 167,424"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(A[centro] &gt; v)</title>
+            <text x="212" y="399"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="212" y="399">(A[centro] &gt; v)</tspan>
+            </text>
+            
+            <text x="159.2" y="399"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="174.8" y="425.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="347.9" y="392.05"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="187" y="434"
+            width="178.2" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>destra = centro - 1</title>
+            <text x="202" y="454"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="202" y="454">destra = centro - 1</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="455.2" y="449"
+            width="177" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="425.2,464 455.2,434 485.2,464 455.2,494"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(A[centro] &lt; v)</title>
+            <text x="500.2" y="469"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="500.2" y="469">(A[centro] &lt; v)</tspan>
+            </text>
+            
+            <text x="447.4" y="469"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="463" y="495.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="636.1" y="462.05"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="475.2" y="504"
+            width="193.79999999999998" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>sinistra = centro + 1</title>
+            <text x="490.2" y="524"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="490.2" y="524">sinistra = centro + 1</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="729" y="504"
+            width="131.39999999999998" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="860.4" y1="514" x2="865.4" y2="514"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="860.4" y1="524" x2="865.4" y2="524"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M865.4, 508 L881.4, 519 L865.4, 530 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return centro</title>
+            <text x="744" y="524"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="744" y="524">return centro</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="87" y="554"
+            width="178.2" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="265.2" y1="564" x2="270.2" y2="564"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="265.2" y1="574" x2="270.2" y2="574"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M270.2, 558 L286.2, 569 L270.2, 580 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return NON_PRESENTE</title>
+            <text x="102" y="574"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="574">return NON_PRESENTE</tspan>
+            </text>
+                
+            </g>
+            <g>
+               <rect x="25" y="13.75"
+            width="216.6" height="24"
+            style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <circle cx="25" cy="25" r="15"
+        style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <title>Program: source module</title>
+            <text x="55" y="30"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="55" y="30">Program: source module</tspan>
+            </text>
+            </g>
+            <g>
+               <path d="M25, 40 L25 91 Q25 95
+                29 95
+                L42 95 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 92 L50, 95 L42, 98 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+                72.5 143.5
+                L79 143.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 140.5 L87, 143.5 L79, 146.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 188 Q68.5 192
+                72.5 192
+                L79 192 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 189 L87, 192 L79, 195 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 271.5 Q68.5 275.5
+                72.5 275.5
+                L79 275.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 272.5 L87, 275.5 L79, 278.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M117, 305.5 L117 326.5 Q117 330.5
+                121 330.5
+                L129 330.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M129, 327.5 L137, 330.5 L129, 333.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M117, 305.5 L117 390 Q117 394
+                121 394
+                L129 394 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M129, 391 L137, 394 L129, 397 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M167, 424 L167 445 Q167 449
+                171 449
+                L179 449 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M179, 446 L187, 449 L179, 452 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M344, 394 L401.2 394  Q405.2 394
+                405.2 398
+                L405.2 456 Q405.2 464
+                409.2 464
+                L417.2 464 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M417.2, 461 L425.2, 464 L417.2, 467 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M455.2, 494 L455.2 515 Q455.2 519
+                459.2 519
+                L467.2 519 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M467.2, 516 L475.2, 519 L467.2, 522 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M632.2, 464 L705 464  Q709 464
+                709 468
+                L709 511 Q709 519
+                713 519
+                L721 519 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M721, 516 L729, 519 L721, 522 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M881.4, 519 L897.4 519  Q901.4 519
+                901.4 515
+                L901.4 233.5 Q901.4 225.5
+                897.4 225.5
+                L125 225.5  Q117 225.5
+                117 229.5
+                L117 237.5"
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M114, 237.5 L117, 245.5 L120, 237.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 565 Q68.5 569
+                72.5 569
+                L79 569 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 566 L87, 569 L79, 572 Z" 
+        fill="#333" />
+            </g>
+            </svg>

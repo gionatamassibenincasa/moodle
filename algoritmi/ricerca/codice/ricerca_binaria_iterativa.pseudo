@@ -1,0 +1,13 @@
+ricerca_binaria (A, n, v):
+    sia sinistra := 0
+    sia destra := n
+    finché (sinistra <= destra):
+        sia centro := (sinistra + destra) / 2
+        se (A[centro] > v):
+            destra = centro - 1
+        altrimenti se (A[centro] < v):
+            sinistra = centro + 1
+        altrimenti:
+            restituisci centro
+
+    restituisci NON_PRESENTE

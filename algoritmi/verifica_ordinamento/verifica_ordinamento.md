@@ -1,4 +1,4 @@
-# Verifica del buon ordinamento
+# Verifica dell'ordinamento
 
 ## Problema
 

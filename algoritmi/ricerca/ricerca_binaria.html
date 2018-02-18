@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc"
+        crossorigin="anonymous"></script>
+
+    <!-- HighlightJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+
+    <!-- Online Python Tutor -->
+    <!--script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js" charset="utf-8"></script-->
+    <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js" charset="utf-8"></script>
+    
+    <title></title>
+
+    <style>
+        tr,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Ricerca binaria</h1>
+<h2>Problema</h2>
+<p>Determinare se un valore  \( v \) dato è presente in una sequenza
+<strong>ordinata</strong>  \( A \)  di  \( n \) valori. Se il valore  \( v \) è presente,
+restituirne la posizione.</p>
+<p>Una sequenza si dice ordinata se, per ogni coppia di valori adiacenti, quello di sinistra è
+non maggiore di quello di destra.
+Formalmente, una sequenza \( A = [a_1, a_2, \ldots, a_n] \) è ordinata se
+\( a_i \leq a_{i+1} \) per \( i = 1, 2, \ldots, n - 1 \).</p>
+<h3>Input</h3>
+<p>Una sequenza ordinata \( A \) di \( n \) valori, \( A = [a_1, a_2, \ldots, a_n] \) e un valore \( v \).</p>
+<h3>Output:</h3>
+<p>Un indice \( i \) tale che l’elemento in posizione \( i \)-esima
+della sequenza, \( a_i \) sia uguale a \( v \), oppure un valore
+speciale che indica che \( v \) non compare nella sequenza \( A \).</p>
+<h3>Esempio</h3>
+<h4>Input</h4>
+<p>La sequenza \(A = [1, 2, 3, 5, 7, 11, 13, 17] \) di \( n = 8 \) elementi e il valore \( v = 5 \)</p>
+<h4>Output</h4>
+<p>L’indice \( i = 4 \) tale che \( a_4 \) è l’elemento \( 5 \).</p>
+<h2>Algoritmo di ricerca binaria</h2>
+<p>L’algoritmo di ricerca binaria consiste cercare un dato valore al centro
+di un intervallo che potrebbe includerlo. Se il valore dato è al centro,
+allora restituisce l’indice, altrimenti se il valore cercato è minore del
+valore nel centro ripete la ricerca nella sotto-sequenza a sinistra del centro,
+altrimenti nella sotto-sequenza di destra.</p>
+<h2>Realizzazione iterativa</h2>
+<h3>In pseudo-codice</h3>
+<pre><code class="pseudo" algo="ricerca_binaria_iterativa"></code></pre>
+<h3>Come diagramma di flusso (di esecuzione)</h3>
+<p><img src="./codice/ricerca_binaria_iterativa.fc.svg" alt=""></p>
+<!--![](https://code2flow.com/Hrzixh.svg)-->
+<h3>In JavaScript</h3>
+<pre><code class="javascript" algo="ricerca_binaria_iterativa"></code></pre>
+<h3>In Python</h3>
+<pre><code class="python" algo="ricerca_binaria_iterativa"></code></pre>
+<h4>Traccia dell’esecuzione</h4>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_iterativa_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_binaria_iterativa_tracce"> </div>
+<h2>Realizzazione ricorsiva</h2>
+<h3>In pseudo-codice</h3>
+<pre><code class="pseudo" algo="ricerca_binaria_ricorsiva"></code></pre>
+<h3>Come diagramma di flusso</h3>
+<p><img src="./codice/ricerca_binaria_ricorsiva.fc.svg" alt=""></p>
+<h3>In JavaScript</h3>
+<pre><code class="javascript" algo="ricerca_binaria_ricorsiva"></code></pre>
+<h3>In Python</h3>
+<pre><code class="python" algo="ricerca_binaria_ricorsiva"></code></pre>
+<h4>Traccia dell’esecuzione</h4>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_binaria_ricorsiva_tracce"> </div>
+<h2>Complessità</h2>
+<h3>Caso migliore</h3>
+<p>Numero confronti: 1</p>
+<h3>Caso peggiore</h3>
+<p>Numero confronti: \( p \) tale che \( 2^{p-1} &lt; n \leq 2^p \)</p>
+<h3>Caso medio</h3>
+<p>Numero confronti:  \( p \) tale che \( 2^{p-1} &lt; n \leq 2^p \)</p>
+
+    <script>
+renderMathInElement(document.body);
+var algos = [];
+document.querySelectorAll('pre > code').forEach(function (e) {
+  if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
+    algos.push(e.attributes['algo'].value);
+  }
+});
+algos.forEach(function (algo) {
+    [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
+        var filename = algo + '.' + impl.ext;
+        var url = './codice/' + filename;
+        fetch(url).then(function(response) {
+            return response.text();
+          }).then(function(src) {
+            var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+            var elem = document.querySelector(sel);
+            elem.innerText = src;
+            hljs.highlightBlock(elem);
+       });
+    });
+});
+// Tracce con OPT
+createAllVisualizersFromHtmlAttrs();
+  </script>
+
+</body>
+</html>

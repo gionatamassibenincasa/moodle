@@ -1,0 +1,14 @@
+ricerca_binaria (A, n, v):
+    ricerca_binaria_passo (A, v, 1, n)
+
+ricerca_binaria_passo (A, v, sinistra, destra):
+    se (sinistra <= destra):
+        centro = (sinistra + destra) / 2
+        se (A[centro] > v):
+            restituisci ricerca_binaria_passo(A, v, sinistra, centro - 1)
+        altrimenti se (A[centro] < v):
+            restituisci ricerca_binaria_passo(A, v, centro + 1, destra)
+        altrimenti:
+            restituisci centro
+    altrimenti:
+        restituisci NON_PRESENTE

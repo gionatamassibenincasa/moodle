@@ -1,0 +1,18 @@
+function ricerca_binaria (A, n, v) {
+  function ricerca_binaria_passo (A, v, sinistra, destra) {
+    if (sinistra <= destra) {
+      let centro = (sinistra + destra) / 2;
+      if (A[centro] > v) {
+        return ricerca_binaria_passo(A, v, sinistra, centro - 1);
+      } else if (A[centro] < v) {
+        return ricerca_binaria_passo(A, v, centro + 1, destra);
+      } else {
+        return centro;
+      }
+    }
+
+    return NON_PRESENTE;
+  };
+
+  return ricerca_binaria_passo(A, v, 1, n);
+};

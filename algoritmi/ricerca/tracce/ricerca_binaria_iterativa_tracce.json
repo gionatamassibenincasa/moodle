@@ -1,0 +1,5357 @@
+{
+  "code": "NON_PRESENTE = -1\n\n\ndef ricerca_binaria(A, n, v):\n    sinistra = 0\n    destra = n\n    while (sinistra <= destra):\n        somma = sinistra + destra\n        centro = somma / 2 if (somma % 2 == 0) else (somma - 1) / 2\n        if (A[centro] > v):\n            destra = centro - 1\n        elif (A[centro] < v):\n            sinistra = centro + 1\n        else:\n            return centro\n    return NON_PRESENTE\n\n\n# Esempi\nseq = [1, 2, 3, 5, 7, 11, 13, 17]\nn = len(seq)\nricerca_binaria(seq, n, 5)\nricerca_binaria(seq, n, 2)\nricerca_binaria(seq, n, 4)\n", 
+  "trace": [
+    {
+      "ordered_globals": [], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 1, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {}, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ]
+      }, 
+      "line": 20, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 21, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 22, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 4, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 5, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "destra": 8, 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "destra": 8, 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 13, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 13, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 15, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 5, 
+            "__return__": 3
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 15, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 23, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 4, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 5, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "destra": 8, 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "destra": 8, 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 15, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 2, 
+            "__return__": 1
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f2", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 15, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 24, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 4, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 5, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 6, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "destra": 8, 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "destra": 8, 
+            "n": 8, 
+            "sinistra": 0, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 8, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 8, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 4, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 0, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 13, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 3, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 1, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 2, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 13, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 5, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 8, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 2, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 3, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 11, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 2, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 7, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 2, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 16, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_binaria", 
+      "stack_to_render": [
+        {
+          "frame_id": 3, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              2
+            ], 
+            "somma": 6, 
+            "destra": 2, 
+            "centro": 3, 
+            "sinistra": 3, 
+            "n": 8, 
+            "v": 4, 
+            "__return__": -1
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_binaria", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_binaria_f3", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "sinistra", 
+            "destra", 
+            "somma", 
+            "centro", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 16, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "NON_PRESENTE", 
+        "ricerca_binaria", 
+        "seq", 
+        "n"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "seq": [
+          "REF", 
+          2
+        ], 
+        "ricerca_binaria": [
+          "REF", 
+          1
+        ], 
+        "NON_PRESENTE": -1, 
+        "n": 8
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_binaria(A, n, v)", 
+          null
+        ], 
+        "2": [
+          "LIST", 
+          1, 
+          2, 
+          3, 
+          5, 
+          7, 
+          11, 
+          13, 
+          17
+        ]
+      }, 
+      "line": 24, 
+      "event": "return"
+    }
+  ]
+}

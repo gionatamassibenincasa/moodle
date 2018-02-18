@@ -1,109 +1,100 @@
-### Problema
+# Ricerca binaria
 
-### 
+## Problema
 
-Determinare se un valore  *v* dato è presente in una sequenza
-**ordinata**   *A*  di  *n* valori. Se il valore  *v* è presente,
-restituirne la posizione.  
-  
+Determinare se un valore  \\( v \\) dato è presente in una sequenza
+**ordinata**  \\( A \\)  di  \\( n \\) valori. Se il valore  \\( v \\) è presente,
+restituirne la posizione.
+
+Una sequenza si dice ordinata se, per ogni coppia di valori adiacenti, quello di sinistra è
+non maggiore di quello di destra.
+Formalmente, una sequenza \\( A = [a_1, a_2, \\ldots, a_n] \\) è ordinata se
+\\( a_i \\leq a\_{i+1} \\) per \\( i = 1, 2, \\ldots, n - 1 \\).
+
+### Input
+
+Una sequenza ordinata \\( A \\) di \\( n \\) valori, \\( A = \[a_1, a_2, \ldots, a_n\] \\) e un valore \\( v \\).
+
+### Output:
+
+Un indice \\( i \\) tale che l'elemento in posizione \\( i \\)-esima
+della sequenza, \\( a_i \\) sia uguale a \\( v \\), oppure un valore
+speciale che indica che \\( v \\) non compare nella sequenza \\( A \\).
+
+### Esempio
 
 #### Input
 
-### 
+La sequenza \\(A = [1, 2, 3, 5, 7, 11, 13, 17] \\) di \\( n = 8 \\) elementi e il valore \\( v = 5 \\)
 
-Una sequenza ordinata  *A* di  *n* valori  *A* = \[ *a* 1,  *a* 2, ..., 
-*a* n\] e un valore  *v*. La sequenza si dice ordinata se, per ogni
-coppia di valori adiacenti, quello di sinistra è non maggiore di quello
-di destra. Formalmente, usa sequenza \\( A = \[a\_1, a\_2, \\ldots,
-a\_n\] \\) è ordinata se \\( a\_i \\leq a\_j \\) per \\( i = 1, 2,
-\\ldots, n - 1 \\).
+#### Output
 
-#### Output:
+L'indice \\( i = 4 \\) tale che \\( a_4 \\) è l'elemento \\( 5 \\).
 
-### 
-
-Un indice  *i* tale che l'elemento in posizione  *i-esima* della
-sequenza, A\[ *i*\] sia uguale a  *v*, oppure un valore speciale che
-indica che  *v *non compare nella sequenza  *A*.
-
-### Algoritmo di ricerca binaria
+## Algoritmo di ricerca binaria
 
 L'algoritmo di ricerca binaria consiste cercare un dato valore al centro
 di un intervallo che potrebbe includerlo. Se il valore dato è al centro,
-allora restituisce l'indice, altrimenti ripete la ricerca nella
-sotto-sequenza a sinistra del centro, se il valore cercato è minore del
-valore nel centro, nella sotto-sequenza di destra altrimenti
+allora restituisce l'indice, altrimenti se il valore cercato è minore del
+valore nel centro ripete la ricerca nella sotto-sequenza a sinistra del centro,
+altrimenti nella sotto-sequenza di destra.
 
-##### In pseudo-codice - Realizzazione iterativa
+## Realizzazione iterativa
 
-    ricerca_binaria (A, v):
-          sinistra = 1
-          destra = n
-          finché (sinistra <= destra):
-              centro = (sinistra + destra) / 2
-              se (A[centro] > v):
-                  destra = centro - 1
-              altrimenti se (A[centro] < v):
-                  sinistra = centro + 1
-              altrimenti:
-                  restituisci centro
-          
-          restituisci -1
+### In pseudo-codice
 
-##### Come diagramma di flusso (di esecuzione)
+<pre><code class="pseudo" algo="ricerca_binaria_iterativa"></code></pre>
 
-FlowChart terminator\_block\_1 i = 1 nop\_block\_2
-terminator\_block\_1-\>nop\_block\_2 ifs\_block\_3 i \<= n
-nop\_block\_2-\>ifs\_block\_3 ifs\_block\_4 A\[i\] == v
-ifs\_block\_3-\>ifs\_block\_4  True  terminator\_block\_7 -1
-ifs\_block\_3-\>terminator\_block\_7  False  terminator\_block\_5 i
-ifs\_block\_4-\>terminator\_block\_5  True  process\_block\_6 i = i + 1
-ifs\_block\_4-\>process\_block\_6  False 
-process\_block\_6-\>nop\_block\_2
+### Come diagramma di flusso (di esecuzione)
 
-##### In JavaScript
+![](./codice/ricerca_binaria_iterativa.fc.svg)
 
-#### In pseudo-codice - versione ricorsiva
+<!--![](https://code2flow.com/Hrzixh.svg)-->
 
-    ricerca_binaria (A, v):
-          ricerca_binaria_passo (A, v, 0, n)
-     
-    ricerca_binaria_passo (A, v, sinistra, destra):
-          se (destra < sinistra):
-              restituisci -1
-          centro = (low + high) / 2
-          se (A[centro] > v):
-              restituisci ricerca_binaria_passo(A, v, sinistra, centro - 1)
-          altrimenti se (A[centro] < v):
-              restituisci ricerca_binaria_passo(A, v, centro + 1, destra)
-          altrimenti:
-              restituisci centro
+### In JavaScript
 
-#### Come diagramma di flusso
+<pre><code class="javascript" algo="ricerca_binaria_iterativa"></code></pre>
 
-FlowChart cluster\_block\_1 ricerca\_lineare (A, v) cluster\_block\_3
-passo\_ricerca\_lineare (A, v, indice) terminator\_block\_2
-passo\_ricerca\_lineare (A, v, 0) ifs\_block\_4 numero\_di\_elementi(A)
-= 0 terminator\_block\_5 -1 ifs\_block\_4-\>terminator\_block\_5  True 
-ifs\_block\_6 A\[1\] = v ifs\_block\_4-\>ifs\_block\_6  False 
-terminator\_block\_7 indice ifs\_block\_6-\>terminator\_block\_7  True 
-process\_block\_8 B = A - a ifs\_block\_6-\>process\_block\_8  False 
-terminator\_block\_9 passo\_ricerca\_lineare (B, v, indice + 1)
-process\_block\_8-\>terminator\_block\_9  1 
+### In Python
 
-#### In JavaScript
+<pre><code class="python" algo="ricerca_binaria_iterativa"></code></pre>
 
-#### Complessità
+#### Traccia dell'esecuzione
 
-##### Caso migliore
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_iterativa_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_binaria_iterativa_tracce"> </div>
+
+## Realizzazione ricorsiva
+
+### In pseudo-codice
+
+<pre><code class="pseudo" algo="ricerca_binaria_ricorsiva"></code></pre>
+
+### Come diagramma di flusso
+
+![](./codice/ricerca_binaria_ricorsiva.fc.svg)
+
+### In JavaScript
+
+<pre><code class="javascript" algo="ricerca_binaria_ricorsiva"></code></pre>
+
+### In Python
+
+<pre><code class="python" algo="ricerca_binaria_ricorsiva"></code></pre>
+
+#### Traccia dell'esecuzione
+
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_binaria_ricorsiva_tracce"> </div>
+
+## Complessità
+
+### Caso migliore
 
 Numero confronti: 1
 
-##### Caso peggiore
+### Caso peggiore
 
-Numero confronti: \\( p \\) tale che \\( 2^{p-1} \< n \\leq 2^p \\)  
+Numero confronti: \\( p \\) tale che \\( 2^{p-1} \< n \\leq 2^p \\)
 
-##### Caso medio
+### Caso medio
 
-Numero confronti:  \\( p \\) tale che \\( 2^{p-1} \< n \\leq 2^p \\)  
-
+Numero confronti:  \\( p \\) tale che \\( 2^{p-1} \< n \\leq 2^p \\)
