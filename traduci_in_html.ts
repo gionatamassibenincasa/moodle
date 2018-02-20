@@ -1,4 +1,5 @@
 import * as markdownIt from "markdown-it";
+import * as table from "markdown-it-table";
 import * as fs from "fs";
 
 const h = `<!DOCTYPE html>
@@ -73,6 +74,7 @@ mdi.set({
   linkify: true,
   typographer: true
 });
+mdi.use(table);
 
 let file = process.argv[2];
 // let p = mdi.parse(fs.readFileSync(file, "utf8"), {});
