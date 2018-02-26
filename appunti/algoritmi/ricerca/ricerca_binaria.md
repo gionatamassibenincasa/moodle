@@ -1,5 +1,9 @@
 # Ricerca binaria
 
+## Indice
+
+[[toc]]
+
 ## Problema
 
 Determinare se un valore  \\( v \\) dato è presente in una sequenza

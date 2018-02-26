@@ -5,7 +5,7 @@ import * as toc from "markdown-it-table-of-contents";
 import * as fs from "fs";
 import * as hb from "handlebars";
 
-export const genera_html = function(file, titolo) {
+export const genera_html = function(file: string, titolo: string): string {
   const h = fs.readFileSync("./template/html/testa.html", "utf-8");
   const t = fs.readFileSync("./template/html/coda.html", "utf-8");
   const md_body = fs.readFileSync(file, "utf8");

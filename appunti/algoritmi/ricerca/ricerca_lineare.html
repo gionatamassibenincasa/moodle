@@ -22,8 +22,8 @@
     <!-- Online Python Tutor -->
     <!--script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js" charset="utf-8"></script-->
     <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js" charset="utf-8"></script>
-    
-    <title></title>
+
+    <title>Ricerca lineare</title>
 
     <style>
         tr,
@@ -36,10 +36,10 @@
 
 <body>
 <h1 id="ricerca-lineare">Ricerca lineare</h1>
-<p><div class="table-of-contents"><ul><li><a href="#ricerca-lineare">Ricerca lineare</a><ul><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-lineare">Algoritmo di ricerca lineare</a></li><li><a href="#realizzazione-iterativa">Realizzazione iterativa</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#realizzazione-ricorsiva">Realizzazione ricorsiva</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso">Come diagramma di flusso</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita-computazionale">Complessità computazionale</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
+<h2 id="indice">Indice</h2>
+<p><div class="table-of-contents"><ul><li><a href="#ricerca-lineare">Ricerca lineare</a><ul><li><a href="#indice">Indice</a></li><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-lineare">Algoritmo di ricerca lineare</a></li><li><a href="#realizzazione-iterativa">Realizzazione iterativa</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#realizzazione-ricorsiva">Realizzazione ricorsiva</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso">Come diagramma di flusso</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita-computazionale">Complessità computazionale</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
 <h2 id="problema">Problema</h2>
-<p>Determinare se un valore \( v \) dato è presente in una sequenza \( A \) di \( n \) valori. Se il valore \( v \) è presente, restituirne
-la posizione.</p>
+<p>Determinare se un valore \( v \) dato è presente in una sequenza \( A \) di \( n \) valori. Se il valore \( v \) è presente, restituirne la posizione.</p>
 <h3 id="input">Input</h3>
 <p>Una sequenza \( A \) di \( n \) valori, \( A = [a_1, a_2, \ldots, a_n] \) e un valore \( v \).</p>
 <h3 id="output">Output</h3>
@@ -87,31 +87,32 @@ il valore non è presente nella sequenza.</p>
 <h3 id="caso-medio">Caso medio</h3>
 <p>Numero confronti: \( \frac{1+2+3+\cdots+n}{n} = \frac{(1+n)\cdot n}{2 \cdot n} = \frac{1+n}{2} \)</p>
 
-    <script>
-renderMathInElement(document.body);
-var algos = [];
-document.querySelectorAll('pre > code').forEach(function (e) {
-  if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
-    algos.push(e.attributes['algo'].value);
-  }
-});
-algos.forEach(function (algo) {
-    [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
-        var filename = algo + '.' + impl.ext;
-        var url = './codice/' + filename;
-        fetch(url).then(function(response) {
-            return response.text();
-          }).then(function(src) {
-            var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
-            var elem = document.querySelector(sel);
-            elem.innerText = src;
-            hljs.highlightBlock(elem);
-       });
+<script>
+    renderMathInElement(document.body);
+    var algos = [];
+    document.querySelectorAll('pre > code').forEach(function (e) {
+        if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
+            algos.push(e.attributes['algo'].value);
+        }
     });
-});
-// Tracce con OPT
-createAllVisualizersFromHtmlAttrs();
-  </script>
+    algos.forEach(function (algo) {
+        [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
+            var filename = algo + '.' + impl.ext;
+            var url = './codice/' + filename;
+            fetch(url).then(function (response) {
+                return response.text();
+            }).then(function (src) {
+                var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+                var elem = document.querySelector(sel);
+                elem.innerText = src;
+                hljs.highlightBlock(elem);
+            });
+        });
+    });
+    // Tracce con OPT
+    createAllVisualizersFromHtmlAttrs();
+</script>
 
 </body>
+
 </html>

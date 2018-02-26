@@ -22,8 +22,8 @@
     <!-- Online Python Tutor -->
     <!--script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js" charset="utf-8"></script-->
     <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js" charset="utf-8"></script>
-    
-    <title></title>
+
+    <title>Ricerca indicizzata</title>
 
     <style>
         tr,
@@ -35,18 +35,17 @@
 </head>
 
 <body>
-<h1>Ricerca indicizzata con accesso diretto</h1>
-<h2>Problema</h2>
-<p>Determinare se un valore \( v \) dato è presente in una sequenza \( A \) di \( n \) valori. Se il valore \( v \) è presente, restituirne
-la posizione, nota la distribuzione dei valori e determinata una funzione d’indicizzazione \( h(v) \) che produce valori interi.</p>
-<h3>Input</h3>
+<h1 id="ricerca-indicizzata-con-accesso-diretto">Ricerca indicizzata con accesso diretto</h1>
+<h2 id="indice">Indice</h2>
+<p><div class="table-of-contents"><ul><li><a href="#ricerca-indicizzata-con-accesso-diretto">Ricerca indicizzata con accesso diretto</a><ul><li><a href="#indice">Indice</a></li><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-indicizzata-con-accesso-diretto">Algoritmo di ricerca indicizzata con accesso diretto</a><ul><li><a href="#discussione">Discussione</a></li></ul></li><li><a href="#realizzazione-iterativa">Realizzazione iterativa</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita-computazionale-hash-perfetta">Complessità computazionale, hash perfetta</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li><li><a href="#complessita-computazionale-con-collisioni">Complessità computazionale, con collisioni</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
+<h2 id="problema">Problema</h2>
+<p>Determinare se un valore \( v \) dato è presente in una sequenza \( A \) di \( n \) valori. Se il valore \( v \) è presente, restituirne la posizione, nota la distribuzione dei valori e determinata una funzione 'indicizzazione \( h(v) \) che produce valori interi.</p>
+<h3 id="input">Input</h3>
 <p>Una sequenza \( A \) di \( n \) valori, \( A = [a_1, a_2, \ldots, a_n] \) e un valore \( v \).</p>
-<h3>Output</h3>
-<p>Un indice \( i \) tale che l’elemento in posizione \( i \)-esima
-della sequenza, \( a_i \) sia uguale a \( v \), oppure un valore
-speciale che indica che \( v \) non compare nella sequenza \( A \).</p>
-<h3>Esempio</h3>
-<h4>Input</h4>
+<h3 id="output">Output</h3>
+<p>Un indice \( i \) tale che l’elemento in posizione \( i \)-esima della sequenza, \( a_i \) sia uguale a \( v \), oppure un valore speciale che indica che \( v \) non compare nella sequenza \( A \).</p>
+<h3 id="esempio">Esempio</h3>
+<h4 id="input-2">Input</h4>
 <p>La sequenza \( A = [Cip, Gastone, Minnie, Pluto, Topolino ] \) di \( n = 5 \) elementi e il valore \( v = Pluto \).
 Sia data anche una procedura \( h \) che dato un valore di tipo stringa \( [c_1, c_2, \ldots, c_k_v]\) restituisce il numero intero dato da:</p>
 <pre><code>h (v):
@@ -54,7 +53,7 @@ Sia data anche una procedura \( h \) che dato un valore di tipo stringa \( [c_1,
     sia indice := (posizione + 1) / 4
     restituisci l'indice
 </code></pre>
-<p>Si noti l’applicazione della procedura h ai valori della sequenza:</p>
+<p>Si noti l’applicazione della procedura \( h \) ai valori della sequenza:</p>
 <table>
 <thead>
 <tr>
@@ -97,20 +96,18 @@ Sia data anche una procedura \( h \) che dato un valore di tipo stringa \( [c_1,
 </tr>
 </tbody>
 </table>
-<h4>Output</h4>
+<h4 id="output-2">Output</h4>
 <p>L’indice \( i = 4 \) tale che \( a_4 \) è l’elemento \( Pluto \).</p>
-<h2>Algoritmo di ricerca indicizzata con accesso diretto</h2>
-<p>L’algoritmo di ricerca indicizzata con accesso diretto consiste nella produzione del
-valore dell’indice a partire dal valore stesso e nella verifica della presenza del
-valore nella posizione prevista.
-Se il valore è nella posizione dell’indice, allora restituisci l’indice, altrimenti
-<code>NON_PRESENTE</code> per indicare che il valore non è presente nella sequenza.</p>
-<h3>Discussione sulla funzione di indicizzazione</h3>
+<h2 id="algoritmo-di-ricerca-indicizzata-con-accesso-diretto">Algoritmo di ricerca indicizzata con accesso diretto</h2>
+<p>L’algoritmo di ricerca indicizzata con accesso diretto consiste nella produzione del valore dell’indice a partire dal valore stesso e nella verifica della presenza del valore nella posizione prevista.
+Se il valore è nella posizione dell’indice, allora restituisci l’indice, altrimenti <code>NON_PRESENTE</code> per indicare che il valore non è presente nella sequenza.</p>
+<h3 id="discussione">Discussione</h3>
+<p>Per poter cercare un elemento è necessario prima poterlo inserire e, se necessario, può essere richiesto di cancellarlo.</p>
 <p>Nel caso d’esempio la funzione d’indicizzazione produce valori interi nell’intervallo [1, 5].
 La sequenza è composta da 5 elementi e non presenta “buchi”. L’ordinamento dei valori resta
 lo stesso dei valori.</p>
 <p>Se la sequenza di valori è nota a priori, può essere possibile determinare funzioni che
-mappa ogni elemento in un numero intero tra 1 e \( n \), dove ((n \)) è il numero di
+mappa ogni elemento in un numero intero tra 1 e \( n \), dove \(n \) è il numero di
 elementi della sequenza stessa. Tale funzione si chiama <em>hash perfetta minimale</em>.</p>
 <p>Se la funzione mappa ogni elemento in un intero tra 1 e \( m \), dove \( m &gt; n \) allora
 la funzione è <em>hash perfetta</em> ma non è <em>minimale</em>.</p>
@@ -118,51 +115,59 @@ la funzione è <em>hash perfetta</em> ma non è <em>minimale</em>.</p>
 _preserva l’ordinamento.</p>
 <p>La funzione d’indicizzazione dell’esempio è quindi: <em>perfetta</em>, <em>mininale</em> e
 <em>preserva l’ordinamento</em>.</p>
-<h2>Realizzazione iterativa</h2>
-<h3>In pseudo-codice</h3>
+<h2 id="realizzazione-iterativa">Realizzazione iterativa</h2>
+<h3 id="in-pseudo-codice">In pseudo-codice</h3>
 <pre><code class="pseudo" algo="ricerca_indicizzata_esempio"></code></pre>
-<h3>Come diagramma di flusso (di esecuzione)</h3>
+<h3 id="come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</h3>
 <p><img src="./codice/ricerca_indicizzata_esempio.fc.svg" alt=""></p>
 <!--![](https://code2flow.com/Hrzixh.svg)-->
-<h3>In JavaScript</h3>
+<h3 id="in-javascript">In JavaScript</h3>
 <pre><code class="javascript" algo="ricerca_indicizzata_esempio"></code></pre>
-<h3>In Python</h3>
+<h3 id="in-python">In Python</h3>
 <pre><code class="python" algo="ricerca_indicizzata_esempio"></code></pre>
-<h4>Traccia dell’esecuzione</h4>
+<h4 id="traccia-dellesecuzione">Traccia dell’esecuzione</h4>
 <div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_indicizzata_esempio_tracce"> </div>
-<h2>Complessità computazionale</h2>
-<h3>Caso migliore</h3>
+<h2 id="complessita-computazionale-hash-perfetta">Complessità computazionale, hash perfetta</h2>
+<h3 id="caso-migliore">Caso migliore</h3>
 <p>Numero accessi: \( 1 \)</p>
-<h3>Caso peggiore</h3>
+<h3 id="caso-peggiore">Caso peggiore</h3>
 <p>Numero accessi: \( 1 \)</p>
-<h3>Caso medio</h3>
+<h3 id="caso-medio">Caso medio</h3>
+<p>Numero accessi: \( 1 \)</p>
+<h2 id="complessita-computazionale-con-collisioni">Complessità computazionale, con collisioni</h2>
+<h3 id="caso-migliore-2">Caso migliore</h3>
+<p>Numero accessi: \( 1 \)</p>
+<h3 id="caso-peggiore-2">Caso peggiore</h3>
+<p>Numero accessi: \( m \), \(m \leq n \)</p>
+<h3 id="caso-medio-2">Caso medio</h3>
 <p>Numero accessi: \( 1 \)</p>
 
-    <script>
-renderMathInElement(document.body);
-var algos = [];
-document.querySelectorAll('pre > code').forEach(function (e) {
-  if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
-    algos.push(e.attributes['algo'].value);
-  }
-});
-algos.forEach(function (algo) {
-    [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
-        var filename = algo + '.' + impl.ext;
-        var url = './codice/' + filename;
-        fetch(url).then(function(response) {
-            return response.text();
-          }).then(function(src) {
-            var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
-            var elem = document.querySelector(sel);
-            elem.innerText = src;
-            hljs.highlightBlock(elem);
-       });
+<script>
+    renderMathInElement(document.body);
+    var algos = [];
+    document.querySelectorAll('pre > code').forEach(function (e) {
+        if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
+            algos.push(e.attributes['algo'].value);
+        }
     });
-});
-// Tracce con OPT
-createAllVisualizersFromHtmlAttrs();
-  </script>
+    algos.forEach(function (algo) {
+        [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
+            var filename = algo + '.' + impl.ext;
+            var url = './codice/' + filename;
+            fetch(url).then(function (response) {
+                return response.text();
+            }).then(function (src) {
+                var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+                var elem = document.querySelector(sel);
+                elem.innerText = src;
+                hljs.highlightBlock(elem);
+            });
+        });
+    });
+    // Tracce con OPT
+    createAllVisualizersFromHtmlAttrs();
+</script>
 
 </body>
+
 </html>

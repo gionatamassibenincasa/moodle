@@ -1,9 +1,12 @@
 # Ricerca indicizzata con accesso diretto
 
+## Indice
+
+[[toc]]
+
 ## Problema
 
-Determinare se un valore \\( v \\) dato è presente in una sequenza \\( A \\) di \\( n \\) valori. Se il valore \\( v \\) è presente, restituirne
-la posizione, nota la distribuzione dei valori e determinata una funzione d'indicizzazione \\( h(v) \\) che produce valori interi.
+Determinare se un valore \\( v \\) dato è presente in una sequenza \\( A \\) di \\( n \\) valori. Se il valore \\( v \\) è presente, restituirne la posizione, nota la distribuzione dei valori e determinata una funzione 'indicizzazione \\( h(v) \\) che produce valori interi.
 
 ### Input
 
@@ -11,9 +14,7 @@ Una sequenza \\( A \\) di \\( n \\) valori, \\( A = \[a_1, a_2, \ldots, a_n\] \\
 
 ### Output
 
-Un indice \\( i \\) tale che l'elemento in posizione \\( i \\)-esima
-della sequenza, \\( a_i \\) sia uguale a \\( v \\), oppure un valore
-speciale che indica che \\( v \\) non compare nella sequenza \\( A \\).
+Un indice \\( i \\) tale che l'elemento in posizione \\( i \\)-esima della sequenza, \\( a_i \\) sia uguale a \\( v \\), oppure un valore speciale che indica che \\( v \\) non compare nella sequenza \\( A \\).
 
 ### Esempio
 
@@ -27,7 +28,7 @@ Sia data anche una procedura \\( h \\) che dato un valore di tipo stringa \\( [c
         sia indice := (posizione + 1) / 4
         restituisci l'indice
 
-Si noti l'applicazione della procedura h ai valori della sequenza:
+Si noti l'applicazione della procedura \\( h \\) ai valori della sequenza:
 
 | Valore   | Primo carattere | Indice alfabeto | h (Valore) |
 | -------- | --------------- | --------------- | ---------- |
@@ -43,20 +44,19 @@ L'indice \\( i = 4 \\) tale che \\( a_4 \\) è l'elemento \\( Pluto \\).
 
 ## Algoritmo di ricerca indicizzata con accesso diretto
 
-L'algoritmo di ricerca indicizzata con accesso diretto consiste nella produzione del
-valore dell'indice a partire dal valore stesso e nella verifica della presenza del
-valore nella posizione prevista.
-Se il valore è nella posizione dell'indice, allora restituisci l'indice, altrimenti
-`NON_PRESENTE` per indicare che il valore non è presente nella sequenza.
+L'algoritmo di ricerca indicizzata con accesso diretto consiste nella produzione del valore dell'indice a partire dal valore stesso e nella verifica della presenza del valore nella posizione prevista.
+Se il valore è nella posizione dell'indice, allora restituisci l'indice, altrimenti `NON_PRESENTE` per indicare che il valore non è presente nella sequenza.
 
-### Discussione sulla funzione di indicizzazione
+### Discussione
+
+Per poter cercare un elemento è necessario prima poterlo inserire e, se necessario, può essere richiesto di cancellarlo. 
 
 Nel caso d'esempio la funzione d'indicizzazione produce valori interi nell'intervallo [1, 5].
 La sequenza è composta da 5 elementi e non presenta "buchi". L'ordinamento dei valori resta
 lo stesso dei valori.
 
 Se la sequenza di valori è nota a priori, può essere possibile determinare funzioni che
-mappa ogni elemento in un numero intero tra 1 e \\( n \\), dove \((n \\)) è il numero di
+mappa ogni elemento in un numero intero tra 1 e \\( n \\), dove \\(n \\) è il numero di
 elementi della sequenza stessa. Tale funzione si chiama _hash perfetta minimale_.
 
 Se la funzione mappa ogni elemento in un intero tra 1 e \\( m \\), dove \\( m > n \\) allora
@@ -92,7 +92,7 @@ _preserva l'ordinamento_.
 
 <div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_indicizzata_esempio_tracce"> </div>
 
-## Complessità computazionale
+## Complessità computazionale, hash perfetta
 
 ### Caso migliore
 
@@ -103,5 +103,19 @@ Numero accessi: \\( 1 \\)
 Numero accessi: \\( 1 \\)
 
 ### Caso medio
+
+Numero accessi: \\( 1 \\)
+
+## Complessità computazionale, con collisioni
+
+### Caso migliore
+
+Numero accessi: \\( 1 \\)
+
+### Caso peggiore
+
+Numero accessi: \\( m \\), \\(m \\leq n \\)
+
+### Caso medio 	
 
 Numero accessi: \\( 1 \\)

@@ -1,4 +1,7 @@
+import * as markdownIt from "markdown-it";
+import * as fs from "fs";
 import { genera_html } from "./genera_html";
+import { risolvi_dipendenza } from "./risolvi_dipendenza";
 
 enum Formato {
   ASCIIDOC,
@@ -13,10 +16,16 @@ class Pagina {
   destinazione: string;
 }
 
-class Argomento {
-  titolo: string;
-  pagine: Pagina[];
+class Contenuto {
   directory: string;
+  pagine: Pagina[];
+  titolo: string;
+}
+
+class Argomento {
+  contenuti: Contenuto[];
+  directory: string;
+  titolo: string;
 }
 
 class Appunti {
@@ -26,50 +35,81 @@ class Appunti {
 const appunti: Appunti = {
   argomenti: [
     {
-      titolo: "Algoritmi di ricerca",
-      directory: "algoritmi/ricerca",
-      pagine: [
+      titolo: "Algoritmi",
+      directory: "algoritmi",
+      contenuti: [
         {
-          formato: Formato.MARKDOWN,
-          titolo: "Ricerca lineare",
-          sorgente: "ricerca_lineare.md",
-          destinazione: "ricerca_lineare.html"
+          titolo: "Algoritmi di ricerca",
+          directory: "algoritmi/ricerca",
+          pagine: [
+            {
+              formato: Formato.MARKDOWN,
+              titolo: "Ricerca lineare",
+              sorgente: "ricerca_lineare.md",
+              destinazione: "ricerca_lineare.html"
+            },
+            {
+              formato: Formato.MARKDOWN,
+              titolo: "Ricerca binaria",
+              sorgente: "ricerca_binaria.md",
+              destinazione: "ricerca_binaria.html"
+            },
+            {
+              formato: Formato.MARKDOWN,
+              titolo: "Ricerca indicizzata",
+              sorgente: "ricerca_indicizzata.md",
+              destinazione: "ricerca_indicizzata.html"
+            }
+          ]
         },
         {
-          formato: Formato.MARKDOWN,
-          titolo: "Ricerca binaria",
-          sorgente: "ricerca_binaria.md",
-          destinazione: "ricerca_binaria.html"
-        },
-        {
-          formato: Formato.MARKDOWN,
-          titolo: "Ricerca indicizzata",
-          sorgente: "ricerca_indicizzata.md",
-          destinazione: "ricerca_indicizzata.html"
-        }
-      ]
-    },
-    {
-      titolo: "Algoritmi di ricerca - riconoscimento",
-      directory: "algoritmi/verifica_ordinamento",
-      pagine: [
-        {
-          formato: Formato.MARKDOWN,
-          titolo: "Riconoscimento di una sequenza ordinata",
-          sorgente: "verifica_ordinamento.md",
-          destinazione: "riconoscimento_ordinamento.html"
+          titolo: "Riconoscitore di sequenze ordinate",
+          directory: "algoritmi/riconoscitore_ordinamento",
+          pagine: [
+            {
+              formato: Formato.MARKDOWN,
+              titolo: "Riconoscimento di una sequenza ordinata",
+              sorgente: "riconoscitore_ordinamento.md",
+              destinazione: "riconoscitore_ordinamento.html"
+            }
+          ]
         }
       ]
     }
   ]
 };
 
+let indenta = function(spazi: number): string {
+  let riga: string = "";
+  for (let n = 0; n < spazi; n++) {
+    riga += " ";
+  }
+  return riga;
+};
+
+let indice: string = "# Indice\n";
+
 appunti.argomenti.forEach(function(argomento: Argomento) {
-  console.log(argomento.titolo);
+  indice += "* " + argomento.titolo + "\n";
+  argomento.contenuti.forEach(function(contenuto) {
+    indice += indenta(4) + "* " + contenuto.titolo + "\n";
+    contenuto.pagine.forEach(function(pagina) {
+      const sorgente = contenuto.directory + "/" + pagina.sorgente;
+      const destinazione = contenuto.directory + "/" + pagina.destinazione;
+      indice +=
+        indenta(8) + "* [" + pagina.titolo + "](" + destinazione + ")" + "\n";
+      if (!risolvi_dipendenza(sorgente, destinazione, pagina.titolo)) {
+        console.log("ERRORE");
+      }
+    });
+  });
 });
 
-const pagina_html = genera_html(
-  "algoritmi/ricerca/ricerca_lineare.md",
-  "Ricerca lineare"
-);
-console.log(pagina_html);
+const mdi = markdownIt();
+mdi.set({
+  html: true,
+  linkify: true,
+  typographer: true
+});
+
+console.log(mdi.render(indice));

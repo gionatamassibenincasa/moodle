@@ -1,4 +1,8 @@
-# Verifica dell'ordinamento
+# Riconoscimento di una sequenza ordinata
+
+## Indice
+
+[[TOC]]
 
 ## Problema
 
