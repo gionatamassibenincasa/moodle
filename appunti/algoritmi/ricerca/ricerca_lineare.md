@@ -1,9 +1,12 @@
 # Ricerca lineare
 
+## Indice
+
+[[toc]]
+
 ## Problema
 
-Determinare se un valore \\( v \\) dato è presente in una sequenza \\( A \\) di \\( n \\) valori. Se il valore \\( v \\) è presente, restituirne
-la posizione.
+Determinare se un valore \\( v \\) dato è presente in una sequenza \\( A \\) di \\( n \\) valori. Se il valore \\( v \\) è presente, restituirne la posizione.
 
 ### Input
 
@@ -54,7 +57,7 @@ il valore non è presente nella sequenza.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_iterativa_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_lineare_iterativa_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_iterativa_tracce.json" data-params="{'embeddedMode': true" id="ricerca_lineare_iterativa_tracce"> </div>
 
 ## Realizzazione ricorsiva
 

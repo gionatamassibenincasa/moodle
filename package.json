@@ -9,8 +9,11 @@
   "dependencies": {
     "@types/node": "^8.0.4",
     "awesome-typescript-loader": "^3.4.1",
+    "handlebars": "^4.0.11",
     "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^4.0.0",
     "markdown-it-table": "^1.0.4",
+    "markdown-it-table-of-contents": "^0.3.3",
     "source-map-loader": "^0.2.3",
     "typescript": "^2.7.2"
   },

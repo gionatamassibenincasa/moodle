@@ -1,0 +1,29 @@
+<script>
+    renderMathInElement(document.body);
+    var algos = [];
+    document.querySelectorAll('pre > code').forEach(function (e) {
+        if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
+            algos.push(e.attributes['algo'].value);
+        }
+    });
+    algos.forEach(function (algo) {
+        [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
+            var filename = algo + '.' + impl.ext;
+            var url = './codice/' + filename;
+            fetch(url).then(function (response) {
+                return response.text();
+            }).then(function (src) {
+                var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
+                var elem = document.querySelector(sel);
+                elem.innerText = src;
+                hljs.highlightBlock(elem);
+            });
+        });
+    });
+    // Tracce con OPT
+    createAllVisualizersFromHtmlAttrs();
+</script>
+
+</body>
+
+</html>

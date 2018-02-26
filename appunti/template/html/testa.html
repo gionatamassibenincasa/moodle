@@ -1,8 +1,4 @@
-import * as markdownIt from "markdown-it";
-import * as table from "markdown-it-table";
-import * as fs from "fs";
-
-const h = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 
 <head>
@@ -26,8 +22,8 @@ const h = `<!DOCTYPE html>
     <!-- Online Python Tutor -->
     <!--script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js" charset="utf-8"></script-->
     <script type="text/javascript" src="../../lib/pytutor-embed.bundle.js" charset="utf-8"></script>
-    
-    <title></title>
+
+    <title>{{titolo}}</title>
 
     <style>
         tr,
@@ -38,48 +34,4 @@ const h = `<!DOCTYPE html>
     </style>
 </head>
 
-<body>`;
-const t = `    <script>
-renderMathInElement(document.body);
-var algos = [];
-document.querySelectorAll('pre > code').forEach(function (e) {
-  if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {
-    algos.push(e.attributes['algo'].value);
-  }
-});
-algos.forEach(function (algo) {
-    [{ lang: 'pseudo', ext: 'pseudo' }, { lang: 'javascript', ext: 'js' }, { lang: 'python', ext: 'py' }].forEach(function (impl) {
-        var filename = algo + '.' + impl.ext;
-        var url = './codice/' + filename;
-        fetch(url).then(function(response) {
-            return response.text();
-          }).then(function(src) {
-            var sel = 'code[algo="' + algo + '"][class="' + impl.lang + '"]';
-            var elem = document.querySelector(sel);
-            elem.innerText = src;
-            hljs.highlightBlock(elem);
-       });
-    });
-});
-// Tracce con OPT
-createAllVisualizersFromHtmlAttrs();
-  </script>
-
-</body>
-</html>`;
-
-const mdi = markdownIt();
-mdi.set({
-  html: true,
-  linkify: true,
-  typographer: true
-});
-mdi.use(table);
-
-let file = process.argv[2];
-// let p = mdi.parse(fs.readFileSync(file, "utf8"), {});
-
-let b = mdi.render(fs.readFileSync(file, "utf8"), {});
-console.log(h);
-console.log(b);
-console.log(t);
+<body>
