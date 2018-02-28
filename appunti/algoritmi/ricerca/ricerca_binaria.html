@@ -37,7 +37,7 @@
 <body>
 <h1 id="ricerca-binaria">Ricerca binaria</h1>
 <h2 id="indice">Indice</h2>
-<p><div class="table-of-contents"><ul><li><a href="#ricerca-binaria">Ricerca binaria</a><ul><li><a href="#indice">Indice</a></li><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output:</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-binaria">Algoritmo di ricerca binaria</a></li><li><a href="#realizzazione-iterativa">Realizzazione iterativa</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#realizzazione-ricorsiva">Realizzazione ricorsiva</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso">Come diagramma di flusso</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita">Complessità</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
+<p><div class="table-of-contents"><ul><li><a href="#ricerca-binaria">Ricerca binaria</a><ul><li><a href="#indice">Indice</a></li><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output:</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-binaria">Algoritmo di ricerca binaria</a></li><li><a href="#realizzazione-iterativa">Realizzazione iterativa</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#realizzazione-ricorsiva">Realizzazione ricorsiva</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso">Come diagramma di flusso</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita-computazionale">Complessità computazionale</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
 <h2 id="problema">Problema</h2>
 <p>Determinare se un valore  \( v \) dato è presente in una sequenza
 <strong>ordinata</strong>  \( A \)  di  \( n \) valori. Se il valore  \( v \) è presente,
@@ -86,7 +86,7 @@ altrimenti nella sotto-sequenza di destra.</p>
 <pre><code class="python" algo="ricerca_binaria_ricorsiva"></code></pre>
 <h4 id="traccia-dellesecuzione-2">Traccia dell’esecuzione</h4>
 <div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_binaria_ricorsiva_tracce"> </div>
-<h2 id="complessita">Complessità</h2>
+<h2 id="complessita-computazionale">Complessità computazionale</h2>
 <h3 id="caso-migliore">Caso migliore</h3>
 <p>Numero confronti: 1</p>
 <h3 id="caso-peggiore">Caso peggiore</h3>
@@ -96,6 +96,14 @@ altrimenti nella sotto-sequenza di destra.</p>
 
 <script>
     renderMathInElement(document.body);
+
+    hljs.registerLanguage("pseudo", function (hljs) {
+        return {
+            case_insensitive: false,
+            keywords: "altrimenti finché restituisci se sia Falso NON_PRESENTE Vero"
+        };
+    });
+
     var algos = [];
     document.querySelectorAll('pre > code').forEach(function (e) {
         if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {

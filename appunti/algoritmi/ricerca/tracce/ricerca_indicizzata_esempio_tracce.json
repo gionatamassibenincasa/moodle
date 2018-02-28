@@ -1,0 +1,810 @@
+{
+  "code": "def ricerca_indicizzata(A, n, v, h):\n  i = h(v)\n  if (A[i] == v):\n      return i\n  else:\n      return 'NON_PRESENTE'\n        \n\ndef h(nome):\n  return ((ord(nome[0]) - 63) // 4) - 1\n\nA = [\"Cip\", \"Gastone\", \"Minnie\", \"Pluto\", \"Topolino\"]\nricerca_indicizzata(A, len(A), \"Pluto\", h)\n", 
+  "trace": [
+    {
+      "ordered_globals": [], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {}, 
+      "heap": {}, 
+      "line": 1, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ]
+      }, 
+      "line": 9, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ]
+      }, 
+      "line": 12, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 13, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_indicizzata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 1, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_indicizzata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 2, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "h", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h"
+          ]
+        }, 
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "nome": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "h", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "h_f2", 
+          "ordered_varnames": [
+            "nome"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 9, 
+      "event": "call"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "h", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h"
+          ]
+        }, 
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "nome": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "h", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "h_f2", 
+          "ordered_varnames": [
+            "nome"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 10, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "h", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": false, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h"
+          ]
+        }, 
+        {
+          "frame_id": 2, 
+          "encoded_locals": {
+            "__return__": 3, 
+            "nome": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "h", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "h_f2", 
+          "ordered_varnames": [
+            "nome", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 10, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_indicizzata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "i": 3, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h", 
+            "i"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 3, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_indicizzata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "i": 3, 
+            "v": "Pluto"
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h", 
+            "i"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 4, 
+      "event": "step_line"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "ricerca_indicizzata", 
+      "stack_to_render": [
+        {
+          "frame_id": 1, 
+          "encoded_locals": {
+            "A": [
+              "REF", 
+              3
+            ], 
+            "i": 3, 
+            "h": [
+              "REF", 
+              2
+            ], 
+            "n": 5, 
+            "v": "Pluto", 
+            "__return__": 3
+          }, 
+          "is_highlighted": true, 
+          "is_parent": false, 
+          "func_name": "ricerca_indicizzata", 
+          "is_zombie": false, 
+          "parent_frame_id_list": [], 
+          "unique_hash": "ricerca_indicizzata_f1", 
+          "ordered_varnames": [
+            "A", 
+            "n", 
+            "v", 
+            "h", 
+            "i", 
+            "__return__"
+          ]
+        }
+      ], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 4, 
+      "event": "return"
+    }, 
+    {
+      "ordered_globals": [
+        "ricerca_indicizzata", 
+        "h", 
+        "A"
+      ], 
+      "stdout": "", 
+      "func_name": "<module>", 
+      "stack_to_render": [], 
+      "globals": {
+        "A": [
+          "REF", 
+          3
+        ], 
+        "h": [
+          "REF", 
+          2
+        ], 
+        "ricerca_indicizzata": [
+          "REF", 
+          1
+        ]
+      }, 
+      "heap": {
+        "1": [
+          "FUNCTION", 
+          "ricerca_indicizzata(A, n, v, h)", 
+          null
+        ], 
+        "2": [
+          "FUNCTION", 
+          "h(nome)", 
+          null
+        ], 
+        "3": [
+          "LIST", 
+          "Cip", 
+          "Gastone", 
+          "Minnie", 
+          "Pluto", 
+          "Topolino"
+        ]
+      }, 
+      "line": 13, 
+      "event": "return"
+    }
+  ]
+}

@@ -21,7 +21,7 @@ Un indice \\( i \\) tale che l'elemento in posizione \\( i \\)-esima della seque
 #### Input
 
 La sequenza \\( A = [Cip, Gastone, Minnie, Pluto, Topolino ] \\) di \\( n = 5 \\) elementi e il valore \\( v = Pluto \\).
-Sia data anche una procedura \\( h \\) che dato un valore di tipo stringa \\( [c_1, c_2, \\ldots, c_k_v]\\) restituisce il numero intero dato da:
+Sia data anche una procedura \\( h \\) che dato un valore di tipo stringa \\( [c_1, c_2, \\ldots, c_{k_v}]\\) restituisce il numero intero dato da:
 
     h (v):
         sia posizione := posizione nell'alfabeto del primo carattere di v
@@ -49,7 +49,7 @@ Se il valore è nella posizione dell'indice, allora restituisci l'indice, altrim
 
 ### Discussione
 
-Per poter cercare un elemento è necessario prima poterlo inserire e, se necessario, può essere richiesto di cancellarlo. 
+Per poter cercare un elemento è necessario prima poterlo inserire e, se necessario, può essere richiesto di cancellarlo.
 
 Nel caso d'esempio la funzione d'indicizzazione produce valori interi nell'intervallo [1, 5].
 La sequenza è composta da 5 elementi e non presenta "buchi". L'ordinamento dei valori resta
@@ -68,29 +68,27 @@ Se \\( v_i \\leq v_j \\implies h(v_i) \\leq h(v_j) \\) allora si dice che la fun
 La funzione d'indicizzazione dell'esempio è quindi: _perfetta_, _mininale_ e
 _preserva l'ordinamento_.
 
-## Realizzazione iterativa
+## Realizzazione
 
 ### In pseudo-codice
 
-<pre><code class="pseudo" algo="ricerca_indicizzata_esempio"></code></pre>
+<pre><code class="pseudo" algo="ricerca_indicizzata"></code></pre>
 
 ### Come diagramma di flusso (di esecuzione)
 
-![](./codice/ricerca_indicizzata_esempio.fc.svg)
-
-<!--![](https://code2flow.com/Hrzixh.svg)-->
+![](./codice/ricerca_indicizzata.fc.svg)
 
 ### In JavaScript
 
-<pre><code class="javascript" algo="ricerca_indicizzata_esempio"></code></pre>
+<pre><code class="javascript" algo="ricerca_indicizzata"></code></pre>
 
-### In Python
+### In Python (esempio)
 
-<pre><code class="python" algo="ricerca_indicizzata_esempio"></code></pre>
+<pre><code class="python" algo="ricerca_indicizzata"></code></pre>
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_indicizzata_esempio_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true}" id="ricerca_indicizzata_esempio_tracce"> </div>
 
 ## Complessità computazionale, hash perfetta
 
@@ -116,6 +114,6 @@ Numero accessi: \\( 1 \\)
 
 Numero accessi: \\( m \\), \\(m \\leq n \\)
 
-### Caso medio 	
+### Caso medio
 
 Numero accessi: \\( 1 \\)

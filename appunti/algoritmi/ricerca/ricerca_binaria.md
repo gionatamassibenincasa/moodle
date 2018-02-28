@@ -89,7 +89,7 @@ altrimenti nella sotto-sequenza di destra.
 
 <div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_binaria_ricorsiva_tracce"> </div>
 
-## Complessità
+## Complessità computazionale
 
 ### Caso migliore
 

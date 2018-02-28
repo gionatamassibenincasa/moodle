@@ -37,7 +37,7 @@
 <body>
 <h1 id="ricerca-indicizzata-con-accesso-diretto">Ricerca indicizzata con accesso diretto</h1>
 <h2 id="indice">Indice</h2>
-<p><div class="table-of-contents"><ul><li><a href="#ricerca-indicizzata-con-accesso-diretto">Ricerca indicizzata con accesso diretto</a><ul><li><a href="#indice">Indice</a></li><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-indicizzata-con-accesso-diretto">Algoritmo di ricerca indicizzata con accesso diretto</a><ul><li><a href="#discussione">Discussione</a></li></ul></li><li><a href="#realizzazione-iterativa">Realizzazione iterativa</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python">In Python</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita-computazionale-hash-perfetta">Complessità computazionale, hash perfetta</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li><li><a href="#complessita-computazionale-con-collisioni">Complessità computazionale, con collisioni</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
+<p><div class="table-of-contents"><ul><li><a href="#ricerca-indicizzata-con-accesso-diretto">Ricerca indicizzata con accesso diretto</a><ul><li><a href="#indice">Indice</a></li><li><a href="#problema">Problema</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li><li><a href="#esempio">Esempio</a><ul><li><a href="#input">Input</a></li><li><a href="#output">Output</a></li></ul></li></ul></li><li><a href="#algoritmo-di-ricerca-indicizzata-con-accesso-diretto">Algoritmo di ricerca indicizzata con accesso diretto</a><ul><li><a href="#discussione">Discussione</a></li></ul></li><li><a href="#realizzazione">Realizzazione</a><ul><li><a href="#in-pseudo-codice">In pseudo-codice</a></li><li><a href="#come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</a></li><li><a href="#in-javascript">In JavaScript</a></li><li><a href="#in-python-esempio">In Python (esempio)</a><ul><li><a href="#traccia-dellesecuzione">Traccia dell'esecuzione</a></li></ul></li></ul></li><li><a href="#complessita-computazionale-hash-perfetta">Complessità computazionale, hash perfetta</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li><li><a href="#complessita-computazionale-con-collisioni">Complessità computazionale, con collisioni</a><ul><li><a href="#caso-migliore">Caso migliore</a></li><li><a href="#caso-peggiore">Caso peggiore</a></li><li><a href="#caso-medio">Caso medio</a></li></ul></li></ul></li></ul></div></p>
 <h2 id="problema">Problema</h2>
 <p>Determinare se un valore \( v \) dato è presente in una sequenza \( A \) di \( n \) valori. Se il valore \( v \) è presente, restituirne la posizione, nota la distribuzione dei valori e determinata una funzione 'indicizzazione \( h(v) \) che produce valori interi.</p>
 <h3 id="input">Input</h3>
@@ -47,7 +47,7 @@
 <h3 id="esempio">Esempio</h3>
 <h4 id="input-2">Input</h4>
 <p>La sequenza \( A = [Cip, Gastone, Minnie, Pluto, Topolino ] \) di \( n = 5 \) elementi e il valore \( v = Pluto \).
-Sia data anche una procedura \( h \) che dato un valore di tipo stringa \( [c_1, c_2, \ldots, c_k_v]\) restituisce il numero intero dato da:</p>
+Sia data anche una procedura \( h \) che dato un valore di tipo stringa \( [c_1, c_2, \ldots, c_{k_v}]\) restituisce il numero intero dato da:</p>
 <pre><code>h (v):
     sia posizione := posizione nell'alfabeto del primo carattere di v
     sia indice := (posizione + 1) / 4
@@ -115,18 +115,17 @@ la funzione è <em>hash perfetta</em> ma non è <em>minimale</em>.</p>
 _preserva l’ordinamento.</p>
 <p>La funzione d’indicizzazione dell’esempio è quindi: <em>perfetta</em>, <em>mininale</em> e
 <em>preserva l’ordinamento</em>.</p>
-<h2 id="realizzazione-iterativa">Realizzazione iterativa</h2>
+<h2 id="realizzazione">Realizzazione</h2>
 <h3 id="in-pseudo-codice">In pseudo-codice</h3>
-<pre><code class="pseudo" algo="ricerca_indicizzata_esempio"></code></pre>
+<pre><code class="pseudo" algo="ricerca_indicizzata"></code></pre>
 <h3 id="come-diagramma-di-flusso-di-esecuzione">Come diagramma di flusso (di esecuzione)</h3>
-<p><img src="./codice/ricerca_indicizzata_esempio.fc.svg" alt=""></p>
-<!--![](https://code2flow.com/Hrzixh.svg)-->
+<p><img src="./codice/ricerca_indicizzata.fc.svg" alt=""></p>
 <h3 id="in-javascript">In JavaScript</h3>
-<pre><code class="javascript" algo="ricerca_indicizzata_esempio"></code></pre>
-<h3 id="in-python">In Python</h3>
-<pre><code class="python" algo="ricerca_indicizzata_esempio"></code></pre>
+<pre><code class="javascript" algo="ricerca_indicizzata"></code></pre>
+<h3 id="in-python-esempio">In Python (esempio)</h3>
+<pre><code class="python" algo="ricerca_indicizzata"></code></pre>
 <h4 id="traccia-dellesecuzione">Traccia dell’esecuzione</h4>
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_indicizzata_esempio_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true}" id="ricerca_indicizzata_esempio_tracce"> </div>
 <h2 id="complessita-computazionale-hash-perfetta">Complessità computazionale, hash perfetta</h2>
 <h3 id="caso-migliore">Caso migliore</h3>
 <p>Numero accessi: \( 1 \)</p>
@@ -144,6 +143,14 @@ _preserva l’ordinamento.</p>
 
 <script>
     renderMathInElement(document.body);
+
+    hljs.registerLanguage("pseudo", function (hljs) {
+        return {
+            case_insensitive: false,
+            keywords: "altrimenti finché restituisci se sia Falso NON_PRESENTE Vero"
+        };
+    });
+
     var algos = [];
     document.querySelectorAll('pre > code').forEach(function (e) {
         if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {

@@ -89,6 +89,14 @@ il valore non è presente nella sequenza.</p>
 
 <script>
     renderMathInElement(document.body);
+
+    hljs.registerLanguage("pseudo", function (hljs) {
+        return {
+            case_insensitive: false,
+            keywords: "altrimenti finché restituisci se sia Falso NON_PRESENTE Vero"
+        };
+    });
+
     var algos = [];
     document.querySelectorAll('pre > code').forEach(function (e) {
         if (e.attributes['algo'] && algos.indexOf(e.attributes['algo'].value) == -1) {

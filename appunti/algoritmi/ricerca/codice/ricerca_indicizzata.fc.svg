@@ -1,0 +1,150 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="563" height="302">
+                
+            <g>
+                <rect x="50" y="80"
+            width="377.59999999999997" height="30"
+            style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                    
+                <line x1="60" y1="80" x2="60" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                <line x1="417.59999999999997" y1="80" x2="417.59999999999997" y2="110"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+             
+                <title>ricerca_indicizzata = function(A, n, v, h)</title>
+            <text x="75" y="100"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="100">ricerca_indicizzata = function(A, n, v, h)</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="128.5"
+            width="139.2" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                   <title>const i = h(v)</title>
+            <text x="102" y="148.5"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="148.5">const i = h(v)</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="117" y="192"
+            width="145.8" height="30"
+            rx="3" ry="3"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />                
+            <polygon points="87,207 117,177 147,207 117,237"
+            style="fill:#ce93d8; stroke:#444; stroke-width:1" />
+            <title>(A[i] == v)</title>
+            <text x="162" y="212"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="162" y="212">(A[i] == v)</tspan>
+            </text>
+            
+            <text x="109.2" y="212"
+        font-family="monospace" font-size="13" fill="#222">if</text> <text x="124.8" y="238.95"
+        font-family="monospace" font-size="13" fill="#222">+</text> <text x="266.7" y="205.05"
+        font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+            <g>
+                <rect x="137" y="247"
+            width="92.4" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="229.4" y1="257" x2="234.4" y2="257"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="229.4" y1="267" x2="234.4" y2="267"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M234.4, 251 L250.4, 262 L234.4, 273 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return i</title>
+            <text x="152" y="267"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="267">return i</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="322.8" y="247"
+            width="193.79999999999998" height="30"
+            rx="3" ry="3"
+            style="fill:#90caf9; stroke:#444; stroke-width:1" />
+                
+                <line x1="516.6" y1="257" x2="521.6" y2="257"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+                
+                <line x1="516.6" y1="267" x2="521.6" y2="267"
+                style="fill:#a5d6a7; stroke:#444; stroke-width:1" />
+
+                <path d="M521.6, 251 L537.6, 262 L521.6, 273 Z" 
+        fill="#a5d6a7" stroke="#444" stroke-width="1" />
+                             
+                <title>return &apos;NON PRESENTE&apos;</title>
+            <text x="337.8" y="267"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="337.8" y="267">return &apos;NON PRESENTE&apos;</tspan>
+            </text>
+                
+            </g>
+            <g>
+               <rect x="25" y="13.75"
+            width="216.6" height="24"
+            style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <circle cx="25" cy="25" r="15"
+        style="fill:#fff59d; stroke:#444; stroke-width:1" />
+               <title>Program: source module</title>
+            <text x="55" y="30"
+                font-family="monospace" font-size="13" fill="#222">
+                <tspan x="55" y="30">Program: source module</tspan>
+            </text>
+            </g>
+            <g>
+               <path d="M25, 40 L25 91 Q25 95
+                29 95
+                L42 95 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M42, 92 L50, 95 L42, 98 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+                72.5 143.5
+                L79 143.5 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 140.5 L87, 143.5 L79, 146.5 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 203 Q68.5 207
+                72.5 207
+                L79 207 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M79, 204 L87, 207 L79, 210 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M117, 237 L117 258 Q117 262
+                121 262
+                L129 262 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M129, 259 L137, 262 L129, 265 Z" 
+        fill="#333" />
+            </g>
+            <g>
+               <path d="M262.8, 207 L298.8 207  Q302.8 207
+                302.8 211
+                L302.8 254 Q302.8 262
+                306.8 262
+                L314.8 262 "
+        style="fill:none; stroke:#444; stroke-width:1" />
+               <path d="M314.8, 259 L322.8, 262 L314.8, 265 Z" 
+        fill="#333" />
+            </g>
+            </svg>
