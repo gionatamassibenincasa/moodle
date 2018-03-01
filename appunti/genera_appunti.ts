@@ -87,29 +87,34 @@ let indenta = function(spazi: number): string {
   return riga;
 };
 
-let indice: string = "# Indice\n";
+const main = function(): void {
+  process.chdir(__dirname);
+  let indice: string = "# Indice\n";
 
-appunti.argomenti.forEach(function(argomento: Argomento) {
-  indice += "* " + argomento.titolo + "\n";
-  argomento.contenuti.forEach(function(contenuto) {
-    indice += indenta(4) + "* " + contenuto.titolo + "\n";
-    contenuto.pagine.forEach(function(pagina) {
-      const sorgente = contenuto.directory + "/" + pagina.sorgente;
-      const destinazione = contenuto.directory + "/" + pagina.destinazione;
-      indice +=
-        indenta(8) + "* [" + pagina.titolo + "](" + destinazione + ")" + "\n";
-      if (!risolvi_dipendenza(sorgente, destinazione, pagina.titolo)) {
-        console.log("ERRORE");
-      }
+  appunti.argomenti.forEach(function(argomento: Argomento) {
+    indice += "* " + argomento.titolo + "\n";
+    argomento.contenuti.forEach(function(contenuto) {
+      indice += indenta(4) + "* " + contenuto.titolo + "\n";
+      contenuto.pagine.forEach(function(pagina) {
+        const sorgente = contenuto.directory + "/" + pagina.sorgente;
+        const destinazione = contenuto.directory + "/" + pagina.destinazione;
+        indice +=
+          indenta(8) + "* [" + pagina.titolo + "](" + destinazione + ")" + "\n";
+        if (!risolvi_dipendenza(sorgente, destinazione, pagina.titolo)) {
+          console.log("ERRORE");
+        }
+      });
     });
   });
-});
 
-const mdi = markdownIt();
-mdi.set({
-  html: true,
-  linkify: true,
-  typographer: true
-});
+  const mdi = markdownIt();
+  mdi.set({
+    html: true,
+    linkify: true,
+    typographer: true
+  });
 
-console.log(mdi.render(indice));
+  console.log(mdi.render(indice));
+};
+
+main();

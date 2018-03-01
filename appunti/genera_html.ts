@@ -5,6 +5,15 @@ import * as toc from "markdown-it-table-of-contents";
 import * as fs from "fs";
 import * as hb from "handlebars";
 
+const prefisso_percorso_relativo = function(n: number): string {
+  let prefisso = "";
+  while (n > 0) {
+    prefisso += "../";
+    n--;
+  }
+  return prefisso;
+};
+
 export const genera_html = function(file: string, titolo: string): string {
   const h = fs.readFileSync("./template/html/testa.html", "utf-8");
   const t = fs.readFileSync("./template/html/coda.html", "utf-8");
@@ -28,6 +37,9 @@ export const genera_html = function(file: string, titolo: string): string {
 
   const sorgente_html = h + "\n" + b + "\n" + t;
   const template = hb.compile(sorgente_html);
-  const contesto = { titolo: titolo };
+  const contesto = {
+    prefisso: prefisso_percorso_relativo(file.split("/").length - 1),
+    titolo: titolo
+  };
   return template(contesto);
 };
