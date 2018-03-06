@@ -3,6 +3,7 @@ import * as handlebars from "handlebars";
 class Quesito {
   titolo: string;
   testo: string;
+  istanziaPersonaggi: boolean;
 }
 
 class QuesitiPerCategoria {
@@ -70,6 +71,7 @@ let deposito: DepositoQuesiti = {
       quesiti: [
         {
           titolo: "Algoritmo di ricerca binaria",
+          istanziaPersonaggi: true,
           testo: `<p>{{personaggio}} possiede quaderno di \( 2^n \) pagine che usa come rubrica telefonica. Le pagina contengono il nome e il
           numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che viene prima nell'ordinamento
           alfabetico è in una pagina precente quella dove è segnato l'altro.</p>
@@ -133,6 +135,7 @@ let deposito: DepositoQuesiti = {
       quesiti: [
         {
           titolo: "Algoritmo di ricerca hashing perfetto",
+          istanziaPersonaggi: true,
           testo: `<p>{{personaggio}} possiede un quaderno che usa come rubrica telefonica. Le pagine contengono il nome e il numero di un amico
           oppure sono lasciate in bianco. {{personaggio}} pu&ograve; aprire il quaderno in corrispondenza di alcune pagine
           usando una linguetta con le prime due lettere del nome del contatto da ricercare. &Egrave; noto che {{personaggio}} non
@@ -191,17 +194,19 @@ let deposito: DepositoQuesiti = {
 
 deposito.quesiti.forEach(quesitiCategoria => {
   console.log(quesitiCategoria.categoria);
-  let quesitiConPersonaggi: Quesito[] = [];
+  let quesitiIstanziati: Quesito[] = [];
   quesitiCategoria.quesiti.forEach(quesitoAnonimo => {
-    personaggi.forEach(personaggio => {
-      quesitiConPersonaggi.push({
-        titolo: quesitoAnonimo.titolo + " - " + personaggio,
-        testo: quesitoAnonimo.testo.replace(/{{personaggio}}/g, personaggio)
+    if (quesitoAnonimo.istanziaPersonaggi)
+      personaggi.forEach(personaggio => {
+        quesitiIstanziati.push({
+          titolo: quesitoAnonimo.titolo + " - " + personaggio,
+          testo: quesitoAnonimo.testo.replace(/{{personaggio}}/g, personaggio),
+          istanziaPersonaggi: true
+        });
       });
-    });
+    else quesitiIstanziati.push(quesitoAnonimo);
   });
-  quesitiCategoria.quesiti = quesitiConPersonaggi;
-  //console.log(quesitiConPersonaggi);
+  quesitiCategoria.quesiti = quesitiIstanziati;
 });
 let template = handlebars.compile(quizTemplate);
 let quizXML = template(deposito.quesiti);

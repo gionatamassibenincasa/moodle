@@ -101,7 +101,7 @@ const main = function(): void {
         indice +=
           indenta(8) + "* [" + pagina.titolo + "](" + destinazione + ")" + "\n";
         if (!risolvi_dipendenza(sorgente, destinazione, pagina.titolo)) {
-          console.log("ERRORE");
+          console.error("ERRORE");
         }
       });
     });
