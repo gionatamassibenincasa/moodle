@@ -3,5 +3,5 @@ const ricerca_indicizzata = function(A, n, v, h) {
   if (A[i] === v)
     return i;
   else
-    return 'NON PRESENTE';
+    return NON_PRESENTE;
 };

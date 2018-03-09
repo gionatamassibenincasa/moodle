@@ -3,4 +3,4 @@ ricerca_indicizzata (A, n, v, h):
     se A[i] = v:
         restituisci A[i]
     altrimenti:
-        restituisci 'NON PRESENTE'
+        restituisci NON_PRESENTE
