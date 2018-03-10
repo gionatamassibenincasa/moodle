@@ -126,7 +126,7 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
 </table>
 
 <p>
-    <strong>Completare le seguenti affermazioni</strong>.</p>
+    <strong>Completare le seguenti affermazioni con la miglior approssimazione</strong>.</p>
 
 <ul>
     <li>{{personaggio}} per cercare il numero di un amico nel sua quaderno nel modo pi&ugrave; efficiente possibile pu&ograve;
@@ -196,7 +196,7 @@ tabella:</p>
 </table>
       
       
-<p><strong>Completare le seguenti affermazioni</strong>.</p>
+<p><strong>Completare le seguenti affermazioni con la miglior approssimazione</strong>.</p>
       
 <ul>
     <li>{{personaggio}}, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
@@ -257,7 +257,7 @@ con le prime due lettere del nome del contatto da ricercare.
     </tbody>
 </table>
 
-<p><strong>Completare le seguenti affermazioni</strong>.</p>
+<p><strong>Completare le seguenti affermazioni con la miglior approssimazione</strong>.</p>
 
 <ul>
     <li>{{personaggio}}, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
@@ -306,7 +306,7 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>determinare che la pagina corrente &egrave; bianca in un tempo trascurabile (0 s).</li>
   </ul>
   
-  <p><strong>Completare le seguenti affermazioni</strong>.</p>
+  <p><strong>Completare le seguenti affermazioni con la miglior approssimazione</strong>.</p>
   
   <ul>
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico {{personaggio}} usa l'algoritmo di ricerca
@@ -348,7 +348,7 @@ algoritmo (A, n, v):
     
     restituisci NON_PRESENTE</pre>
 
-<p>Scegli un'alternativa</p>
+<p><strong>Scegli un'alternativa</strong></p>
 {1:MULTICHOICE_V:=Ricerca lineare~Ricerca binaria~Ricerca indicizzata~Riconoscimento dell'ordinamento}
 `
         },
@@ -370,7 +370,7 @@ algoritmo_ausiliare (A, n, v, indice):
   altrimenti:
       restituisci algoritmo_ausiliare (A, n, v, indice + 1)</pre>
   
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
   {1:MULTICHOICE_V:=Ricerca lineare~Ricerca binaria~Ricerca indicizzata~Riconoscimento dell'ordinamento}
   `
         }
@@ -402,7 +402,7 @@ algoritmo (A, n, v):
 
     restituisci NON_PRESENTE</pre>
   
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
   {1:MULTICHOICE_V:Ricerca lineare~=Ricerca binaria~Ricerca indicizzata~Riconoscimento dell'ordinamento}
   `
         },
@@ -429,7 +429,7 @@ algoritmo (A, n, v):
         restituisci NON_PRESENTE  
     </pre>
     
-    <p>Scegli un'alternativa</p>
+    <p><strong>Scegli un'alternativa</strong></p>
     {1:MULTICHOICE_V:Ricerca lineare~=Ricerca binaria~Ricerca indicizzata~Riconoscimento dell'ordinamento}
     `
         }
@@ -454,7 +454,7 @@ algoritmo (A, n, v, h):
     altrimenti:
         restituisci NON_PRESENTE</pre>
   
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
   {1:MULTICHOICE_V:Ricerca lineare~Ricerca binaria~=Ricerca indicizzata~Riconoscimento dell'ordinamento}
   `
         }
@@ -482,7 +482,7 @@ algoritmo (A, n):
     
     restituisci Vero</pre>
   
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
   {1:MULTICHOICE_V:Ricerca lineare~Ricerca binaria~Ricerca indicizzata~=Riconoscimento dell'ordinamento}
   `
         },
@@ -507,7 +507,7 @@ algoritmo_ausiliario (A, n , coppia)
     altrimenti:
       restituisci algoritmo_ausiliario (A, n, coppia + 1)</pre>
     
-    <p>Scegli un'alternativa</p>
+    <p><strong>Scegli un'alternativa</strong></p>
     {1:MULTICHOICE_V:Ricerca lineare~Ricerca binaria~Ricerca indicizzata~=Riconoscimento dell'ordinamento}
     `
         }
@@ -527,9 +527,9 @@ algoritmo_ausiliario (A, n , coppia)
           se la combinazione che sta provando precede o segue, nell'ordine numerico,
           quella corretta. Per aprire la cassaforte avr&agrave; al pi&ugrave; bisogno di
           provare al pi&ugrave; quante combinazioni? </span>
-</p>;
+</p>
           
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
   {1:MULTICHOICE_V:=20~100~500000~1000000}
 
   <p><span style="color: gray; font-size: 50%">Da un testo di Mauro Torelli</span></p>
@@ -550,13 +550,13 @@ algoritmo_ausiliario (A, n , coppia)
 <p>Quale delle seguenti definizioni descrive una procedura effettiva di calcolo per determinare se la sequenza numerica 
    \\( S \\) &egrave; ordinata?</p>
 
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
 
   {1:MULTICHOICE_V:=\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{vero\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\} & \\text{se \\}\\mathrm{primo\\}(S) \\succ \\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(\\mathrm{resto\\}(S)) & \\text{altrimenti\\}\\end{cases\\}\\)~\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{vero\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\} & \\text{se \\}\\mathrm{primo\\}(S) > \\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(S) &\\text{altrimenti\\}\\end{cases\\}\\)~\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{vero\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\}& \\text{se \\}\\mathrm{primo\\}(S)\\preccurlyeq\\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(\\mathrm{resto\\}(S)) & \\text{altrimenti\\}\\end{cases\\}\\)~\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{falso\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\} & \\text{se \\}\\mathrm{primo\\}(S)\\succ\\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(\\mathrm{resto\\}(S)) & \\text{altrimenti\\}\\end{cases\\}\\)}
 
   <p>Nota: 
-     \\( \\mathrm{lunghezza}(S) \\) restituisce il numero di elementi della sequenza \\( S \\) (e.g. \\mathrm{lunghezza}([s_1, s_2, s_3]) = 3 \\));
-     \\( \\mathrm{resto}(S) \\) produce una sequenza \\(S^\\prime\\) che include gli elementi di \\(S\\) dal secondo all'ultimo, nello stesso ordine (e.g. \\mathrm{resto}([s_1, s_2, s_3]) = [s_2, s_3] \\)).
+     \\( \\mathrm{lunghezza}(S) \\) restituisce il numero di elementi della sequenza \\( S \\) (e.g. \\( \\mathrm{lunghezza}([s_1, s_2, s_3]) = 3 \\)); <br>
+     \\( \\mathrm{resto}(S) \\) produce una sequenza \\(S^\\prime\\) che include gli elementi di \\(S\\) dal secondo all'ultimo, nello stesso ordine (e.g. \\( \\mathrm{resto}([s_1, s_2, s_3]) = [s_2, s_3] \\)). <br>
      \\(a \\preccurlyeq b\\) indica che \\(a\\) non segue \\(b\\) nell'ordinamento considerato mentre \\(a \\succ b\\) indica che \\(a\\)  segue \\(b\\).
   `
         }
@@ -575,7 +575,7 @@ algoritmo_ausiliario (A, n , coppia)
 <p>Quale delle seguenti definizioni descrive una procedura effettiva di calcolo per determinare se la sequenza numerica 
    \\( S = [s_1, s_2,\\ldots, s_n]\\) &egrave; ordinata?</p>
 
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
 
   {1:MULTICHOICE_V:=\\(s_i \\preccurlyeq s_{i+1\\} \\text{ per \\} i = 1, 2, \\ldots, n - 1\\)~\\(s_i \\preccurlyeq s_{i+1\\} \\text{ per \\} i = 1, 2, \\ldots, n\\)~\\(s_i \\succ s_{i+1\\} \\text{ per \\} i = 1, 2, \\ldots, n - 1\\)~\\(s_i \\succ s_{i+1\\} \\text{ per \\} i = 1, 2, \\ldots, n\\)}
 
@@ -596,7 +596,7 @@ algoritmo_ausiliario (A, n , coppia)
           testo: `
 <p>La somma di tutti gli interi compresi tra \\(1\\) e \\(n\\) vale?</p>
 
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
 
   {1:MULTICHOICE_V:=\\(\\frac{(1+n)\\cdot n\\}{2\\}\\)~\\(\\frac{(1+n)\\cdot n\\}{2\\cdot n\\}\\)~\\(\\frac{(1+n)\\}{2\\}\\)~\\(\\frac{n^2\\}{2\\}\\)}
   `
@@ -613,7 +613,7 @@ algoritmo_ausiliario (A, n , coppia)
           testo: `
 <p>Le tecniche di ricerca <em>indicizzate</em> che prevedono <em>collisioni</em> hanno prestazioni</p>
 
-  <p>Scegli un'alternativa</p>
+  <p><strong>Scegli un'alternativa</strong></p>
 
   {1:MULTICHOICE_V:=che dipendono dal rapporto tra numero delle posizioni occupate e numero delle posizioni disponibili~che dipendono dal rapporto tra numero di scambi e numero di confronti~costanti, ossia indipendenti dai dati~peggiori di quelle dell'algoritmo di ricerca lineare}
   `
