@@ -134,16 +134,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -160,7 +160,7 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
           istanziaPersonaggi: true,
           testo: `
 <p>{{personaggio}} possiede quaderno di \\( p \\) pagine che usa come rubrica telefonica. Il numero \\( p \\) soddisfa la relazione
-\\( 2^{n - 1} < p \leq 2^{n} \\).
+\\( 2^{n - 1} < p \\leq 2^{n} \\).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -202,15 +202,15 @@ tabella:</p>
     <li>{{personaggio}}, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>{{personaggio}}, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>{{personaggio}}, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>{{personaggio}}, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>{{personaggio}}, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>{{personaggio}}. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>{{personaggio}}. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 `
@@ -263,13 +263,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>{{personaggio}}, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>{{personaggio}}, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>{{personaggio}}, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>{{personaggio}}, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>{{personaggio}}, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>{{personaggio}} determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>{{personaggio}} determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>`
         }
@@ -312,13 +312,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico {{personaggio}} usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, {{personaggio}} riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -414,9 +414,9 @@ algoritmo (A, n, v):
     <p>Quale algoritmo può essere descritto nel modo seguente?</p>
     <pre>
 algoritmo (A, n, v):
-    algoritmo_ausiliario (A, v, 1, n)
+  restituisci algoritmo_ausiliario (A, v, 1, n)
 
-    algoritmo_ausiliario (A, v, sinistra, destra):
+  algoritmo_ausiliario (A, v, sinistra, destra):
     se (sinistra <= destra):
         sia centro := (sinistra + destra) / 2
         se (A[centro] > v):
@@ -532,7 +532,7 @@ algoritmo_ausiliario (A, n , coppia)
   <p>Scegli un'alternativa</p>
   {1:MULTICHOICE_V:=20~100~500000~1000000}
 
-  <p>Da un testo di Mauro Torelli</p>
+  <p><span style="color: gray; font-size: 50%">Da un testo di Mauro Torelli</span></p>
   `
         }
       ]
@@ -554,7 +554,9 @@ algoritmo_ausiliario (A, n , coppia)
 
   {1:MULTICHOICE_V:=\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{vero\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\} & \\text{se \\}\\mathrm{primo\\}(S) \\succ \\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(\\mathrm{resto\\}(S)) & \\text{altrimenti\\}\\end{cases\\}\\)~\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{vero\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\} & \\text{se \\}\\mathrm{primo\\}(S) > \\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(S) &\\text{altrimenti\\}\\end{cases\\}\\)~\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{vero\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\}& \\text{se \\}\\mathrm{primo\\}(S)\\preccurlyeq\\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(\\mathrm{resto\\}(S)) & \\text{altrimenti\\}\\end{cases\\}\\)~\\(\\mathrm{ordinato?\\}(S) = \\begin{cases\\}    \\mathrm{falso\\} & \\text{se \\}\\mathrm{lunghezza\\}(S)\\leq 1\\\\    \\mathrm{falso\\} & \\text{se \\}\\mathrm{primo\\}(S)\\succ\\mathrm{secondo\\}(S)\\\\    \\mathrm{ordinato?\\}(\\mathrm{resto\\}(S)) & \\text{altrimenti\\}\\end{cases\\}\\)}
 
-  <p>Nota: \\( \\mathrm{resto\\}(S) \\) produce una sequenza \\(S^\\prime\\) che include gli elementi di \\(S\\) dal secondo all'ultimo, nello stesso ordine.
+  <p>Nota: 
+     \\( \\mathrm{lunghezza}(S) \\) restituisce il numero di elementi della sequenza \\( S \\) (e.g. \\mathrm{lunghezza}([s_1, s_2, s_3]) = 3 \\));
+     \\( \\mathrm{resto}(S) \\) produce una sequenza \\(S^\\prime\\) che include gli elementi di \\(S\\) dal secondo all'ultimo, nello stesso ordine (e.g. \\mathrm{resto}([s_1, s_2, s_3]) = [s_2, s_3] \\)).
      \\(a \\preccurlyeq b\\) indica che \\(a\\) non segue \\(b\\) nell'ordinamento considerato mentre \\(a \\succ b\\) indica che \\(a\\)  segue \\(b\\).
   `
         }

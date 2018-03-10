@@ -61,16 +61,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -134,16 +134,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -207,16 +207,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -280,16 +280,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -353,16 +353,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -426,16 +426,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -499,16 +499,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -572,16 +572,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -645,16 +645,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -718,16 +718,16 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <li>Nel caso pi&ugrave; fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
         s.
     </li>
-    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:=(n+1)/2~n~1} s.
+    <li>Il tempo medio per trovare il numero di un amico presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=(n+1)/2~n} s.
         <em>Aiuto: coincide con il valor medio tra il caso migliore e quello peggiore.</em>
     </li>
-    <li>Nel caso meno fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Nel caso meno fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n}
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:NUMERICAL:=10:0}
+    <li>Il tempo necessario per trovare il numero dell'amico il cui numero &egrave; scritto nella decima pagina &egrave; di {1:MULTICHOICE:1~=10~(n+1)/2~n}
         s.
     </li>
 </ul>
@@ -755,7 +755,7 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
     <questiontext format="html">
       <text><![CDATA[
 <p>Topolino possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -797,15 +797,15 @@ tabella:</p>
     <li>Topolino, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Topolino, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Topolino, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Topolino, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Topolino, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Topolino. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Topolino. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -824,7 +824,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Minni possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -866,15 +866,15 @@ tabella:</p>
     <li>Minni, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Minni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Minni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Minni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Minni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Minni. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Minni. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -893,7 +893,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Pippo possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -935,15 +935,15 @@ tabella:</p>
     <li>Pippo, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Pippo, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Pippo, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Pippo, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Pippo, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Pippo. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Pippo. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -962,7 +962,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Pluto possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1004,15 +1004,15 @@ tabella:</p>
     <li>Pluto, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Pluto, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Pluto, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Pluto, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Pluto, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Pluto. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Pluto. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1031,7 +1031,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Clarabella possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1073,15 +1073,15 @@ tabella:</p>
     <li>Clarabella, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Clarabella, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Clarabella, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Clarabella, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Clarabella, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Clarabella. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Clarabella. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1100,7 +1100,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Orazio Cavezza possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1142,15 +1142,15 @@ tabella:</p>
     <li>Orazio Cavezza, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Orazio Cavezza, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Orazio Cavezza, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Orazio Cavezza, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Orazio Cavezza, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Orazio Cavezza. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Orazio Cavezza. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1169,7 +1169,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Pietro Gambadilegno possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1211,15 +1211,15 @@ tabella:</p>
     <li>Pietro Gambadilegno, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Pietro Gambadilegno, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Pietro Gambadilegno, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Pietro Gambadilegno, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Pietro Gambadilegno, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Pietro Gambadilegno. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Pietro Gambadilegno. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1238,7 +1238,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Commissario Basettoni possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1280,15 +1280,15 @@ tabella:</p>
     <li>Commissario Basettoni, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Commissario Basettoni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Commissario Basettoni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Commissario Basettoni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Commissario Basettoni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Commissario Basettoni. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Commissario Basettoni. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1307,7 +1307,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Ispettore Manetta possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1349,15 +1349,15 @@ tabella:</p>
     <li>Ispettore Manetta, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Ispettore Manetta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Ispettore Manetta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Ispettore Manetta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Ispettore Manetta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Ispettore Manetta. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Ispettore Manetta. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1376,7 +1376,7 @@ tabella:</p>
     <questiontext format="html">
       <text><![CDATA[
 <p>Eta Beta possiede quaderno di \( p \) pagine che usa come rubrica telefonica. Il numero \( p \) soddisfa la relazione
-\( 2^{n - 1} < p leq 2^{n} \).
+\( 2^{n - 1} < p \leq 2^{n} \).
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
@@ -1418,15 +1418,15 @@ tabella:</p>
     <li>Eta Beta, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
         {1:MULTICHOICE:~lineare~=binaria~indicizzata}.
     </li>
-    <li>Eta Beta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Eta Beta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
         s.
     </li>
 
-    <li>Eta Beta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n}
+    <li>Eta Beta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n}
         s.
     </li>
-    <li>Eta Beta. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=n} s.</li>
-    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=n} s.</li>
+    <li>Eta Beta. in media, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
+    <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~(n+1)/2~=n} s.</li>
 
 </ul>
 ]]></text>
@@ -1488,13 +1488,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Topolino, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Topolino, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Topolino, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Topolino, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Topolino, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Topolino determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Topolino determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1547,13 +1547,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Minni, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Minni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Minni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Minni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Minni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Minni determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Minni determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1606,13 +1606,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Pippo, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Pippo, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Pippo, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Pippo, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Pippo, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Pippo determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Pippo determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1665,13 +1665,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Pluto, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Pluto, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Pluto, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Pluto, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Pluto, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Pluto determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Pluto determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1724,13 +1724,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Clarabella, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Clarabella, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Clarabella, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Clarabella, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Clarabella, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Clarabella determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Clarabella determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1783,13 +1783,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Orazio Cavezza, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Orazio Cavezza, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Orazio Cavezza, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Orazio Cavezza, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Orazio Cavezza, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Orazio Cavezza determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Orazio Cavezza determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1842,13 +1842,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Pietro Gambadilegno, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Pietro Gambadilegno, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Pietro Gambadilegno, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Pietro Gambadilegno, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Pietro Gambadilegno, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Pietro Gambadilegno determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Pietro Gambadilegno determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1901,13 +1901,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Commissario Basettoni, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Commissario Basettoni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Commissario Basettoni, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Commissario Basettoni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Commissario Basettoni, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Commissario Basettoni determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Commissario Basettoni determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -1960,13 +1960,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Ispettore Manetta, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Ispettore Manetta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Ispettore Manetta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Ispettore Manetta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Ispettore Manetta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Ispettore Manetta determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Ispettore Manetta determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -2019,13 +2019,13 @@ con le prime due lettere del nome del contatto da ricercare.
     <li>Eta Beta, per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico, usa l'algoritmo di ricerca
     {1:MULTICHOICE:binaria~=indicizzata~lineare}.
     </li>
-    <li>Eta Beta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+    <li>Eta Beta, nel caso pi&ugrave; fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Eta Beta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=1}
+    <li>Eta Beta, nel caso meno fortunato, riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n}
     s.
     </li>
-    <li>Eta Beta determina che il nome di un amico non &egrave; registrato nel quaderno in {1:SHORTANSWER:=1} s.
+    <li>Eta Beta determina che il nome di un amico non &egrave; registrato nel quaderno in {1:MULTICHOICE:=1~10~(n+1)/2~n} s.
     </li>
 </ul>]]></text>
     </questiontext>
@@ -2076,13 +2076,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Topolino usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Topolino riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2127,13 +2127,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Minni usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Minni riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2178,13 +2178,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Pippo usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Pippo riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2229,13 +2229,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Pluto usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Pluto riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2280,13 +2280,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Clarabella usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Clarabella riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2331,13 +2331,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Orazio Cavezza usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Orazio Cavezza riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2382,13 +2382,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Pietro Gambadilegno usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Pietro Gambadilegno riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2433,13 +2433,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Commissario Basettoni usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Commissario Basettoni riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2484,13 +2484,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Ispettore Manetta usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Ispettore Manetta riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2535,13 +2535,13 @@ con le prime due lettere del nome del contatto da ricercare.
       <li>Per ricercare nel modo pi&ugrave; efficiente possibile il numero di un amico Eta Beta usa l'algoritmo di ricerca
           {1:MULTICHOICE:lineare~binaria~=indicizzata}.
       </li>
-      <li>Nel caso pi&ugrave; fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:NUMERICAL:=1:0}
+      <li>Nel caso pi&ugrave; fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:=1~10~m~n}
           s.
       </li>
-      <li>Nel caso meno fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:SHORTANSWER:=m}
+      <li>Nel caso meno fortunato, Eta Beta riesce a trovare il numero di un amico presente nel quaderno in {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
-      <li>Il tempo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:SHORTANSWER:=m}
+      <li>Il tempo massimo necessario per determinare che il nome di un amico non &egrave; presente nel quaderno &egrave; di {1:MULTICHOICE:1~10~=m~n}
           s.
       </li>
   </ul>
@@ -2671,9 +2671,9 @@ algoritmo (A, n, v):
     <p>Quale algoritmo può essere descritto nel modo seguente?</p>
     <pre>
 algoritmo (A, n, v):
-    algoritmo_ausiliario (A, v, 1, n)
+  restituisci algoritmo_ausiliario (A, v, 1, n)
 
-    algoritmo_ausiliario (A, v, sinistra, destra):
+  algoritmo_ausiliario (A, v, sinistra, destra):
     se (sinistra <= destra):
         sia centro := (sinistra + destra) / 2
         se (A[centro] > v):
@@ -2826,7 +2826,7 @@ algoritmo_ausiliario (A, n , coppia)
   <p>Scegli un'alternativa</p>
   {1:MULTICHOICE_V:=20~100~500000~1000000}
 
-  <p>Da un testo di Mauro Torelli</p>
+  <p><span style="color: gray; font-size: 50%">Da un testo di Mauro Torelli</span></p>
   ]]></text>
     </questiontext>
     <generalfeedback format="html">
@@ -2857,7 +2857,9 @@ algoritmo_ausiliario (A, n , coppia)
 
   {1:MULTICHOICE_V:=\(\mathrm{ordinato?\}(S) = \begin{cases\}    \mathrm{vero\} & \text{se \}\mathrm{lunghezza\}(S)\leq 1\\    \mathrm{falso\} & \text{se \}\mathrm{primo\}(S) \succ \mathrm{secondo\}(S)\\    \mathrm{ordinato?\}(\mathrm{resto\}(S)) & \text{altrimenti\}\end{cases\}\)~\(\mathrm{ordinato?\}(S) = \begin{cases\}    \mathrm{vero\} & \text{se \}\mathrm{lunghezza\}(S)\leq 1\\    \mathrm{falso\} & \text{se \}\mathrm{primo\}(S) > \mathrm{secondo\}(S)\\    \mathrm{ordinato?\}(S) &\text{altrimenti\}\end{cases\}\)~\(\mathrm{ordinato?\}(S) = \begin{cases\}    \mathrm{vero\} & \text{se \}\mathrm{lunghezza\}(S)\leq 1\\    \mathrm{falso\}& \text{se \}\mathrm{primo\}(S)\preccurlyeq\mathrm{secondo\}(S)\\    \mathrm{ordinato?\}(\mathrm{resto\}(S)) & \text{altrimenti\}\end{cases\}\)~\(\mathrm{ordinato?\}(S) = \begin{cases\}    \mathrm{falso\} & \text{se \}\mathrm{lunghezza\}(S)\leq 1\\    \mathrm{falso\} & \text{se \}\mathrm{primo\}(S)\succ\mathrm{secondo\}(S)\\    \mathrm{ordinato?\}(\mathrm{resto\}(S)) & \text{altrimenti\}\end{cases\}\)}
 
-  <p>Nota: \( \mathrm{resto\}(S) \) produce una sequenza \(S^\prime\) che include gli elementi di \(S\) dal secondo all'ultimo, nello stesso ordine.
+  <p>Nota: 
+     \( \mathrm{lunghezza}(S) \) restituisce il numero di elementi della sequenza \( S \) (e.g. \mathrm{lunghezza}([s_1, s_2, s_3]) = 3 \));
+     \( \mathrm{resto}(S) \) produce una sequenza \(S^\prime\) che include gli elementi di \(S\) dal secondo all'ultimo, nello stesso ordine (e.g. \mathrm{resto}([s_1, s_2, s_3]) = [s_2, s_3] \)).
      \(a \preccurlyeq b\) indica che \(a\) non segue \(b\) nell'ordinamento considerato mentre \(a \succ b\) indica che \(a\)  segue \(b\).
   ]]></text>
     </questiontext>
