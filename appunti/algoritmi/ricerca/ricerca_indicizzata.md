@@ -88,7 +88,7 @@ _preserva l'ordinamento_.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_tracce.json" data-params="{'embeddedMode': true}" id="ricerca_indicizzata_esempio_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_indicizzata_esempio_traccia.json" data-params="{'embeddedMode': true}" id="ricerca_indicizzata_esempio_tracce"> </div>
 
 ## Complessità computazionale, hash perfetta
 

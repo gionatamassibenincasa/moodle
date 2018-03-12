@@ -54,7 +54,7 @@ se tutte le coppie sono ordinate.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/verifica_ordinamento_iterativa_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="verifica_ordinamento_iterativa_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/verifica_ordinamento_iterativa_traccia.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="verifica_ordinamento_iterativa_tracce"> </div>
 
 ## Realizzazione ricorsiva
 
@@ -76,7 +76,7 @@ se tutte le coppie sono ordinate.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/verifica_ordinamento_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="verifica_ordinamento_ricorsiva_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/verifica_ordinamento_ricorsiva_traccia.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="verifica_ordinamento_ricorsiva_tracce"> </div>
 
 ## Un formalismo matematico
 

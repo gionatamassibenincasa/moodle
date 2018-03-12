@@ -65,7 +65,7 @@ altrimenti nella sotto-sequenza di destra.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_iterativa_tracce.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_binaria_iterativa_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_iterativa_traccia.json" data-params="{'embeddedMode': true,'startingInstruction': 5}" id="ricerca_binaria_iterativa_tracce"> </div>
 
 ## Realizzazione ricorsiva
 
@@ -87,7 +87,7 @@ altrimenti nella sotto-sequenza di destra.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_binaria_ricorsiva_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_binaria_ricorsiva_traccia.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_binaria_ricorsiva_tracce"> </div>
 
 ## Complessità computazionale
 

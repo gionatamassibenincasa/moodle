@@ -57,7 +57,7 @@ il valore non è presente nella sequenza.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_iterativa_tracce.json" data-params="{'embeddedMode': true" id="ricerca_lineare_iterativa_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_iterativa_traccia.json" data-params="{'embeddedMode': true" id="ricerca_lineare_iterativa_tracce"> </div>
 
 ## Realizzazione ricorsiva
 
@@ -79,7 +79,7 @@ il valore non è presente nella sequenza.
 
 #### Traccia dell'esecuzione
 
-<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_ricorsiva_tracce.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_lineare_ricorsiva_tracce"> </div>
+<div class="pytutorVisualizer" data-tracefile="./tracce/ricerca_lineare_ricorsiva_traccia.json" data-params='{"embeddedMode": true, "jumpToEnd": true' id="ricerca_lineare_ricorsiva_tracce"> </div>
 
 ## Complessità computazionale
 
