@@ -593,7 +593,7 @@ algoritmo_ausiliario (A, n , coppia)
           Quante pagine dovrà aprire, al pi&ugrave;, per trovare il lemma che
           sta cercando?
 
-          <br><em>Si suppone che usa la strategia pi&ugrave; efficiente</em>          
+          <br><em>Si suppone che usi la strategia pi&ugrave; efficiente</em>          
 </p>
           
   <p><strong>Scegli un'alternativa</strong></p>
@@ -618,7 +618,7 @@ algoritmo_ausiliario (A, n , coppia)
           Se il mago non ha poteri magici ma conosce e sa applicare gli algoritmi,
           quanto vale \\( n \\)?
 
-          <br><em>Si suppone che usa la strategia pi&ugrave; efficiente</em>          
+          <br><em>Si suppone che usi la strategia pi&ugrave; efficiente</em>          
 </p>
           
   <p><strong>Scegli un'alternativa</strong></p>
@@ -639,7 +639,7 @@ algoritmo_ausiliario (A, n , coppia)
           quella corretta. Per aprire la cassaforte avr&agrave; al pi&ugrave; bisogno di
           provare al pi&ugrave; quante combinazioni?
           
-          <br><em>Si suppone che usa la strategia pi&ugrave; efficiente</em>
+          <br><em>Si suppone che usi la strategia pi&ugrave; efficiente</em>
 </p>
           
   <p><strong>Scegli un'alternativa</strong></p>
