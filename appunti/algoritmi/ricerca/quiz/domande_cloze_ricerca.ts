@@ -95,7 +95,7 @@ let deposito: DepositoQuesiti = {
 numero di un amico e sono tutte piene. Tra i nomi scritti su due pagine consecutive, comunque prese, non sussiste nessun
 criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice.</p>
 
-<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portale a termine sono indicati nella seguente
+<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portarle a termine sono indicati nella seguente
     tabella:</p>
 
 <table>
@@ -159,7 +159,7 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
       ),
       quesiti: [
         {
-          titolo: "Algoritmo di ricerca binaria - cloze quaderno-rubrica",
+          titolo: "Algoritmo di ricerca binaria - Cloze quaderno-rubrica",
           tipo: TipoQuesito.CLOZE,
           istanziaPersonaggi: true,
           testo: `
@@ -168,7 +168,7 @@ criterio di ordinamento. Non sono note funzioni che mappano un nome in un indice
 Le pagina contengono il nome e il numero di un amico oppure sono lasciate in bianco. Dati una coppia di nomi nel quaderno, quello che
 viene prima nell'ordinamento alfabetico &egrave; in una pagina precente quella dove &egrave; l'altro.</p>
       
-<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portale a termine sono indicati nella seguente
+<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portarle a termine sono indicati nella seguente
 tabella:</p>
       
 <table>
@@ -236,7 +236,7 @@ Le pagine contengono il nome e il numero di un amico oppure sono lasciate in bia
 con le prime due lettere del nome del contatto da ricercare.
 &Egrave; noto che {{personaggio}} non ha due o pi&ugrave; amici le cui prime due lettere del nome siano uguali.</p>
 
-<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portale a termine sono indicati nella seguente
+<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portarle a termine sono indicati nella seguente
     tabella:
 </p>
 
@@ -280,34 +280,23 @@ con le prime due lettere del nome del contatto da ricercare.
     },
     {
       categoria: nome_categoria(
-        "Ricerca indicizzata/Hash con collisioni/Ricerca indicizata, hashing con collisioni - Cloze quaderno-rubrica"
+        "Ricerca indicizzata/Hash con collisioni/Ricerca indicizzata, hashing con collisioni - Cloze quaderno-rubrica"
       ),
       quesiti: [
         {
           titolo:
-            "Algoritmo di ricerca indicizzata con collisioni - cloze quaderno-rubrica",
+            "Algoritmo di ricerca indicizzata con collisioni - Cloze quaderno-rubrica",
           tipo: TipoQuesito.CLOZE,
           istanziaPersonaggi: true,
           testo: `
   <p>{{personaggio}} possiede un quaderno che usa come rubrica telefonica. Le pagine contengono il nome e il numero di un amico
       oppure sono lasciate in bianco. La prima pagina ha una linguetta che permette di aprire la rubrica sul primo nome che
       inizia con la lettera
-      <em>A</em>. La pagina
-      <strong>
-          <em>m</em>
-      </strong> ha la linguetta che permette di accedere al primo nome che inizia con la lettera
-      <em>B</em> e così via. Il fatto che ci siano solo
-      <em>m</em> pagine per ogni lettera non preoccupa {{personaggio}} perché lui non ha pi&ugrave; di
-      <em>m</em> amici il cui nome inizia con la stessa lettera.</p>
+      <em>A</em>. La pagina \\( m \\) ha la linguetta che permette di accedere al primo nome che inizia con la lettera
+      <em>B</em> e così via. Il fatto che ci siano solo \\( m \\) pagine per ogni lettera non preoccupa {{personaggio}}
+      perché lui non ha pi&ugrave; di \\( m \\) amici il cui nome inizia con la stessa lettera.</p>
   
-  <p>{{personaggio}} sa realizzare le seguenti operazioni:</p>
-  <ul>
-      <li>aprire la rubrica alla pagina corrispondente alla lettera iniziale di un nome in un tempo trascurabile (0 s);</li>
-      <li>confrontare il nome da ricercare con quello scritto nella pagina della rubrica in un secondo (1 s);</li>
-      <li>voltare pagina dalla precedente alla successiva in un tempo trascurabile (0 s);</li>
-  </ul>
-
-  <p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portale a termine sono indicati nella seguente
+<p>Le azioni che {{personaggio}} pu&ograve; realizzare e i tempi che impiega per portarle a termine sono indicati nella seguente
     tabella:
 </p>
 
@@ -576,7 +565,7 @@ algoritmo_ausiliario (A, n , coppia)
     },
     {
       categoria: nome_categoria(
-        "Ricerca binaria/Riceca binaria - Esercizi di comprensione"
+        "Ricerca binaria/Ricerca binaria - Esercizi di comprensione"
       ),
       quesiti: [
         {
