@@ -4,7 +4,8 @@ import { Specifica } from "./specifica";
 import { Verifica } from "./verifica";
 import { Consegna } from "./consegna";
 import { Pagina } from "./pagina";
-import { Editor } from "codemirror/index";
+import { Compito } from "./compito_20180317";
+import * as CodeMirror from "codemirror";
 
 //
 // MAIN
@@ -20,7 +21,7 @@ let generaListaSpecifiche = function(quesiti: Quesito[]): Specifica[] {
   return specifiche;
 };
 
-let configurazioneEditor = {
+let configurazioneEditor: CodeMirror.EditorConfiguration = {
   //value: '\n',
   mode: {
     name: "sql"
@@ -30,133 +31,41 @@ let configurazioneEditor = {
   viewportMargin: 10, //Infinity,
   extraKeys: {
     "Ctrl-Space": "autocomplete"
-  },
-  scrollbarStyle: "simple"
+  }
 };
 
-let compito: Quesito[] = [
-  // 1
-  new Quesito(
-    "π<sub>Nome</sub>(Attore)",
-    "Proietta l'attributo <strong>nome</strong> della relazione <strong>Attore</strong>",
-    0
-  ),
-  // 2
-  new Quesito(
-    "π<sub>Titolo, Anno</sub>(Film)",
-    "Proietta gli attributi <strong>titolo</strong> e <strong>anno</strong> della relazione <strong>Film</strong>",
-    0
-  ),
-  // 3
-  new Quesito(
-    "π<sub>*</sub>(Film)",
-    "Proietta <strong>tutti gli attributi</strong> della relazione <strong>Film</strong>",
-    0
-  ),
-  // 4
-  new Quesito(
-    "σ<sub>Nome LIKE 'G%', Cognome LIKE 'M%'</sub>(Attore)",
-    "Seleziona le ennuple della relazione <strong>Attore</strong> che soddisfano la condizione composta <strong>nome inizia per G E cognome inizia per M</strong>",
-    0
-  ),
-  // 5
-  new Quesito(
-    "σ<sub>Nome LIKE 'Comedy'</sub>(Categoria)",
-    "Seleziona le ennuple della relazione <strong>Categoria</strong> che soddisfano la condizione <strong>nome = 'Comedy'</strong>",
-    0
-  ),
-  // 6
-  new Quesito(
-    "σ<sub>categoria_id = 15</sub>(Categoria)",
-    "Seleziona le ennuple della relazione <strong>Categoria</strong> che soddisfano la condizione <strong>categoria_id = 15</strong>",
-    0
-  ),
-  // 7
-  new Quesito(
-    "π<sub>Nome</sub>(σ<sub>attore_id >= 150</sub>(Attore))",
-    "Proietta il <strong>nome<strong> della selezione dele ennuple della relazione <strong>Attore</strong> che soddisfano la condizione <strong>attore_id >= 150</strong>",
-    0
-  ),
-  // 8
-  new Quesito(
-    "π<sub>Titolo</sub>(σ<sub>anno = 2006</sub>(Film))",
-    "Proietta il <strong>titolo<strong> della selezione dele ennuple della relazione <strong>Film</strong> che soddisfano la condizione <strong>anno = 2006</strong>",
-    0
-  ),
-  // 9
-  new Quesito(
-    "Film X Categoria",
-    "Calcola il prodotto cartesiano di <strong>Film</strong> per <strong>Categoria</strong>",
-    0
-  ),
-  // 10
-  new Quesito(
-    "Film X Film_Categoria",
-    "Calcola il prodotto cartesiano di <strong>Film</strong> per <strong>Film_Categoria</strong>",
-    0
-  ),
-  // 11
-  new Quesito(
-    "Film |X|<sub>film_id</sub> Film_Categoria",
-    "Calcola la giunzione di <strong>Film</strong> e <strong>Film_Categoria</strong> dove gli attributi <strong>film_id</strong> assumono lo stesso valore",
-    0
-  ),
-  // 12
-  new Quesito(
-    "Film |X|<sub>film_id</sub> Film_Categoria |X|<sub>categoria_id</sub> Categoria",
-    "Calcola la giunzione di <strong>Film</strong>, <strong>Film_Categoria</strong> e <strong>Categoria</strong> dove gli attributi <strong>film_id</strong> e <strong>categoria_id</strong> assumono lo stesso valore",
-    0
-  ),
-  // 13
-  new Quesito(
-    "π<sub>Titolo, Nome</sub>(Film |X|<sub>film_id</sub> Film_Categoria |X|<sub>categoria_id</sub> Categoria)",
-    "Proietta il <strong>titolo</strong> del film e il <strong>nome</strong> della categoria della giunzione di <strong>Film</strong>, <strong>Film_Categoria</strong> e <strong>Categoria</strong> dove gli attributi <strong>film_id</strong> e <strong>categoria_id</strong> assumono lo stesso valore",
-    0
-  ),
-  // 14
-  new Quesito(
-    "π<sub>Titolo, Nome, Anno</sub>(σ<sub>anno <= 2010</sub>(Film |X|<sub>film_id</sub> Film_Categoria |X|<sub>categoria_id</sub> Categoria))",
-    "Proietta il <strong>titolo</strong> del film, il <strong>nome</strong> della categoria e l'<strong>anno</strong> di produzione della giunzione di <strong>Film</strong>, <strong>Film_Categoria</strong> e <strong>Categoria</strong> dove gli attributi <strong>film_id</strong> e <strong>categoria_id</strong> assumono lo stesso valore e dove &egrave soddisfatta la condizione <strong>anno <= 2010</strong>",
-    0
-  ),
-  // 15
-  new Quesito(
-    "π<sub>Nome</sub>(Attore) ∪ π<sub>Cognome → Nome</sub>(Attore)",
-    "Unisci la proiezione del <strong>nome</strong> con quella del <strong>cognome</strong> ridenominato in <strong>nome</strong> della relazione <strong>Attore</strong>",
-    0
-  ),
-  // 16
-  new Quesito(
-    "π<sub>Nome</sub>(Attore) ∩ π<sub>Cognome → Nome</sub>(Attore)",
-    "Interseca la proiezione del <strong>nome</strong> con quella del <strong>cognome</strong> ridenominato in <strong>nome</strong> della relazione <strong>Attore</strong>",
-    0
-  ),
-  // 17
-  new Quesito(
-    "π<sub>Nome</sub>(Attore) - π<sub>Cognome → Nome</sub>(Attore)",
-    "Sottrai dalla proiezione del <strong>nome</strong> della relazione <strong>Attori</strong> quella del <strong>cognome</strong> ridenominato in <strong>nome</strong> della stessa relazione <strong>Attore</strong>",
-    0
-  )
-];
-
-let specifiche = generaListaSpecifiche(compito);
+let specifiche = generaListaSpecifiche(Compito.quesiti);
 pagina.aggiungiSpecifiche(specifiche);
 
-/*
+function editor(id: HTMLTextAreaElement) {
+  return CodeMirror.fromTextArea(id, configurazioneEditor);
+}
+
+let codice: NodeListOf<HTMLTextAreaElement> = document.querySelectorAll(
+  ".codice"
+);
+for (let j = 0; j < codice.length; j++) {
+  editor(codice[j]).refresh();
+}
+
 let invia = function() {
-  let classe = compito.classe();
-  let alunno = new Alunno(
-    document.querySelector("#alunno-nome").value,
-    document.querySelector("#alunno-cognome").value
-  );
+  let classe = Compito.classe,
+    inputNome: HTMLInputElement = document.querySelector("#alunno-nome"),
+    inputCognome: HTMLInputElement = document.querySelector("#alunno-cognome"),
+    alunno = new Alunno(inputNome.value, inputCognome.value);
   if (alunno.vuoto()) {
     alert(
       "Per continuare devi immettere il nome e il cognome nelle caselle in alto a destra."
     );
     return;
   }
-  let editor = document.querySelectorAll(".CodeMirror")[0].CodeMirror;
-  let artefatto = editor.getValue();
+  let artefatti: string[] = [];
+  let editors: NodeListOf<Element> = document.querySelectorAll(".CodeMirror");
+  for (let j = 0; j < editors.length; j++) {
+    let e: any = editors[j];
+    artefatti.push(e.CodeMirror.getValue());
+  }
+  let artefatto: string = artefatti.join("\n");
   if (artefatto === "") {
     alert("Per continuare devi immettere del testo.");
     return;
@@ -166,4 +75,3 @@ let invia = function() {
   consegna.invia();
 };
 document.querySelector("#invia").addEventListener("click", invia);
-*/

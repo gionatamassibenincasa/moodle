@@ -104,8 +104,7 @@ export class Pagina {
         spec.quesito.descrizione_breve +
         '<br><textarea id="editor_' +
         spec.indice +
-        '"></textarea>';
-
+        '" class="codice"></textarea>';
       elenco.appendChild(item);
     });
   }
