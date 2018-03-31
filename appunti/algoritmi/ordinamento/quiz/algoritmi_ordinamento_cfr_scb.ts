@@ -1,8 +1,9 @@
 export class Prestazioni {
   private confronti: number;
-  private scambi: 0;
-  constructor() {
-    this.confronti = this.scambi = 0;
+  private scambi: number;
+  constructor(confronti = 0, scambi = 0) {
+    this.confronti = confronti;
+    this.scambi = scambi;
   }
   incrementaConfronti() {
     this.confronti++;
@@ -15,20 +16,28 @@ export class Prestazioni {
 export class RigaRegistro {
   private iterazione: number;
   private sequenza: number[];
+  private prestazioniIterazione: Prestazioni;
   private prestazioni: Prestazioni;
   private ultimo_ordinato: number;
+  private confronti: Array<[number, number]>;
   private scambi: Array<[number, number]>;
   constructor(
     sequenza: number[],
     iterazione: number = 0,
     ultimo_ordinato: number = 0,
+    confronti: Array<[number, number]>,
     scambi: Array<[number, number]>,
     prestazioni: Prestazioni
   ) {
     this.iterazione = iterazione;
     this.sequenza = Object.assign([], sequenza);
     this.ultimo_ordinato = ultimo_ordinato;
+    this.confronti = confronti;
     this.scambi = scambi;
+    this.prestazioniIterazione = new Prestazioni(
+      confronti.length,
+      scambi.length
+    );
     this.prestazioni = prestazioni
       ? Object.assign({}, prestazioni)
       : new Prestazioni();
@@ -45,47 +54,62 @@ export class Registro {
   }
 }
 
-interface SortingAlgorithm {
-  ordina(): void;
-  traccia(): Registro;
-  nome(): string;
-}
+type CoppiaIndici = [number, number];
 
-export class SelectionSort implements SortingAlgorithm {
-  private sequenza: number[];
-  private prestazioni: Prestazioni;
-  private registro: Registro;
-  constructor(sequenza: number[]) {
+abstract class BaseSort {
+  protected sequenza: number[];
+  protected prestazioni: Prestazioni;
+  protected registro: Registro;
+  protected cfr: CoppiaIndici[];
+  protected scb: CoppiaIndici[];
+  protected readonly nomeAlgoritmo: string;
+
+  constructor(sequenza: number[], nome: string) {
     this.sequenza = sequenza;
     this.prestazioni = new Prestazioni();
     this.registro = new Registro();
+    this.nomeAlgoritmo = nome;
   }
 
-  public nome() {
-    return "Selection sort";
-  }
-
-  private precede(a: number, b: number): boolean {
+  protected precede(v: number[], i: number, j: number): boolean {
     if (this.prestazioni) {
       this.prestazioni.incrementaConfronti();
+      this.cfr.push([i, j]);
     }
-    return a <= b;
+    return v[i] <= v[j];
   }
 
-  private scambia(v: number[], i: number, j: number): void {
+  protected scambia(v: number[], i: number, j: number): void {
     if (i == j) return;
     if (this.prestazioni) {
       this.prestazioni.incrementaScambi();
+      this.scb.push([i, j]);
     }
     const tmp: number = v[i];
     v[i] = v[j];
     v[j] = tmp;
   }
 
+  public traccia() {
+    return this.registro;
+  }
+
+  public nome() {
+    return this.nomeAlgoritmo;
+  }
+
+  abstract ordina(): void;
+}
+
+export class SelectionSort extends BaseSort {
+  constructor(sequenza: number[]) {
+    super(sequenza, "Selection sort");
+  }
+
   private seleziona_indice_minimo(v: number[], i: number): number {
     let indice_minimo_corrente = i;
     for (i++; i < v.length; i++) {
-      if (this.precede(v[i], v[indice_minimo_corrente])) {
+      if (this.precede(v, i, indice_minimo_corrente)) {
         indice_minimo_corrente = i;
       }
     }
@@ -95,7 +119,7 @@ export class SelectionSort implements SortingAlgorithm {
   public ordina(): void {
     let v: number[] = this.sequenza;
     this.registro.aggiungiRiga(
-      new RigaRegistro(v, 0, -1, [], this.prestazioni)
+      new RigaRegistro(v, 0, -1, [], [], this.prestazioni)
     );
 
     for (
@@ -103,6 +127,8 @@ export class SelectionSort implements SortingAlgorithm {
       primo_disordinato < v.length - 1;
       primo_disordinato++
     ) {
+      this.cfr = [];
+      this.scb = [];
       const indice_minimo = this.seleziona_indice_minimo(v, primo_disordinato);
       this.scambia(v, primo_disordinato, indice_minimo);
       this.registro.aggiungiRiga(
@@ -110,85 +136,62 @@ export class SelectionSort implements SortingAlgorithm {
           v,
           primo_disordinato + 1,
           primo_disordinato,
-          [[primo_disordinato, indice_minimo]],
+          this.cfr,
+          this.scb,
           this.prestazioni
         )
       );
     }
   }
-
-  public traccia() {
-    return this.registro;
-  }
 }
 
-export class InsertionSort implements SortingAlgorithm {
-  private sequenza: number[];
-  private prestazioni: Prestazioni;
-  private registro: Registro;
+export class InsertionSort extends BaseSort {
   constructor(sequenza: number[]) {
-    this.sequenza = sequenza;
-    this.prestazioni = new Prestazioni();
-    this.registro = new Registro();
+    super(sequenza, "Insertion sort");
   }
 
-  public nome() {
-    return "Insertion sort";
-  }
-
-  private precede(a: number, b: number): boolean {
-    if (this.prestazioni) {
-      this.prestazioni.incrementaConfronti();
-    }
-    return a <= b;
-  }
-
-  private scambia(v: number[], i: number, j: number): void {
-    if (i == j) return;
-    if (this.prestazioni) {
-      this.prestazioni.incrementaScambi();
-    }
-    const tmp: number = v[i];
-    v[i] = v[j];
-    v[j] = tmp;
-  }
-
-  private inserisci(v: number[], i: number): Array<[number, number]> {
+  private inserisci(v: number[], i: number): void {
+    let confronti = [];
     let scambi = [];
-    for (; i > 0 && this.precede(v[i], v[i - 1]); i--) {
-      this.scambia(v, i - 1, i);
-      scambi.push([i - 1, i]);
+    let scambiato: boolean = true;
+    for (; i > 0 && scambiato; i--) {
+      scambiato = this.precede(v, i, i - 1);
+      if (scambiato) {
+        this.scambia(v, i - 1, i);
+      }
     }
-    return scambi;
   }
 
   public ordina(): void {
     let v: number[] = this.sequenza;
-    this.registro.aggiungiRiga(new RigaRegistro(v, 0, 0, [], this.prestazioni));
+    this.registro.aggiungiRiga(
+      new RigaRegistro(v, 0, 0, [], [], this.prestazioni)
+    );
 
     for (
       let primo_disordinato = 1;
       primo_disordinato < v.length;
       primo_disordinato++
     ) {
-      let scambi = this.inserisci(v, primo_disordinato);
+      this.cfr = [];
+      this.scb = [];
+
+      this.inserisci(v, primo_disordinato);
       this.registro.aggiungiRiga(
         new RigaRegistro(
           v,
           primo_disordinato,
           primo_disordinato,
-          scambi,
+          this.cfr,
+          this.scb,
           this.prestazioni
         )
       );
     }
   }
-
-  public traccia() {
-    return this.registro;
-  }
 }
 
+/*
 export class BubbleSort implements SortingAlgorithm {
   private sequenza: number[];
   private prestazioni: Prestazioni;
@@ -257,6 +260,7 @@ export class BubbleSort implements SortingAlgorithm {
     return this.registro;
   }
 }
+*/
 
 let sequenze = [
   [9, 0, 1, 2, 3, 4, 5, 6, 7, 8],
@@ -266,9 +270,9 @@ let sequenze = [
 
 let soluzioni = [];
 sequenze.forEach(v => {
-  let algoritmi = [SelectionSort, InsertionSort, BubbleSort];
+  let algoritmi = [SelectionSort, InsertionSort]; //, BubbleSort];
   algoritmi.forEach(algoritmo => {
-    let istanzaAlgoritmo = new algoritmo(v);
+    let istanzaAlgoritmo = new algoritmo(Object.assign([], v));
     istanzaAlgoritmo.ordina();
     soluzioni.push({
       algoritmo: istanzaAlgoritmo.nome(),
