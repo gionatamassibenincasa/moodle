@@ -90,6 +90,11 @@ abstract class BaseSort {
     v[j] = tmp;
   }
 
+  protected inizioIterazione() {
+    this.cfr = [];
+    this.scb = [];
+  }
+
   public traccia() {
     return this.registro;
   }
@@ -127,8 +132,7 @@ export class SelectionSort extends BaseSort {
       primo_disordinato < v.length - 1;
       primo_disordinato++
     ) {
-      this.cfr = [];
-      this.scb = [];
+      this.inizioIterazione();
       const indice_minimo = this.seleziona_indice_minimo(v, primo_disordinato);
       this.scambia(v, primo_disordinato, indice_minimo);
       this.registro.aggiungiRiga(
@@ -173,8 +177,7 @@ export class InsertionSort extends BaseSort {
       primo_disordinato < v.length;
       primo_disordinato++
     ) {
-      this.cfr = [];
-      this.scb = [];
+      this.inizioIterazione();
 
       this.inserisci(v, primo_disordinato);
       this.registro.aggiungiRiga(
@@ -191,95 +194,67 @@ export class InsertionSort extends BaseSort {
   }
 }
 
-/*
-export class BubbleSort implements SortingAlgorithm {
-  private sequenza: number[];
-  private prestazioni: Prestazioni;
-  private registro: Registro;
+export class BubbleSort extends BaseSort {
   constructor(sequenza: number[]) {
-    this.sequenza = sequenza;
-    this.prestazioni = new Prestazioni();
-    this.registro = new Registro();
+    super(sequenza, "Bubble sort");
   }
 
-  public nome() {
-    return "Bubble sort";
-  }
-
-  private precede(a: number, b: number): boolean {
-    if (this.prestazioni) {
-      this.prestazioni.incrementaConfronti();
-    }
-    return a <= b;
-  }
-
-  private scambia(v: number[], i: number, j: number): void {
-    if (i == j) return;
-    if (this.prestazioni) {
-      this.prestazioni.incrementaScambi();
-    }
-    const tmp: number = v[i];
-    v[i] = v[j];
-    v[j] = tmp;
-  }
-
-  private sposta(v: number[], i: number): Array<[number, number]> {
-    let scambi = [];
+  private sali(v: number[], i: number): void {
     for (let j = v.length - 1; j > i; j--) {
-      if (this.precede(v[j], v[j - 1])) {
+      if (this.precede(v, j, j - 1)) {
         this.scambia(v, j - 1, j);
-        scambi.push([j - 1, j]);
       }
     }
-    return scambi;
   }
 
   public ordina(): void {
     let v: number[] = this.sequenza;
-    this.registro.aggiungiRiga(new RigaRegistro(v, 0, 0, [], this.prestazioni));
+    this.registro.aggiungiRiga(
+      new RigaRegistro(v, 0, 0, [], [], this.prestazioni)
+    );
 
     for (
       let primo_disordinato = 0;
       primo_disordinato < v.length - 1;
       primo_disordinato++
     ) {
-      let scambi = this.sposta(v, primo_disordinato);
+      this.inizioIterazione();
+
+      this.sali(v, primo_disordinato);
       this.registro.aggiungiRiga(
         new RigaRegistro(
           v,
           primo_disordinato + 1,
           primo_disordinato,
-          scambi,
+          this.cfr,
+          this.scb,
           this.prestazioni
         )
       );
     }
   }
-
-  public traccia() {
-    return this.registro;
-  }
 }
-*/
 
-let sequenze = [
-  [9, 0, 1, 2, 3, 4, 5, 6, 7, 8],
-  [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
-  [5, 6, 7, 8, 9, 0, 1, 2, 3, 4]
-];
+function test() {
+  let sequenze = [
+    [9, 0, 1, 2, 3, 4, 5, 6, 7, 8],
+    [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+    [5, 6, 7, 8, 9, 0, 1, 2, 3, 4]
+  ];
 
-let soluzioni = [];
-sequenze.forEach(v => {
-  let algoritmi = [SelectionSort, InsertionSort]; //, BubbleSort];
-  algoritmi.forEach(algoritmo => {
-    let istanzaAlgoritmo = new algoritmo(Object.assign([], v));
-    istanzaAlgoritmo.ordina();
-    soluzioni.push({
-      algoritmo: istanzaAlgoritmo.nome(),
-      sequenza: v,
-      traccia: istanzaAlgoritmo.traccia()
+  let soluzioni = [];
+  sequenze.forEach(v => {
+    let algoritmi = [SelectionSort, InsertionSort, BubbleSort];
+    algoritmi.forEach(algoritmo => {
+      let istanzaAlgoritmo = new algoritmo(Object.assign([], v));
+      istanzaAlgoritmo.ordina();
+      soluzioni.push({
+        algoritmo: istanzaAlgoritmo.nome(),
+        sequenza: v,
+        traccia: istanzaAlgoritmo.traccia()
+      });
     });
   });
-});
 
-console.log(JSON.stringify(soluzioni));
+  console.log(JSON.stringify(soluzioni));
+}
