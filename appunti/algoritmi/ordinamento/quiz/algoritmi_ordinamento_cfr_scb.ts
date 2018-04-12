@@ -1,4 +1,4 @@
-import { handlebars } from "handlebars";
+import * as Handlebars from "handlebars";
 import { JSDOM } from "jsdom";
 
 export enum TipoOperazione {
@@ -154,7 +154,7 @@ abstract class BaseSort {
     this.operazioni.push(TipoOperazione.nuovaIterazione);
   }
 
-  public traccia(): Traccia {
+  public esecuzione(): Traccia {
     return {
       algoritmo: this.nome(),
       sequenza_iniziale: this.sequenza_iniziale,
@@ -212,7 +212,7 @@ export class SelectionSort extends BaseSort {
       );
     }
     this.fine();
-    return this.traccia();
+    return this.esecuzione();
   }
 }
 
@@ -261,7 +261,7 @@ export class InsertionSort extends BaseSort {
       );
     }
     this.fine();
-    return this.traccia();
+    return this.esecuzione();
   }
 }
 
@@ -306,28 +306,20 @@ export class BubbleSort extends BaseSort {
       );
     }
     this.fine();
-    return this.traccia();
+    return this.esecuzione();
   }
 }
 
-function test() {
-  let sequenze = [
-    [9, 0, 1, 2, 3, 4, 5, 6, 7, 8],
-    [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
-    [5, 6, 7, 8, 9, 0, 1, 2, 3, 4]
-  ];
+class Sequenza {
+  stringa: string;
+  posizioni: number[];
+}
 
-  let soluzioni = [];
-  sequenze.forEach(v => {
-    let algoritmi = [SelectionSort, InsertionSort, BubbleSort];
-    algoritmi.forEach(algoritmo => {
-      let istanzaAlgoritmo = new algoritmo(Object.assign([], v));
-      istanzaAlgoritmo.ordina();
-      soluzioni.push(istanzaAlgoritmo.traccia());
-    });
-  });
-
-  console.log(JSON.stringify(soluzioni));
+class ContestoQuiz {
+  esecuzione: Traccia;
+  categoria: string;
+  titolo: string;
+  opzioniMoodle: string[];
 }
 
 function analizza(stringa) {
@@ -351,6 +343,58 @@ function analizza(stringa) {
     }
   }
   return ret;
+}
+
+function generaAlternative(esecuzione: Traccia): Sequenza[] {
+  let alternative: Sequenza[] = [];
+  esecuzione.traccia.forEach((r, i) => {
+    let stringa = JSON.stringify(r.sequenza)
+      .slice(1)
+      .slice(0, -1);
+    let presente: boolean = false;
+    for (let j: number = 0; j < alternative.length && !presente; j++) {
+      if (alternative[j].stringa === stringa) {
+        alternative[j].posizioni.push(i);
+        presente = true;
+      }
+    }
+    if (!presente) {
+      alternative.push({ stringa: stringa, posizioni: [i] });
+    }
+  });
+  return alternative;
+}
+
+function ordinaAlternativePerNome(alternative: Sequenza[]): Sequenza[] {
+  alternative.sort((a, b): number => {
+    if (a.stringa > b.stringa) return 1;
+    if (a.stringa < b.stringa) return -1;
+    return 0;
+  });
+  return alternative;
+}
+
+function moodleMultiChoice(alternative: Sequenza[]): string[] {
+  ordinaAlternativePerNome(alternative);
+  let opzioni: string[] = [];
+  let iters = alternative.reduce((prev, curr) => {
+    return prev + curr.posizioni.length;
+  }, 0);
+  for (let iter = 0; iter < iters; iter++) {
+    let stringa: string = "{1:MC:";
+    for (let opt = 0; opt < alternative.length; opt++) {
+      if (alternative[opt].posizioni.indexOf(iter) != -1) {
+        stringa += "=";
+      }
+      stringa += alternative[opt].stringa;
+      if (opt < alternative.length - 1) {
+        stringa += "~";
+      }
+    }
+    stringa += "}";
+    opzioni.push(stringa);
+  }
+  return opzioni;
 }
 
 function creaTabella(traccia: Traccia): string {
@@ -511,10 +555,126 @@ function permuta_aux(v: number[], index: number, fnc: Function) {
   }
 }
 
+function generaQuiz(soluzioni: ContestoQuiz[]): string {
+  const html_template = `<?xml version="1.0" encoding="UTF-8"?>
+ <quiz>
+ <!-- Formato Moodle XML - quiz sugli algoritmi di ordinamento -->
+
+ {{#each this}}
+ <question type="category">
+  <category>
+   <text>{{categoria}}</text>
+  </category>
+ </question>
+
+ <question type="cloze">
+ <name>
+   <text>{{titolo}}</text>
+ </name>
+ <questiontext format="html">
+   <text><![CDATA[
+  <p>Ordinare la sequenza [{{esecuzione.sequenza_iniziale}}] con l'algoritmo {{esecuzione.algoritmo}}. Indicare il numero di confronti e di scambi in ogni iterazione.</p>
+  <table id="sequenze" style="width: 100%">
+   <caption>Algoritmo &quot;{{esecuzione.algoritmo}}&quot;
+    applicato alla sequenza [{{esecuzione.sequenza_iniziale}}]</caption>
+   <thead id="intestazione">
+    <tr>
+     <th>Iterazione</th>
+     <th>Sequenza</th>
+     <th>Confronti</th>
+     <th>Scambi</th>
+    </tr>
+   </thead>
+   <tbody id="corpo">
+    {{#each esecuzione.traccia}}
+    <tr>
+     <th>{{_iterazione}}</th>
+     <td>{{#ifPrimo @index}}{{_sequenza}}{{else}}{{{getSequenzeMoodle ../opzioniMoodle @index}}}{{/ifPrimo}}</td>
+     <td>{{#ifPrimo @index}}-{{else}}{1:NM:={{_prestazioniIterazione._confronti}}:0}{{/ifPrimo}}</td>
+     <td>{{#ifPrimo @index}}-{{else}}{1:NM:={{_prestazioniIterazione._scambi}}:0}{{/ifPrimo}}</td>
+    </tr>
+    {{/each}}
+   </tbody>
+   <!--tfoot id="intestazione">
+    <tr>
+     <th></th>
+     <th></th>
+     <th id="cfrComplessivi">Confronti</th>
+     <th id="scbComplessivi">Scambi</th>
+    </tr>
+   </tfoot-->
+  </table>
+]]></text>
+</questiontext>
+<generalfeedback format="html">
+  <text></text>
+</generalfeedback>
+<penalty>0.3333333</penalty>
+<hidden>0</hidden>
+</question>
+ {{/each}}
+</quiz>`;
+  Handlebars.logger.level = 0;
+  Handlebars.registerHelper("getSequenzeMoodle", function(array, id) {
+    return array[id];
+  });
+  Handlebars.registerHelper("ifPrimo", function(index, options) {
+    if (index == 0) {
+      return options.fn(this);
+    } else {
+      return options.inverse(this);
+    }
+  });
+  const template = Handlebars.compile(html_template);
+  const html = template(soluzioni);
+  return html;
+}
+
+function test() {
+  let seq = [[], [], []];
+  permuta([1, 2, 3, 4], v => seq[0].push(Object.assign([], v)));
+  permuta([1, 2, 3, 4, 5], v => seq[1].push(Object.assign([], v)));
+  permuta([1, 2, 3, 4, 5, 6], v => seq[2].push(Object.assign([], v)));
+
+  let soluzioni: ContestoQuiz[] = [];
+  let algoritmi = [SelectionSort, InsertionSort, BubbleSort];
+  let parziale = 0;
+  algoritmi.forEach(algoritmo => {
+    seq.forEach(sequenze => {
+      // sequenze di una data dimensione
+      let numeroEserciziPerAlgoPerDim = 0;
+      sequenze.forEach(v => {
+        if (numeroEserciziPerAlgoPerDim >= 50) return;
+        let istanzaAlgoritmo = new algoritmo(Object.assign([], v));
+        let esecuzione: Traccia = istanzaAlgoritmo.ordina();
+        let alternative: Sequenza[] = generaAlternative(esecuzione);
+        let opzioniMoodle: string[] = moodleMultiChoice(alternative);
+        if (alternative.length === 4) {
+          soluzioni.push({
+            esecuzione: istanzaAlgoritmo.esecuzione(),
+            opzioniMoodle: opzioniMoodle,
+            categoria: `$course$/Algoritmi/Algoritmi di ordinamento/${istanzaAlgoritmo.nome()}/Dimensione ${
+              istanzaAlgoritmo.esecuzione().sequenza_iniziale.length
+            }`,
+            titolo: `${istanzaAlgoritmo.nome()} - [${
+              istanzaAlgoritmo.esecuzione().sequenza_iniziale
+            }]`
+          });
+          numeroEserciziPerAlgoPerDim++;
+        }
+      });
+    });
+    //console.log(`Sequenze per ${algoritmo}: ${soluzioni.length - parziale}`);
+    parziale = soluzioni.length;
+  });
+
+  console.log(generaQuiz(soluzioni));
+  //console.log(JSON.stringify(soluzioni));
+}
+
+test();
 // permuta([1, 2, 3, 4, 5], console.log);
 
-// console.log(creaTabella(new BubbleSort([9, 1, 2, 3, 4, 5, 6, 7, 8]).ordina()));
-
-//new SelectionSort([2, 3, 1, 4]).ordina().traccia.forEach(r => {
-//  console.log(JSON.stringify(r.sequenza));
-//});
+//console.log(creaTabella(new BubbleSort([7, 1, 6, 2, 5, 3, 4]).ordina()));
+//let esecuzione: Traccia = new BubbleSort([7, 1, 6, 2, 5, 3, 4, 8, 9]).ordina();
+//console.log(ordinaAlternativePerNome(generaAlternative(esecuzione)));
