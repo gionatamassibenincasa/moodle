@@ -28,7 +28,7 @@ let configurazioneEditor: CodeMirror.EditorConfiguration = {
   },
   lineNumbers: true,
   lineWrapping: true,
-  viewportMargin: Infinity,
+  // viewportMargin: Infinity,
   extraKeys: {
     "Ctrl-Space": "autocomplete"
   }
