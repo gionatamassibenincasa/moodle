@@ -13,9 +13,9 @@
     "highlightjs": "^9.10.0",
     "katex": "^0.9.0",
     "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-anchor": "^5.0.2",
     "markdown-it-table": "^1.0.4",
-    "markdown-it-table-of-contents": "^0.3.3",
+    "markdown-it-table-of-contents": "^0.4.3",
     "path": "^0.12.7",
     "source-map-loader": "^0.2.3",
     "typescript": "^2.7.2"

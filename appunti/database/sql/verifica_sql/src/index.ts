@@ -22,13 +22,13 @@ let generaListaSpecifiche = function (quesiti: Quesito[]): Specifica[] {
 };
 
 let configurazioneEditor: CodeMirror.EditorConfiguration = {
-  //value: '\n',
+  value: '\n',
   mode: {
     name: "sql"
   },
   lineNumbers: true,
   lineWrapping: true,
-  viewportMargin: 10, //Infinity,
+  viewportMargin: Infinity,
   extraKeys: {
     "Ctrl-Space": "autocomplete"
   }

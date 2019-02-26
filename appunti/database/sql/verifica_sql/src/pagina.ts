@@ -66,32 +66,30 @@ export class Pagina {
           const ss: StyleSheetList = document.styleSheets;
           for (let j = 0; j < ss.length; j++) {
             css = ss[j];
-            /*
             // Cercare tra i figli l'attributo id
-            if (
-              css.ownerNode &&
-              css.ownerNode.hasAttributes("id") &&
-              css.ownerNode.getAttribute("id") === idStileInterno
-            ) {
-              trovato = true;
-              break;
+            if (css.ownerNode) {
+              if (css.ownerNode.hasChildNodes()) {
+                //css.ownerNode.hasAttributes("id");
+                //css.ownerNode.getAttribute("id") === idStileInterno
+                trovato = true;
+                break;
+              }
             }
-            */
+            /*
+            if (trovato) {
+              const rules: CSSRuleList = css.cssRules;
+              for (let j = 0; j < rules.length; j++) {
+                let rule: CSSRule = rules[j];
+                rule.style["font-family"] = ff;
+                document.querySelectorAll(".CodeMirror").forEach(elem : Element => {
+                  let codemirror: CodeMirror.Editor = elem["CodeMirror"];
+                  codemirror.refresh();
+                }
+                */
+            return;
           }
-          if (trovato) {
-            /*const rules: CSSRuleList = css.cssRules;
-            for (let j = 0; j < rules.length; j++) {
-              let rule: CSSRule = rules[j];
-              rule.style["font-family"] = ff;
-              //document.querySelectorAll(".CodeMirror").forEach(elem => {
-              //  let codemirror: CodeMirror.Editor = elem["CodeMirror"];
-              //  codemirror.refresh();
-              //});
-              return;
-            }
-            */
-          }
-        });
+        }
+        );
     };
 
     abilitaModificaCaratteriTipografi();

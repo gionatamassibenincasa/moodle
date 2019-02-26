@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": ".",
+    "outDir": "./dist",
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
     "allowJs": true,
     "sourceMap": true
   },
-  "exclude": ["node_modules", "**/*-aot.ts"],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": ["./node_modules", "**/*-aot.ts", "./dist"],
   "lib": ["es6", "dom", "dom.iterable"],
   "typeRoots": ["node_modules/@types"],
   "removeComments": false

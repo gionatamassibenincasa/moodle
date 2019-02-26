@@ -4,7 +4,7 @@
   "description": "Un framework per erogare verifica sul linguaggio sql con valutazione oggettiva e automatizzata",
   "main": "index.js",
   "scripts": {
-    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "babel": "babel js/main.js -o build/main.bundle.js",
     "build": "webpack --progress -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "webpack-dev-server --open",
@@ -14,21 +14,20 @@
   "author": "Gionata Massi <gionata.massi@savoiabenincasa.it>",
   "license": "ISC",
   "dependencies": {
-    "@types/codemirror": "0.0.55",
-    "@types/node": "^9.4.7",
-    "babel-core": "^6.26.0",
-    "babel-runtime": "^6.26.0",
-    "codemirror": "^5.32.0"
+    "@types/codemirror": "0.0.72",
+    "@types/node": "^11.9.4",
+    "@types/sql.js": "0.0.29",
+    "@types/tern": "^0.22.2",
+    "codemirror": "^5.44.0",
+    "css-loader": "^2.1.0",
+    "sql.js": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.5",
+    "webpack-dev-server": "^3.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "css-loader": "^0.28.7",
-    "style-loader": "^0.19.1",
-    "ts-loader": "^4.0.1",
-    "typescript": "^2.7.2",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-cli": "^3.2.3"
   }
 }
