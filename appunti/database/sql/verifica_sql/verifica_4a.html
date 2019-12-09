@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Verifica d'informatica</title>
+    <!-- OpenDyslexic CSS -->
+    <link id="opendyslexic-fonts" rel="stylesheet" href="lib/fonts.css" type="text/css" disabled>
+    <!-- Bootstrap CSS -->
+    <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"-->
+    <!-- CSS personalizzato -->
+    <link rel="stylesheet" href="lib/pagina.css" type="text/css">
+    <!-- Codemirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/codemirror.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/hint/show-hint.min.css">
+    <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/scroll/simplescrollbars.min.css" -->
+    <!-- JQuery (opzionale) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- Popper (opzionale) -->
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script-->
+    <!-- Bootstrap -->
+    <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script-->
+    <!-- CodeMirror -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/codemirror.min.js"></script>
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/scroll/simplescrollbars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/selection/selection-pointer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/hint/show-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/hint/sql-hint.min.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/mode/sql/sql.min.js"></script>
+    <!-- SQL, per correzione -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/0.5.0/js/sql-optimized.js'></script>
+    <!-- Reimposta CodeMirror -->
+    <style id="stile_interno">
+        * {
+            font-family: "";
+        }
+
+        .CodeMirror * {
+            font-family: monospace;
+            /*border: 1px solid #eee;*/
+        }
+        /*.CodeMirror-scroll {
+            overflow-y: hidden;
+            overflow-x: auto;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="contenitore">
+        <div class="scelta_font">
+            <!-- Dislessia -->
+            <label for="font-scelto">Scegli il carattere tipografico: </label>
+            <select id="font-scelto">
+                <option value="">Browser default</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Inconsolata">Inconsolata</option>
+                <option value="opendyslexic">Open Dyslexic</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+        </div>
+        <div class="dati_alunno">
+            <span>
+                <label for="nome">Nome:</label>
+                <input type="text" id="alunno-nome" name="nome" placeholder="Nome" required autocomplete="nome" />
+            </span>
+            <span>
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="alunno-cognome" name="cognome" placeholder="Cognome" required autocomplete="cognome" />
+            </span>
+        </div>
+        <!-- dati_alunno -->
+        <div class="specifiche">
+            <header>Istruzioni operative</header>
+
+            <ol id="descr-specs"></ol>
+            <div class="comandi">
+                <button id="invia">Invia</button>
+            </div>
+        </div>
+        <script src="dist/bundle.js" async></script>
+    </div>
+</body>
+
+</html>
