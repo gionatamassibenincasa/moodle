@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Algoritmi di ordinamento</title>
+    <meta charset="UTF-8" />
+    <style>
+table, th, td {
+        font-family: monospace;
+        border-collapse: collapse;
+        text-align: center;
+        border: 1px solid black;
+        white-space:nowrap;
+}
+    </style>
+  </head>
+  <body>
+    <p>Immettere una sequenza di numeri naturali.</p>
+    <p>Sequenza: (<input id="sequenza" type="text" />)</p>
+    <p>
+      <select id="algoritmo">
+        <option value="selection" selected="selected">Algoritmo di ordinamento per selezione (Selection sort)</option>
+        <option value="insertion">Algoritmo di ordinamento per inserimento (Insertion sort)</option>
+        <option value="bubble">Algoritmo di ordinamento a bolle (Bubble sort)</option>
+        <!--option value="merge">Algoritmo di ordinamento per fusione (Mergesort)</option>
+        <option value="quick">Algoritmo di ordinamento veloce (Quicksort)</option-->
+      </select>
+    </p>
+    <p>
+      <button id="ordina">Ordina!</button>
+    </p>
+    <table>
+	  <caption></caption>
+      <thead style="visibility: hidden;">
+        <tr>
+          <th>Iterazione</th>
+          <th>Sequenza</th>
+          <th>Confronti iter</th>
+          <th>Scambi iter.</th>
+          <th>Confronti</th>
+          <th>Scambi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+/* global Event */
+/* jslint browser:true */
+'use strict';
+function analizza(stringa) {
+    var ret = [],
+        pos = 0,
+        ultimoNumero;
+    while (pos < stringa.length) {
+        if (stringa[pos] >= '0' && stringa[pos] <= '9') {
+            ultimoNumero = pos + 1;
+            while (ultimoNumero <= stringa.length && stringa[ultimoNumero] >= '0' && stringa[ultimoNumero] <= '9') {
+                ultimoNumero++;
+            }
+            ret.push(parseInt(stringa.slice(pos, ultimoNumero), 10));
+            pos = ultimoNumero;
+        } else {
+            pos++;
+        }
+    }
+    return ret;
+}
+function mostraIntestazioni(caption) {
+	document.querySelectorAll('caption')[0].innerText = caption;
+	document.querySelectorAll('thead')[0].style.visibility = 'visible';
+}
+function aggiungiRiga(iterazione, sequenza, nConfronti, nScambi, totConfronti, totScambi) {
+    var tabella = document.querySelectorAll("tbody")[0],
+        tr = document.createElement("tr"),
+        aggiungiNumero = function (valore) {
+            var td = document.createElement("td");
+            td.innerHTML = valore;
+            tr.appendChild(td);
+        },
+        aggiungiSequenza = function (sequenza) {
+            var td = document.createElement("td"),
+                j;
+            if (sequenza.length) {
+                td.innerHTML = sequenza[0];
+            }
+            for (j = 1; j < sequenza.length; j++) {
+                td.innerHTML += ' ' + sequenza[j];
+            }
+            tr.appendChild(td);
+        };
+    aggiungiNumero(iterazione);
+    aggiungiSequenza(sequenza);
+    aggiungiNumero(nConfronti);
+    aggiungiNumero(nScambi);
+    aggiungiNumero(totConfronti);
+    aggiungiNumero(totScambi);
+    tabella.appendChild(tr);
+}
+function selection(sequenza) {
+    var nConfronti,
+        nScambi,
+        totConfronti = 0,
+        totScambi = 0,
+        j,
+        primoNonOrdinato,
+        trovaMinimo = function (inizioNonOrdinata) {
+            var indiceMinimo = inizioNonOrdinata;
+            for (j = inizioNonOrdinata + 1; j < sequenza.length; j++) {
+                if (sequenza[j] < sequenza[indiceMinimo]) {
+                    indiceMinimo = j;
+                }
+                nConfronti++;
+            }
+            return indiceMinimo;
+        },
+        scambia = function (i, j) {
+            var minimo;
+            if (i !== j) {
+                minimo = sequenza[j];
+                sequenza[j] = sequenza[i];
+                sequenza[i] = minimo;
+                nScambi++;
+            }
+        },
+        iterazione = function (primoNonOrdinato) {
+            var indiceMinimo = trovaMinimo(primoNonOrdinato);
+            scambia(primoNonOrdinato, indiceMinimo);
+        };
+    mostraIntestazioni("Selection sort applicato alla sequenza originale [" + sequenza.join(", ") + "]");
+    // Esempi di sequenze peggiori: 5 1 2 3 4; 9 0 1 2 3 4 5 6 7 8;...
+    for (primoNonOrdinato = 0; primoNonOrdinato < sequenza.length - 1; primoNonOrdinato++) {
+        nConfronti = 0;
+        nScambi = 0;
+        iterazione(primoNonOrdinato);
+        totConfronti += nConfronti;
+        totScambi += nScambi;
+        aggiungiRiga(primoNonOrdinato + 1, sequenza, nConfronti, nScambi, totConfronti, totScambi);
+    }
+}
+function insertion(sequenza) {
+    var nConfronti,
+        nScambi,
+        totConfronti = 0,
+        totScambi = 0,
+        elementoDaInserire,
+        scambia = function (i, j) {
+            var minimo;
+            if (i !== j) {
+                minimo = sequenza[j];
+                sequenza[j] = sequenza[i];
+                sequenza[i] = minimo;
+                nScambi++;
+            }
+        },
+        iterazione = function (elementoDaInserire) {
+            while (elementoDaInserire > 0) {
+                nConfronti++;
+                if (sequenza[elementoDaInserire] < sequenza[elementoDaInserire - 1]) {
+                    scambia(elementoDaInserire, elementoDaInserire - 1);
+                    elementoDaInserire--;
+                } else {
+                    elementoDaInserire = 0;
+                }
+            }
+        };
+    mostraIntestazioni("Insertion sort applicato alla sequenza originale [" + sequenza.join(", ") + "]");
+    // Esempi di sequenze peggiori: 5 4 3 2 1; 10 9 8 7 6 5 4 3 2 1;...
+    for (elementoDaInserire = 1; elementoDaInserire < sequenza.length; elementoDaInserire++) {
+        nConfronti = 0;
+        nScambi = 0;
+        iterazione(elementoDaInserire);
+        totConfronti += nConfronti;
+        totScambi += nScambi;
+        aggiungiRiga(elementoDaInserire, sequenza, nConfronti, nScambi, totConfronti, totScambi);
+    }
+}
+function bubble(sequenza) {
+    var nConfronti,
+        nScambi,
+        totConfronti = 0,
+        totScambi = 0,
+        elementoOrdinato,
+		elementoDiConfronto,
+        scambia = function (i, j) {
+            var minimo;
+            if (i !== j) {
+                minimo = sequenza[j];
+                sequenza[j] = sequenza[i];
+                sequenza[i] = minimo;
+                nScambi++;
+            }
+        },
+        iterazione = function (elementoOrdinato) {
+			elementoDiConfronto = sequenza.length - 1;
+            while (elementoDiConfronto > elementoOrdinato) {
+                nConfronti++;
+                if (sequenza[elementoDiConfronto - 1] > sequenza[elementoDiConfronto]) {
+                    scambia(elementoDiConfronto, elementoDiConfronto - 1);
+                }
+                elementoDiConfronto--;
+            }
+        };
+    mostraIntestazioni("Bubble sort applicato alla sequenza originale [" + sequenza.join(", ") + "]");
+    // Esempi di sequenze peggiori: 5 4 3 2 1; 10 9 8 7 6 5 4 3 2 1;...
+    for (elementoOrdinato = 0; elementoOrdinato < sequenza.length - 1; elementoOrdinato++) {
+        nConfronti = 0;
+        nScambi = 0;
+        iterazione(elementoOrdinato);
+        totConfronti += nConfronti;
+        totScambi += nScambi;
+        aggiungiRiga(elementoOrdinato + 1, sequenza, nConfronti, nScambi, totConfronti, totScambi);
+    }
+}
+function ripristinaTabella() {
+    var tabella = document.querySelectorAll('tbody')[0];
+    while (tabella.firstChild) {
+        tabella.removeChild(tabella.firstChild);
+    }
+	document.querySelectorAll('thead')[0].style.visibility = 'hidden';
+}
+function ordina () {
+    var sequenza = analizza(document.getElementById('sequenza').value);
+    ripristinaTabella();
+    var nomeAlgoritmo = document.getElementById('algoritmo').value;
+    window[nomeAlgoritmo](sequenza);
+}
+document.getElementById('ordina').addEventListener('click', ordina);
+document.getElementById('sequenza').addEventListener('keypress', function (e) {
+    var key = e.keyCode || e.which;
+    if (key === 13) {
+        ordina();
+    }
+});
+    </script>
+  </body>
+</html>
